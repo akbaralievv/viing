@@ -1,0 +1,303 @@
+{
+  "meta": {
+    "title": "VIING — import and export from China | VIING MCHJ XK",
+    "titleTemplate": "%s | VIING",
+    "description": "VIING MCHJ XK — import and export from China, wholesale supply and private-label manufacturing for businesses in Uzbekistan and CIS.",
+    "shortDescription": "Import and export from China. Wholesale supply and private-label manufacturing.",
+    "ogTitle": "VIING — import and export from China",
+    "ogAlt": "VIING — international trade",
+    "keywords": "import from China, export, wholesale, foreign trade Uzbekistan, China to CIS shipping, OEM manufacturing, VIING",
+    "locale": "en_US"
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "products": "Products",
+    "process": "How we work",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "contactCta": "Get in touch",
+    "openMenu": "Open menu",
+    "menuTitle": "Navigation menu",
+    "homeAria": "VIING — home",
+    "skipToContent": "Skip to content",
+    "back": "Back home",
+    "writeWhatsapp": "Message us on WhatsApp",
+    "writeTelegram": "Message us on Telegram"
+  },
+  "language": {
+    "label": "Language",
+    "ru": "Русский",
+    "en": "English",
+    "uz": "O'zbekcha"
+  },
+  "hero": {
+    "badge": "MCHJ XK — official partner",
+    "title1": "Your reliable",
+    "title2": "trading partner",
+    "subtitle": "Import and export from China. Wholesale supply and private-label manufacturing with guaranteed quality.",
+    "ctaPrimary": "Get a consultation",
+    "ctaSecondary": "Our products",
+    "stats": {
+      "years": "Years on the market",
+      "partners": "Partners",
+      "countries": "Countries"
+    },
+    "imageAlt": "Container terminal — international trade",
+    "globalTrade": "Global trade",
+    "tradeRoute": "China — CIS — Europe"
+  },
+  "partners": {
+    "title": "We work with leading logistics operators"
+  },
+  "about": {
+    "badge": "About us",
+    "title1": "VIING — your bridge to",
+    "title2": "Asian markets",
+    "p1": "VIING MCHJ XK is a professional team of international trade specialists. We focus on import and export between China and CIS countries.",
+    "p2": "Our mission is to make international trade transparent and accessible to every client, ensuring high product and service quality.",
+    "advantages": [
+      "Direct contracts with manufacturers",
+      "Quality control at every stage",
+      "Full customs clearance",
+      "Flexible payment terms",
+      "Delivery across the CIS",
+      "More than 10 years on the market"
+    ],
+    "images": {
+      "warehouse": "International logistics warehouse",
+      "shipping": "Container shipping",
+      "production": "Goods production",
+      "team": "Negotiations team"
+    }
+  },
+  "services": {
+    "badge": "Our services",
+    "title1": "A full range of",
+    "title2": "trading solutions",
+    "subtitle": "From sourcing the supplier to delivering the goods — we cover every stage",
+    "items": [
+      {
+        "title": "Import from China",
+        "description": "Direct supply of quality goods from verified Chinese manufacturers with full customs support."
+      },
+      {
+        "title": "Export of goods",
+        "description": "Export deliveries of your products to international markets with optimal logistics."
+      },
+      {
+        "title": "Private label",
+        "description": "Manufacturing under your brand: from design development to finished goods."
+      },
+      {
+        "title": "Wholesale trade",
+        "description": "Wholesale supply of a wide product range for retail chains and distributors."
+      }
+    ]
+  },
+  "products": {
+    "badge": "Products",
+    "title1": "A wide range of",
+    "title2": "goods",
+    "subtitle": "We work with multiple product categories for any kind of business",
+    "cta": "Request the full catalog",
+    "items": [
+      {
+        "category": "Electronics",
+        "items": ["Smartphones", "Accessories", "Home appliances", "LED lighting"]
+      },
+      {
+        "category": "Textile",
+        "items": ["Apparel", "Home textile", "Workwear", "Fabrics"]
+      },
+      {
+        "category": "Construction materials",
+        "items": ["Tools", "Hardware", "Finishing materials", "Plumbing"]
+      },
+      {
+        "category": "Home goods",
+        "items": ["Tableware", "Decor", "Furniture", "Household items"]
+      }
+    ]
+  },
+  "process": {
+    "badge": "How we work",
+    "title1": "A transparent",
+    "title2": "process",
+    "title3": "at every stage",
+    "subtitle": "Five steps from the first call to delivery at your warehouse",
+    "steps": [
+      {
+        "title": "Brief and request",
+        "description": "We discuss your goal, volumes, budget and timeline. Pick the optimal supply scheme."
+      },
+      {
+        "title": "Supplier sourcing",
+        "description": "Find and vet factories, agree on samples and specifications."
+      },
+      {
+        "title": "Production control",
+        "description": "We monitor schedule, quality and packaging. Photo and video reports on request."
+      },
+      {
+        "title": "Logistics and customs",
+        "description": "Arrange shipping, prepare documents, clear customs end-to-end."
+      },
+      {
+        "title": "Handover and support",
+        "description": "Deliver the cargo to your warehouse and stay in touch for next shipments."
+      }
+    ]
+  },
+  "whyUs": {
+    "badge": "Why us",
+    "title1": "Reliability and",
+    "title2": "quality",
+    "title3": "in every shipment",
+    "subtitle": "We understand how critical reliability is in business. Every step — from picking a supplier to delivery — is under our strict control.",
+    "items": [
+      {
+        "title": "Quality control",
+        "description": "Inspecting goods against specifications before shipment"
+      },
+      {
+        "title": "Fast delivery",
+        "description": "Optimal routes and lead times starting from 15 days"
+      },
+      {
+        "title": "Turnkey service",
+        "description": "End-to-end support: from sourcing to warehouse delivery"
+      }
+    ],
+    "globalTitle": "Global capabilities",
+    "stats": {
+      "suppliers": "Suppliers",
+      "products": "Products",
+      "successRate": "Successful shipments",
+      "support": "Support"
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title1": "Answers to",
+    "title2": "important questions",
+    "subtitle": "Didn't find your question? Write to us — we'll reply within a day",
+    "items": [
+      {
+        "question": "What is your minimum order?",
+        "answer": "We work with shipments starting from 1 container. For LCL — from 100 kg. For large clients we tailor individual terms."
+      },
+      {
+        "question": "How long does delivery from China take?",
+        "answer": "Sea — 35–45 days to Tashkent, rail — 18–25 days, air — 5–7 days. Final lead time depends on route, volume and season."
+      },
+      {
+        "question": "How do you control product quality?",
+        "answer": "We run a factory inspection before shipment: specifications, packaging, labeling. Photo and video reports for every batch on request."
+      },
+      {
+        "question": "Can you handle customs clearance end-to-end?",
+        "answer": "Yes. We handle all documents, certification and customs clearance in Uzbekistan and most CIS countries. You receive the cargo at your warehouse."
+      },
+      {
+        "question": "Do you offer deferred payment?",
+        "answer": "For repeat customers and large contracts — discussed individually. Standard terms: 50% prepayment, 50% upon goods readiness."
+      },
+      {
+        "question": "Do you do private label (OEM)?",
+        "answer": "Yes. We develop packaging, apply your logo, agree on design with the factory. Minimum batch depends on the category — typically 500–1000 pcs."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Contact",
+    "title1": "Get",
+    "title2": "in touch",
+    "subtitle": "Ready to discuss your project? Submit a request or message us directly — we usually reply within an hour during business hours.",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "addressLabel": "Address",
+    "address": "Tashkent, Mirzo-Ulugbek district, Shahriobod mahalla, Oliy Khimmat street, 128-A",
+    "addressLocality": "Tashkent",
+    "hoursTitle": "Working hours",
+    "hours": [
+      { "day": "Monday — Friday", "value": "09:00 — 18:00" },
+      { "day": "Saturday", "value": "10:00 — 15:00" },
+      { "day": "Sunday", "value": "Closed" }
+    ],
+    "formTitle": "Send a request"
+  },
+  "form": {
+    "name": "Your name",
+    "namePlaceholder": "Enter your name",
+    "phone": "Phone",
+    "phonePlaceholder": "+998 XX XXX XX XX",
+    "email": "Email",
+    "emailPlaceholder": "example@mail.com",
+    "message": "Message",
+    "messagePlaceholder": "What needs to be supplied, in what volume and where?",
+    "consent": "I agree to the processing of personal data according to the",
+    "consentLink": "privacy policy",
+    "submit": "Send request",
+    "submitting": "Sending...",
+    "honeypotLabel": "Website (leave empty)",
+    "errors": {
+      "nameMin": "Enter your name (minimum 2 characters)",
+      "nameMax": "Name is too long",
+      "phoneRequired": "Enter your contact phone",
+      "phoneInvalid": "This phone looks invalid",
+      "emailInvalid": "Invalid email",
+      "messageMin": "Describe your request — at least a few words",
+      "messageMax": "Message is too long",
+      "consentRequired": "Consent to personal data processing is required",
+      "submitFailed": "Something went wrong. Try again or message us on Telegram."
+    },
+    "dialog": {
+      "successTitle": "Request sent",
+      "successMessage": "We will contact you during the next working hours.",
+      "errorTitle": "Sending failed",
+      "okButton": "OK",
+      "closeButton": "Close"
+    }
+  },
+  "footer": {
+    "tagline": "VIING MCHJ XK — your reliable partner in international trade. Import, export and wholesale supply of goods from China.",
+    "servicesTitle": "Services",
+    "companyTitle": "Company",
+    "contactsTitle": "Contacts",
+    "copyright": "© {year} VIING MCHJ XK. All rights reserved.",
+    "legalNav": "Legal information",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use"
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "intro": "This Policy describes how VIING MCHJ XK (the «Company») processes personal data of users of {url}.",
+    "section1Title": "1. What data we collect",
+    "section1Body": "When you submit the contact form we collect: name, phone, email (if provided) and message text. This data is used solely to respond to your request.",
+    "section2Title": "2. Processing purposes",
+    "section2List": [
+      "handling inquiries and preparing commercial proposals;",
+      "fulfilling contractual obligations;",
+      "informing you about the status of your requests and shipments."
+    ],
+    "section3Title": "3. Sharing with third parties",
+    "section3Body": "We do not share your data with third parties, except as required by the law of the Republic of Uzbekistan and our technical contractors (hosting, messengers) acting on our behalf.",
+    "section4Title": "4. Storage period",
+    "section4Body": "Personal data is stored no longer than required for the processing purposes, or until you withdraw your consent.",
+    "section5Title": "5. Contacts",
+    "section5Body": "For personal data questions write to"
+  },
+  "terms": {
+    "title": "Terms of use",
+    "intro": "By using the {url} website you agree to these terms. If you do not agree — please stop using the website.",
+    "section1Title": "1. Purpose of the website",
+    "section1Body": "The website is informational and does not constitute a public offer. Exact terms, prices and timelines are agreed individually based on your request.",
+    "section2Title": "2. Intellectual property",
+    "section2Body": "All website materials — texts, images, logos — belong to VIING MCHJ XK or are used with the permission of rights holders. Any use without consent is prohibited.",
+    "section3Title": "3. Limitation of liability",
+    "section3Body": "The Company makes reasonable efforts to keep information up to date but does not guarantee its completeness and accuracy in all cases.",
+    "section4Title": "4. Contacts",
+    "section4Body": "For questions about the terms of use write to"
+  }
+}

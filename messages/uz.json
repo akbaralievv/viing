@@ -1,0 +1,303 @@
+{
+  "meta": {
+    "title": "VIING — Xitoydan import va eksport | VIING MCHJ XK",
+    "titleTemplate": "%s | VIING",
+    "description": "VIING MCHJ XK — Xitoydan tovarlarni import va eksport qilish, ulgurji yetkazib berish va O'zbekiston hamda MDH biznesi uchun xususiy brend ostida ishlab chiqarish.",
+    "shortDescription": "Xitoydan tovar import va eksport. Ulgurji yetkazib berish va xususiy brend ostida ishlab chiqarish.",
+    "ogTitle": "VIING — Xitoydan import va eksport",
+    "ogAlt": "VIING — xalqaro savdo",
+    "keywords": "Xitoydan import, eksport, ulgurji savdo, O'zbekiston tashqi savdo, Xitoydan MDHga yetkazish, OEM ishlab chiqarish, VIING",
+    "locale": "uz_UZ"
+  },
+  "nav": {
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "products": "Mahsulotlar",
+    "process": "Qanday ishlaymiz",
+    "faq": "FAQ",
+    "contact": "Aloqa",
+    "contactCta": "Bog'lanish",
+    "openMenu": "Menyuni ochish",
+    "menuTitle": "Navigatsiya menyusi",
+    "homeAria": "VIING — bosh sahifa",
+    "skipToContent": "Asosiy mazmunga o'tish",
+    "back": "Bosh sahifa",
+    "writeWhatsapp": "WhatsApp orqali yozish",
+    "writeTelegram": "Telegram orqali yozish"
+  },
+  "language": {
+    "label": "Til",
+    "ru": "Русский",
+    "en": "English",
+    "uz": "O'zbekcha"
+  },
+  "hero": {
+    "badge": "MCHJ XK — rasmiy hamkor",
+    "title1": "Ishonchli",
+    "title2": "savdo hamkoringiz",
+    "subtitle": "Xitoydan tovarlarni import va eksport qilish. Ulgurji yetkazib berish va sifat kafolati bilan xususiy brend ostida ishlab chiqarish.",
+    "ctaPrimary": "Maslahat olish",
+    "ctaSecondary": "Mahsulotlarimiz",
+    "stats": {
+      "years": "Yillik tajriba",
+      "partners": "Hamkorlar",
+      "countries": "Davlatlar"
+    },
+    "imageAlt": "Konteyner terminali — xalqaro savdo",
+    "globalTrade": "Global savdo",
+    "tradeRoute": "Xitoy — MDH — Yevropa"
+  },
+  "partners": {
+    "title": "Yetakchi logistika operatorlari bilan ishlaymiz"
+  },
+  "about": {
+    "badge": "Kompaniya haqida",
+    "title1": "VIING — sizning",
+    "title2": "Osiyo bozorlariga ko'prigingiz",
+    "p1": "VIING MCHJ XK — xalqaro savdo sohasidagi mutaxassislardan iborat professional jamoa. Xitoy va MDH davlatlari o'rtasida import va eksportga ixtisoslashganmiz.",
+    "p2": "Bizning vazifamiz — xalqaro savdoni har bir mijoz uchun shaffof va qulay qilish, tovarlar va xizmat sifatini ta'minlash.",
+    "advantages": [
+      "Ishlab chiqaruvchilar bilan to'g'ridan-to'g'ri shartnomalar",
+      "Har bosqichda sifat nazorati",
+      "To'liq bojxona rasmiylashtirish",
+      "Moslashuvchan to'lov shartlari",
+      "MDH bo'ylab yetkazib berish",
+      "10 yildan ortiq bozorda"
+    ],
+    "images": {
+      "warehouse": "Xalqaro logistika ombori",
+      "shipping": "Konteynerli yuk tashish",
+      "production": "Tovar ishlab chiqarish",
+      "team": "Muzokara jamoasi"
+    }
+  },
+  "services": {
+    "badge": "Xizmatlarimiz",
+    "title1": "To'liq",
+    "title2": "savdo yechimlari spektri",
+    "subtitle": "Yetkazib beruvchini topishdan tortib tovarni yetkazishgacha — barcha bosqichlarni o'z zimmamizga olamiz",
+    "items": [
+      {
+        "title": "Xitoydan import",
+        "description": "Tekshirilgan Xitoy ishlab chiqaruvchilaridan to'g'ridan-to'g'ri yetkazish va to'liq bojxona qo'llab-quvvatlash."
+      },
+      {
+        "title": "Mahsulot eksporti",
+        "description": "Mahsulotingizni xalqaro bozorlarga optimal logistika bilan eksport qilish."
+      },
+      {
+        "title": "Xususiy brend",
+        "description": "Sizning brendingiz ostida ishlab chiqarish: dizayn ishlab chiqishdan tortib tayyor mahsulotgacha."
+      },
+      {
+        "title": "Ulgurji savdo",
+        "description": "Chakana savdo tarmoqlari va distribyutorlar uchun keng assortimentdagi ulgurji yetkazish."
+      }
+    ]
+  },
+  "products": {
+    "badge": "Mahsulotlar",
+    "title1": "Keng assortimentdagi",
+    "title2": "tovarlar",
+    "subtitle": "Har qanday biznes uchun turli kategoriyadagi tovarlar bilan ishlaymiz",
+    "cta": "To'liq katalogni so'rash",
+    "items": [
+      {
+        "category": "Elektronika",
+        "items": ["Smartfonlar", "Aksessuarlar", "Maishiy texnika", "LED yoritish"]
+      },
+      {
+        "category": "To'qimachilik",
+        "items": ["Kiyim", "Uy to'qimachiligi", "Maxsus kiyim", "Matolar"]
+      },
+      {
+        "category": "Qurilish materiallari",
+        "items": ["Asboblar", "Furnitura", "Pardozlash materiallari", "Santexnika"]
+      },
+      {
+        "category": "Uy uchun tovarlar",
+        "items": ["Idishlar", "Dekor", "Mebel", "Xo'jalik tovarlari"]
+      }
+    ]
+  },
+  "process": {
+    "badge": "Qanday ishlaymiz",
+    "title1": "Har bosqichda",
+    "title2": "shaffof",
+    "title3": "jarayon",
+    "subtitle": "Birinchi qo'ng'iroqdan tortib yukni omboringizda qabul qilgungacha besh bosqich",
+    "steps": [
+      {
+        "title": "So'rov va brifing",
+        "description": "Vazifa, hajm, byudjet va muddatlarni muhokama qilamiz. Optimal yetkazish sxemasini tanlaymiz."
+      },
+      {
+        "title": "Yetkazib beruvchilarni tanlash",
+        "description": "Fabrikalarni topib tekshiramiz, namuna va xususiyatlarni kelishamiz."
+      },
+      {
+        "title": "Ishlab chiqarish nazorati",
+        "description": "Muddat, sifat va qadoqlashni nazorat qilamiz. Foto va video hisobotlar tayyorlaymiz."
+      },
+      {
+        "title": "Logistika va bojxona",
+        "description": "Yetkazishni tashkil qilamiz, hujjatlarni rasmiylashtiramiz, kalit topshirish asosida bojxonadan o'tkazamiz."
+      },
+      {
+        "title": "Topshirish va qo'llab-quvvatlash",
+        "description": "Yukni omboringizga topshiramiz va keyingi yetkazib berishlar uchun aloqada qolamiz."
+      }
+    ]
+  },
+  "whyUs": {
+    "badge": "Nima uchun biz",
+    "title1": "Har bir yetkazib berishda",
+    "title2": "ishonchlilik",
+    "title3": "va sifat",
+    "subtitle": "Biznesda ishonchlilik qanchalik muhimligini tushunamiz. Shuning uchun har bir bosqich — yetkazib beruvchini tanlashdan tortib yetkazib berishgacha — bizning qattiq nazoratimiz ostida o'tadi.",
+    "items": [
+      {
+        "title": "Sifat nazorati",
+        "description": "Jo'natishdan oldin tovarlarni standartlarga muvofiqligini tekshirish"
+      },
+      {
+        "title": "Tezkor yetkazib berish",
+        "description": "Optimal marshrutlar va 15 kundan boshlangan yetkazish muddatlari"
+      },
+      {
+        "title": "Kalit topshirish",
+        "description": "To'liq qo'llab-quvvatlash: tovar topishdan omborga yetkazib berishgacha"
+      }
+    ],
+    "globalTitle": "Global imkoniyatlar",
+    "stats": {
+      "suppliers": "Yetkazib beruvchilar",
+      "products": "Tovarlar",
+      "successRate": "Muvaffaqiyatli yetkazishlar",
+      "support": "Qo'llab-quvvatlash"
+    }
+  },
+  "faq": {
+    "badge": "Tez-tez beriladigan savollar",
+    "title1": "Muhim",
+    "title2": "savollarga javoblar",
+    "subtitle": "Savolingizni topa olmadingizmi — bizga yozing, kun ichida javob beramiz",
+    "items": [
+      {
+        "question": "Minimal hajm qancha?",
+        "answer": "1 konteynerdan boshlab yetkazamiz. Yig'ma yuklar bo'yicha — 100 kg dan boshlab. Yirik mijozlar uchun individual shartlar shakllantiramiz."
+      },
+      {
+        "question": "Xitoydan yetkazib berish qancha vaqt oladi?",
+        "answer": "Dengiz orqali — Toshkentgacha 35–45 kun, temir yo'l — 18–25 kun, avia — 5–7 kun. Yakuniy muddat marshrut, hajm va mavsumga bog'liq."
+      },
+      {
+        "question": "Tovar sifatini qanday tekshirasiz?",
+        "answer": "Jo'natishdan oldin fabrikada inspeksiya o'tkazamiz: spetsifikatsiya, qadoqlash, markirovkani tekshiramiz. So'rov bo'yicha har bir partiya uchun foto va video hisobot tayyorlaymiz."
+      },
+      {
+        "question": "Bojxonani kalit topshirish asosida rasmiylashtirasizmi?",
+        "answer": "Ha. Barcha hujjatlar, sertifikatlash va bojxona rasmiylashtirishni O'zbekistonda va aksariyat MDH davlatlarida o'z zimmamizga olamiz. Mijoz tayyor yukni o'z omboriga oladi."
+      },
+      {
+        "question": "To'lovni kechiktirish mumkinmi?",
+        "answer": "Doimiy mijozlar va yirik shartnomalar uchun — individual ravishda muhokama qilinadi. Standart: 50% oldindan to'lov, 50% tovar tayyor bo'lganidan keyin."
+      },
+      {
+        "question": "Xususiy brend (OEM) bilan ishlaysizmi?",
+        "answer": "Ha. Qadoqlashni ishlab chiqamiz, logotipni qo'llaymiz, fabrika bilan dizaynni kelishamiz. Minimal tiraj kategoriyaga bog'liq — odatda 500–1000 donadan."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Aloqa",
+    "title1": "Biz bilan",
+    "title2": "bog'laning",
+    "subtitle": "Loyihangizni muhokama qilishga tayyormiz? So'rov qoldiring yoki to'g'ridan-to'g'ri yozing — odatda ish vaqtida bir soat ichida javob beramiz.",
+    "phoneLabel": "Telefon",
+    "emailLabel": "Email",
+    "addressLabel": "Manzil",
+    "address": "Toshkent shahri, Mirzo Ulug'bek tumani, Shahriobod MFY, Oliy ximmat ko'chasi, 128-A uy",
+    "addressLocality": "Toshkent",
+    "hoursTitle": "Ish vaqti",
+    "hours": [
+      { "day": "Dushanba — Juma", "value": "09:00 — 18:00" },
+      { "day": "Shanba", "value": "10:00 — 15:00" },
+      { "day": "Yakshanba", "value": "Dam olish kuni" }
+    ],
+    "formTitle": "So'rov yuborish"
+  },
+  "form": {
+    "name": "Ismingiz",
+    "namePlaceholder": "Ismingizni kiriting",
+    "phone": "Telefon",
+    "phonePlaceholder": "+998 XX XXX XX XX",
+    "email": "Email",
+    "emailPlaceholder": "example@mail.com",
+    "message": "Xabar",
+    "messagePlaceholder": "Nima yetkazib berish kerak, qaysi hajmda va qayerga?",
+    "consent": "Shaxsiy ma'lumotlarni qayta ishlashga roziman, shartlar:",
+    "consentLink": "maxfiylik siyosati",
+    "submit": "So'rov yuborish",
+    "submitting": "Yuborilmoqda...",
+    "honeypotLabel": "Sayt (bo'sh qoldiring)",
+    "errors": {
+      "nameMin": "Ismingizni kiriting (kamida 2 belgi)",
+      "nameMax": "Ism juda uzun",
+      "phoneRequired": "Aloqa telefoni kiriting",
+      "phoneInvalid": "Telefon noto'g'ri ko'rinadi",
+      "emailInvalid": "Noto'g'ri email",
+      "messageMin": "So'rovingizni tasvirlang — kamida bir necha so'z",
+      "messageMax": "Xabar juda uzun",
+      "consentRequired": "Shaxsiy ma'lumotlarni qayta ishlashga rozilik talab qilinadi",
+      "submitFailed": "Nimadir noto'g'ri ketdi. Qaytadan urinib ko'ring yoki Telegram orqali yozing."
+    },
+    "dialog": {
+      "successTitle": "So'rov yuborildi",
+      "successMessage": "Yaqin ish vaqtida siz bilan bog'lanamiz.",
+      "errorTitle": "Yuborib bo'lmadi",
+      "okButton": "Yaxshi",
+      "closeButton": "Yopish"
+    }
+  },
+  "footer": {
+    "tagline": "VIING MCHJ XK — xalqaro savdoda ishonchli hamkoringiz. Xitoydan tovarlarni import, eksport va ulgurji yetkazish.",
+    "servicesTitle": "Xizmatlar",
+    "companyTitle": "Kompaniya",
+    "contactsTitle": "Aloqa",
+    "copyright": "© {year} VIING MCHJ XK. Barcha huquqlar himoyalangan.",
+    "legalNav": "Yuridik ma'lumotlar",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari"
+  },
+  "privacy": {
+    "title": "Maxfiylik siyosati",
+    "intro": "Mazkur Siyosat VIING MCHJ XK (keyingi o'rinlarda — «Kompaniya») {url} sayti foydalanuvchilarining shaxsiy ma'lumotlarini qanday qayta ishlashini tasvirlaydi.",
+    "section1Title": "1. Qanday ma'lumotlarni yig'amiz",
+    "section1Body": "Murojaat formasini to'ldirganda quyidagilarni yig'amiz: ism, telefon, email (agar ko'rsatilgan bo'lsa) va xabar matni. Bu ma'lumotlar faqat sizning so'rovingiz bo'yicha aloqa uchun ishlatiladi.",
+    "section2Title": "2. Qayta ishlash maqsadlari",
+    "section2List": [
+      "murojaatlarni qayta ishlash va tijorat takliflarini tayyorlash;",
+      "shartnoma majburiyatlarini bajarish;",
+      "so'rov va yetkazib berishlar holati haqida xabardor qilish."
+    ],
+    "section3Title": "3. Uchinchi shaxslarga uzatish",
+    "section3Body": "Ma'lumotlaringizni uchinchi shaxslarga uzatmaymiz, O'zbekiston Respublikasi qonunchiligida nazarda tutilgan hollar va bizning topshirig'imiz asosida ishlovchi texnik pudratchilar (xosting, messenjerlar) bundan mustasno.",
+    "section4Title": "4. Saqlash muddati",
+    "section4Body": "Shaxsiy ma'lumotlar qayta ishlash maqsadlari uchun zarur bo'lgan muddatdan ko'p saqlanmaydi yoki roziligingizni qaytarib olmaguningizgacha saqlanadi.",
+    "section5Title": "5. Aloqa",
+    "section5Body": "Shaxsiy ma'lumotlarni qayta ishlash bo'yicha savollar uchun yozing"
+  },
+  "terms": {
+    "title": "Foydalanish shartlari",
+    "intro": "{url} saytidan foydalanish orqali siz mazkur shartlarga rozilik bildirasiz. Agar rozi bo'lmasangiz — iltimos, saytdan foydalanishni to'xtating.",
+    "section1Title": "1. Sayt maqsadi",
+    "section1Body": "Sayt axborot xarakteriga ega va ommaviy oferta emas. Aniq yetkazib berish shartlari, narxlar va muddatlar murojaat natijasiga ko'ra individual kelishiladi.",
+    "section2Title": "2. Intellektual mulk",
+    "section2Body": "Saytdagi barcha materiallar — matnlar, tasvirlar, logotiplar — VIING MCHJ XK ga tegishli yoki huquq egalarining ruxsati bilan ishlatiladi. Rozilik olmasdan foydalanish taqiqlanadi.",
+    "section3Title": "3. Javobgarlik chegarasi",
+    "section3Body": "Kompaniya ma'lumotning dolzarbligini saqlash uchun oqilona harakat qiladi, lekin uning to'liqligi va aniqligini barcha hollarda kafolatlamaydi.",
+    "section4Title": "4. Aloqa",
+    "section4Body": "Foydalanish shartlari bo'yicha savollar uchun yozing"
+  }
+}
