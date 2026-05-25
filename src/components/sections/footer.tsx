@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { LogoMark } from "@/components/logo-mark";
 import { siteConfig } from "@/lib/site-config";
 import { navKeys, navHrefs } from "@/lib/site-data";
 
@@ -18,13 +19,8 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-6">
-              <span
-                aria-hidden="true"
-                className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center"
-              >
-                <span className="text-white font-bold text-lg">V</span>
-              </span>
+            <Link href="/" className="flex items-center gap-2.5 mb-6">
+              <LogoMark className="w-10 h-10" />
               <span className="text-xl font-bold">{siteConfig.name}</span>
             </Link>
             <p className="text-background/70 text-sm leading-relaxed">{t("tagline")}</p>

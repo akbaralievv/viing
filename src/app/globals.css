@@ -69,8 +69,15 @@
   }
   h1, h2, h3, h4 {
     font-family: var(--font-display), var(--font-display-cyrillic), 'Fraunces', 'Lora', Georgia, serif;
-    letter-spacing: -0.015em;
+    letter-spacing: 0.005em;
     line-height: 1.2;
+    word-spacing: 0.02em;
+  }
+  :lang(ru) h1, :lang(ru) h2, :lang(ru) h3, :lang(ru) h4,
+  :lang(uz) h1, :lang(uz) h2, :lang(uz) h3, :lang(uz) h4 {
+    letter-spacing: 0.035em;
+    word-spacing: 0.08em;
+    font-weight: 600;
   }
 }
 

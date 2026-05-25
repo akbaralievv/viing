@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { VisuallyHidden } from "@/components/ui/visually-hidden";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { LogoMark } from "@/components/logo-mark";
 import { navKeys, navHrefs } from "@/lib/site-data";
 import { siteConfig } from "@/lib/site-config";
 
@@ -36,13 +37,8 @@ export function Header() {
         {t("skipToContent")}
       </a>
       <div className="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2" aria-label={t("homeAria")}>
-          <div
-            aria-hidden="true"
-            className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-primary to-amber-600 rounded-xl flex items-center justify-center"
-          >
-            <span className="text-white font-bold text-lg md:text-xl">V</span>
-          </div>
+        <Link href="/" className="flex items-center gap-2.5" aria-label={t("homeAria")}>
+          <LogoMark className="w-10 h-10 md:w-12 md:h-12" />
           <span className="text-xl md:text-2xl font-bold tracking-tight">{siteConfig.name}</span>
         </Link>
 
