@@ -31,9 +31,9 @@ export function Hero() {
             <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 px-4 py-1.5">
               {t("badge")}
             </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] mb-6">
               {t("title1")}
-              <span className="text-gradient block mt-2">{t("title2")}</span>
+              <span className="text-gradient block mt-1">{t("title2")}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
               {t("subtitle")}

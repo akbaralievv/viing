@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fraunces, Lora, Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -10,16 +10,26 @@ import { Header } from "@/components/sections/header";
 import { Footer } from "@/components/sections/footer";
 import { FloatingContacts } from "@/components/floating-contacts";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const montserrat = Montserrat({
+  variable: "--font-sans",
+  subsets: ["latin", "cyrillic"],
   display: "swap",
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const fraunces = Fraunces({
+  variable: "--font-display",
+  subsets: ["latin", "latin-ext"],
   display: "swap",
+  weight: "variable",
+  axes: ["opsz", "SOFT"],
+});
+
+const lora = Lora({
+  variable: "--font-display-cyrillic",
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || siteConfig.url;
@@ -147,7 +157,10 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={locale} className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html
+      lang={locale}
+      className={`${montserrat.variable} ${fraunces.variable} ${lora.variable}`}
+    >
       <body suppressHydrationWarning className="antialiased">
         <NextIntlClientProvider>
           <Header />
