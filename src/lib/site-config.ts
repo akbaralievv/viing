@@ -9,6 +9,8 @@ export const siteConfig = {
     email: "info@viing.tech",
     telegram: "https://t.me/+998933143223",
     whatsapp: "https://wa.me/998933143223",
+    instagram: "https://instagram.com/viing.uz",
+    linkedin: "https://www.linkedin.com/company/viing",
     addressCountry: "UZ",
   },
 } as const;

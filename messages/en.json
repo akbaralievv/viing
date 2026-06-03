@@ -1,22 +1,22 @@
 {
   "meta": {
-    "title": "VIING — import and export from China | VIING MCHJ XK",
+    "title": "VIING — goods from China for business | wholesale & Private Label",
     "titleTemplate": "%s | VIING",
-    "description": "VIING MCHJ XK — import and export from China, wholesale supply and private-label manufacturing for businesses in Uzbekistan and CIS.",
-    "shortDescription": "Import and export from China. Wholesale supply and private-label manufacturing.",
-    "ogTitle": "VIING — import and export from China",
-    "ogAlt": "VIING — international trade",
-    "keywords": "import from China, export, wholesale, foreign trade Uzbekistan, China to CIS shipping, OEM manufacturing, VIING",
+    "description": "VIING — import and wholesale supply of goods from China: hygiene, packaging, home goods and HoReCa, plus private-label manufacturing. A reliable partner for businesses in Uzbekistan and the CIS.",
+    "shortDescription": "Import and wholesale supply of goods from China. Catalog, Private Label and made-to-order manufacturing.",
+    "ogTitle": "VIING — goods from China for your business",
+    "ogAlt": "VIING — wholesale supply from China",
+    "keywords": "wholesale from China, bulk supply, hygiene wholesale, packaging materials, HoReCa, private label, contract manufacturing, Uzbekistan, VIING",
     "locale": "en_US"
   },
   "nav": {
-    "about": "About",
+    "catalog": "Catalog",
+    "brand": "Private Label",
     "services": "Services",
-    "products": "Products",
-    "process": "How we work",
-    "faq": "FAQ",
-    "contact": "Contact",
-    "contactCta": "Get in touch",
+    "about": "About",
+    "contact": "Contacts",
+    "getOffer": "Get an offer",
+    "search": "Search",
     "openMenu": "Open menu",
     "menuTitle": "Navigation menu",
     "homeAria": "VIING — home",
@@ -32,191 +32,238 @@
     "uz": "O'zbekcha"
   },
   "hero": {
-    "badge": "MCHJ XK — official partner",
-    "title1": "Your reliable",
-    "title2": "trading partner",
-    "subtitle": "Import and export from China. Wholesale supply and private-label manufacturing with guaranteed quality.",
-    "ctaPrimary": "Get a consultation",
-    "ctaSecondary": "Our products",
+    "eyebrow": "Import & wholesale supply",
+    "title": "Goods from China for your business",
+    "subtitle": "A wide range of quality products, private brands and made-to-order manufacturing. A reliable partner for wholesale buyers across Central Asia.",
+    "ctaCatalog": "Browse catalog",
+    "ctaOffer": "Get an offer",
+    "imageAlt": "VIING product range",
     "stats": {
-      "years": "Years on the market",
-      "partners": "Partners",
-      "countries": "Countries"
-    },
-    "imageAlt": "Container terminal — international trade",
-    "globalTrade": "Global trade",
-    "tradeRoute": "China — CIS — Europe"
-  },
-  "partners": {
-    "title": "We work with leading logistics operators"
-  },
-  "about": {
-    "badge": "About us",
-    "title1": "VIING — your bridge to",
-    "title2": "Asian markets",
-    "p1": "VIING MCHJ XK is a professional team of international trade specialists. We focus on import and export between China and CIS countries.",
-    "p2": "Our mission is to make international trade transparent and accessible to every client, ensuring high product and service quality.",
-    "advantages": [
-      "Direct contracts with manufacturers",
-      "Quality control at every stage",
-      "Full customs clearance",
-      "Flexible payment terms",
-      "Delivery across the CIS",
-      "More than 10 years on the market"
-    ],
-    "images": {
-      "warehouse": "International logistics warehouse",
-      "shipping": "Container shipping",
-      "production": "Goods production",
-      "team": "Negotiations team"
+      "products": { "value": "10,000+", "label": "products in the catalog" },
+      "suppliers": { "value": "500+", "label": "verified manufacturers" },
+      "experience": { "value": "8+ years", "label": "of experience with China" },
+      "delivery": { "value": "Delivery", "label": "across Uzbekistan and the CIS" }
     }
   },
-  "services": {
-    "badge": "Our services",
-    "title1": "A full range of",
-    "title2": "trading solutions",
-    "subtitle": "From sourcing the supplier to delivering the goods — we cover every stage",
-    "items": [
-      {
-        "title": "Import from China",
-        "description": "Direct supply of quality goods from verified Chinese manufacturers with full customs support."
-      },
-      {
-        "title": "Export of goods",
-        "description": "Export deliveries of your products to international markets with optimal logistics."
-      },
-      {
-        "title": "Private label",
-        "description": "Manufacturing under your brand: from design development to finished goods."
-      },
-      {
-        "title": "Wholesale trade",
-        "description": "Wholesale supply of a wide product range for retail chains and distributors."
-      }
-    ]
+  "categories": {
+    "title": "Product categories",
+    "viewAll": "View all categories",
+    "countLabel": "products",
+    "explore": "Go to category"
   },
-  "products": {
-    "badge": "Products",
-    "title1": "A wide range of",
-    "title2": "goods",
-    "subtitle": "We work with multiple product categories for any kind of business",
-    "cta": "Request the full catalog",
-    "items": [
-      {
-        "category": "Electronics",
-        "items": ["Smartphones", "Accessories", "Home appliances", "LED lighting"]
-      },
-      {
-        "category": "Textile",
-        "items": ["Apparel", "Home textile", "Workwear", "Fabrics"]
-      },
-      {
-        "category": "Construction materials",
-        "items": ["Tools", "Hardware", "Finishing materials", "Plumbing"]
-      },
-      {
-        "category": "Home goods",
-        "items": ["Tableware", "Decor", "Furniture", "Household items"]
-      }
-    ]
+  "popular": {
+    "title": "Popular products",
+    "viewAll": "View all products",
+    "requestPrice": "Request a price",
+    "prev": "Previous",
+    "next": "Next"
   },
-  "process": {
-    "badge": "How we work",
-    "title1": "A transparent",
-    "title2": "process",
-    "title3": "at every stage",
-    "subtitle": "Five steps from the first call to delivery at your warehouse",
+  "brand": {
+    "eyebrow": "Private Label",
+    "title": "Manufacturing under your brand",
+    "subtitle": "We create products under your trademark with full quality control at every stage.",
+    "features": [
+      "Packaging and design development",
+      "Product and material selection",
+      "Manufacturing at verified factories",
+      "Quality control and certification",
+      "Delivery to your warehouse"
+    ],
+    "cta": "Learn more",
+    "metaTitle": "Private-label manufacturing",
+    "metaDescription": "Manufacturing of goods under your own trademark: packaging and design development, material selection, production at verified factories in China, quality control and delivery.",
+    "pageTitle": "Private-label manufacturing",
+    "pageSubtitle": "From idea to a finished batch under your own trademark. We handle design, production, quality control and delivery — you get a ready product under your logo.",
+    "stepsTitle": "How we build your brand",
     "steps": [
       {
-        "title": "Brief and request",
-        "description": "We discuss your goal, volumes, budget and timeline. Pick the optimal supply scheme."
+        "title": "Brief and product selection",
+        "description": "We discuss the goal, volume and budget and pick the right product and materials for your market."
       },
       {
-        "title": "Supplier sourcing",
-        "description": "Find and vet factories, agree on samples and specifications."
+        "title": "Design and packaging",
+        "description": "We develop the packaging artwork, apply your logo and approve samples before launch."
       },
       {
-        "title": "Production control",
-        "description": "We monitor schedule, quality and packaging. Photo and video reports on request."
+        "title": "Factory production",
+        "description": "We place the order at a verified factory and monitor the production timeline."
       },
       {
-        "title": "Logistics and customs",
-        "description": "Arrange shipping, prepare documents, clear customs end-to-end."
+        "title": "Quality control and certification",
+        "description": "We inspect the batch and prepare the required documents and certificates."
       },
       {
-        "title": "Handover and support",
-        "description": "Deliver the cargo to your warehouse and stay in touch for next shipments."
-      }
-    ]
-  },
-  "whyUs": {
-    "badge": "Why us",
-    "title1": "Reliability and",
-    "title2": "quality",
-    "title3": "in every shipment",
-    "subtitle": "We understand how critical reliability is in business. Every step — from picking a supplier to delivery — is under our strict control.",
-    "items": [
-      {
-        "title": "Quality control",
-        "description": "Inspecting goods against specifications before shipment"
-      },
-      {
-        "title": "Fast delivery",
-        "description": "Optimal routes and lead times starting from 15 days"
-      },
-      {
-        "title": "Turnkey service",
-        "description": "End-to-end support: from sourcing to warehouse delivery"
+        "title": "Logistics and delivery",
+        "description": "We arrange shipping and customs clearance to your warehouse end-to-end."
       }
     ],
-    "globalTitle": "Global capabilities",
-    "stats": {
-      "suppliers": "Suppliers",
-      "products": "Products",
-      "successRate": "Successful shipments",
-      "support": "Support"
-    }
+    "ctaTitle": "Ready to launch your brand?",
+    "ctaSubtitle": "Tell us about the product — we'll prepare a quote and suggest the best solution.",
+    "ctaButton": "Discuss the project"
   },
-  "faq": {
-    "badge": "FAQ",
-    "title1": "Answers to",
-    "title2": "important questions",
-    "subtitle": "Didn't find your question? Write to us — we'll reply within a day",
+  "whyUs": {
+    "title": "Why businesses choose VIING",
+    "subtitle": "We take on the full cycle — from sourcing the product to delivery at your warehouse.",
     "items": [
       {
-        "question": "What is your minimum order?",
-        "answer": "We work with shipments starting from 1 container. For LCL — from 100 kg. For large clients we tailor individual terms."
+        "title": "Verified suppliers",
+        "description": "We work only with reliable manufacturers in China"
       },
       {
-        "question": "How long does delivery from China take?",
-        "answer": "Sea — 35–45 days to Tashkent, rail — 18–25 days, air — 5–7 days. Final lead time depends on route, volume and season."
+        "title": "Quality control",
+        "description": "Product inspection at every production stage"
       },
       {
-        "question": "How do you control product quality?",
-        "answer": "We run a factory inspection before shipment: specifications, packaging, labeling. Photo and video reports for every batch on request."
+        "title": "Favorable terms",
+        "description": "Direct contracts and the best wholesale prices"
       },
       {
-        "question": "Can you handle customs clearance end-to-end?",
-        "answer": "Yes. We handle all documents, certification and customs clearance in Uzbekistan and most CIS countries. You receive the cargo at your warehouse."
-      },
-      {
-        "question": "Do you offer deferred payment?",
-        "answer": "For repeat customers and large contracts — discussed individually. Standard terms: 50% prepayment, 50% upon goods readiness."
-      },
-      {
-        "question": "Do you do private label (OEM)?",
-        "answer": "Yes. We develop packaging, apply your logo, agree on design with the factory. Minimum batch depends on the category — typically 500–1000 pcs."
+        "title": "Full support",
+        "description": "We handle the whole process — from order to delivery"
       }
     ]
   },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A reliable partner for supply from China",
+    "p1": "VIING is a wholesale supplier of goods from China for businesses in Uzbekistan and the CIS. We help you buy products directly from factories at competitive prices.",
+    "p2": "For over 8 years we've worked with verified manufacturers and handled the entire process: product sourcing, quality control, logistics and customs clearance.",
+    "advantages": [
+      "Direct contracts with factories",
+      "Quality control at every stage",
+      "Full customs clearance",
+      "Delivery across Uzbekistan and the CIS"
+    ]
+  },
+  "cta": {
+    "title": "Need products from China?",
+    "subtitle": "Leave a request and get a commercial offer within 24 hours."
+  },
+  "catalog": {
+    "metaTitle": "Product catalog",
+    "metaDescription": "Wholesale catalog of goods from China: hygiene, packaging materials, home goods and HoReCa. Wholesale prices on request, delivery across Uzbekistan and the CIS.",
+    "title": "Product catalog",
+    "subtitle": "Wholesale supply of goods from China by category. Pick a direction — a manager will curate the range and send a price list for your volume.",
+    "breadcrumbHome": "Home",
+    "allProducts": "All products",
+    "requestPrice": "Request a price",
+    "priceOnRequest": "Price on request",
+    "priceNote": "Wholesale prices are calculated for your order volume. Leave a request — we'll send an up-to-date price list and supply terms.",
+    "specsTitle": "Specifications",
+    "relatedTitle": "Related products",
+    "productsLabel": "products in the category",
+    "emptyCategory": "Products in this category are coming soon. Write to us — we'll source to your request.",
+    "requestProductMessage": "Hello! I'd like the wholesale price and supply terms for: {name}.",
+    "categories": {
+      "hygiene": {
+        "name": "Hygiene",
+        "desc": "Wet wipes, paper products, soap and sanitizers for home and business."
+      },
+      "packaging": {
+        "name": "Packaging materials",
+        "desc": "Food film, stretch film, tape and consumables for packaging."
+      },
+      "home": {
+        "name": "Home goods",
+        "desc": "Household goods, cleaning supplies and everyday essentials."
+      },
+      "horeca": {
+        "name": "Business & HoReCa",
+        "desc": "Disposable tableware, packaging and consumables for cafés, restaurants and delivery."
+      },
+      "private-label": {
+        "name": "Private Label",
+        "desc": "Manufacturing of goods under your trademark."
+      },
+      "custom": {
+        "name": "Made to order",
+        "desc": "Any products on your request"
+      }
+    },
+    "products": {
+      "wet-wipes": {
+        "name": "Wet wipes with a lid",
+        "desc": "Wet wipes for hands and surfaces with a reusable flip lid. Soft non-woven material that leaves no streaks.",
+        "specs": ["Per pack: 100 pcs", "Material: spunlace 50 g/m²", "Minimum order: from 1,000 packs"]
+      },
+      "paper-towels": {
+        "name": "Paper towels",
+        "desc": "Two-ply paper towels in rolls for home, office and venues. High absorbency and a dense roll.",
+        "specs": ["Plies: 2", "Roll length: 20 m", "Minimum order: from 500 packs"]
+      },
+      "liquid-soap": {
+        "name": "Liquid soap, canister",
+        "desc": "Liquid hand soap in an economical canister. Neutral pH, suitable for refilling dispensers.",
+        "specs": ["Volume: 5 L", "Scent: neutral", "Minimum order: from 200 pcs"]
+      },
+      "hand-sanitizer": {
+        "name": "Hand sanitizer",
+        "desc": "Alcohol-based hand sanitizer gel. Dries quickly; emollients prevent dry skin.",
+        "specs": ["Volume: 500 ml", "Alcohol: 70%", "Minimum order: from 300 pcs"]
+      },
+      "pvc-food-film": {
+        "name": "PVC food film",
+        "desc": "Transparent PVC food film for wrapping products. Clings tightly to surfaces, suitable for manual and automatic packing.",
+        "specs": ["Size: 30 cm × 300 m", "Material: PVC", "Minimum order: from 500 rolls"]
+      },
+      "stretch-film-hand": {
+        "name": "Hand stretch film",
+        "desc": "Hand stretch film for pallet and cargo wrapping. High stretch and tear resistance.",
+        "specs": ["Width: 500 mm", "Thickness: 23 µm", "Minimum order: from 200 rolls"]
+      },
+      "stretch-film-machine": {
+        "name": "Machine stretch film",
+        "desc": "Machine stretch film for automatic pallet wrapping. Stable tension and economical usage.",
+        "specs": ["Width: 500 mm", "Roll length: 1,500 m", "Minimum order: from 100 rolls"]
+      },
+      "packing-tape": {
+        "name": "Packing tape",
+        "desc": "BOPP adhesive packing tape. Secure box sealing, available clear and brown.",
+        "specs": ["Size: 48 mm × 100 m", "Base: BOPP", "Minimum order: from 1,000 pcs"]
+      },
+      "trash-bags": {
+        "name": "Trash bags 120 L",
+        "desc": "Heavy-duty high-density trash bags. Won't tear under load, convenient for home and business.",
+        "specs": ["Volume: 120 L", "Per roll: 10 pcs", "Minimum order: from 500 packs"]
+      },
+      "cleaning-set": {
+        "name": "Youreko cleaning set",
+        "desc": "A cleaning kit: a mop with a wringer, a bucket and replaceable microfiber pads. Ergonomic handle.",
+        "specs": ["Includes: mop + bucket", "Pad: microfiber", "Minimum order: from 100 pcs"]
+      },
+      "dish-sponges": {
+        "name": "Dish sponges",
+        "desc": "Foam sponges with an abrasive layer for washing dishes. Won't scratch surfaces and last long.",
+        "specs": ["Per pack: 10 pcs", "Size: 95 × 65 mm", "Minimum order: from 1,000 packs"]
+      },
+      "household-gloves": {
+        "name": "Household gloves",
+        "desc": "Latex household gloves with an inner coating. Protect hands during cleaning and contact with water.",
+        "specs": ["Material: latex", "Sizes: S–XL", "Minimum order: from 500 pairs"]
+      },
+      "paper-cups": {
+        "name": "Single-wall paper cups",
+        "desc": "Disposable paper cups for hot and cold drinks. Food-grade laminated board, ready for logo printing.",
+        "specs": ["Volume: 250 ml", "Per pack: 50 pcs", "Minimum order: from 1,000 pcs"]
+      },
+      "food-containers": {
+        "name": "Food containers",
+        "desc": "Disposable containers for delivery and packing ready meals. Airtight lid, withstand hot food.",
+        "specs": ["Volume: 500 ml", "Material: PP", "Minimum order: from 1,000 pcs"]
+      },
+      "wooden-cutlery": {
+        "name": "Wooden cutlery",
+        "desc": "Eco-friendly disposable birch cutlery: forks, spoons, knives. Smooth, splinter-free finish.",
+        "specs": ["Set: fork / spoon / knife", "Material: birch", "Minimum order: from 2,000 pcs"]
+      },
+      "dispenser-napkins": {
+        "name": "Dispenser napkins",
+        "desc": "Paper napkins for tabletop dispensers. Suitable for cafés, restaurants and food courts.",
+        "specs": ["Per pack: 250 pcs", "Plies: 1", "Minimum order: from 500 packs"]
+      }
+    }
+  },
   "contact": {
-    "badge": "Contact",
-    "title1": "Get",
-    "title2": "in touch",
-    "subtitle": "Ready to discuss your project? Submit a request or message us directly — we usually reply within an hour during business hours.",
-    "phoneLabel": "Phone",
-    "emailLabel": "Email",
-    "addressLabel": "Address",
     "address": "Tashkent, Mirzo-Ulugbek district, Shahriobod mahalla, Oliy Khimmat street, 128-A",
     "addressLocality": "Tashkent",
     "hoursTitle": "Working hours",
@@ -224,18 +271,17 @@
       { "day": "Monday — Friday", "value": "09:00 — 18:00" },
       { "day": "Saturday", "value": "10:00 — 15:00" },
       { "day": "Sunday", "value": "Closed" }
-    ],
-    "formTitle": "Send a request"
+    ]
   },
   "form": {
     "name": "Your name",
-    "namePlaceholder": "Enter your name",
+    "namePlaceholder": "Name",
     "phone": "Phone",
-    "phonePlaceholder": "+998 XX XXX XX XX",
+    "phonePlaceholder": "Phone",
     "email": "Email",
     "emailPlaceholder": "example@mail.com",
-    "message": "Message",
-    "messagePlaceholder": "What needs to be supplied, in what volume and where?",
+    "message": "Comment",
+    "messagePlaceholder": "Comment",
     "consent": "I agree to the processing of personal data according to the",
     "consentLink": "privacy policy",
     "submit": "Send request",
@@ -261,9 +307,23 @@
     }
   },
   "footer": {
-    "tagline": "VIING MCHJ XK — your reliable partner in international trade. Import, export and wholesale supply of goods from China.",
+    "tagline": "Wholesale supply of a wide range of goods from China for businesses in Uzbekistan and the CIS.",
+    "catalogTitle": "Catalog",
     "servicesTitle": "Services",
+    "services": [
+      "Manufacturer sourcing",
+      "Private-label manufacturing",
+      "Quality control",
+      "Logistics and delivery",
+      "Customs clearance"
+    ],
     "companyTitle": "Company",
+    "company": {
+      "about": "About us",
+      "advantages": "Why us",
+      "brand": "Private Label",
+      "contact": "Contacts"
+    },
     "contactsTitle": "Contacts",
     "copyright": "© {year} VIING MCHJ XK. All rights reserved.",
     "legalNav": "Legal information",

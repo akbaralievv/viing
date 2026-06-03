@@ -1,100 +1,88 @@
 import Image from "next/image";
-import { ArrowRight, Globe } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { heroImage, stats } from "@/lib/site-data";
+import { heroStats } from "@/lib/site-data";
+import { cn } from "@/lib/utils";
 
 export function Hero() {
   const t = useTranslations("hero");
-  const tStats = useTranslations("hero.stats");
 
   return (
     <section
-      className="relative min-h-[100svh] flex items-center pt-16 md:pt-20 overflow-hidden"
-      aria-label={t("title2")}
+      className="relative flex min-h-[860px] md:min-h-[820px] lg:min-h-[800px] flex-col overflow-hidden bg-primary"
+      aria-label={t("title")}
     >
-      <div aria-hidden="true" className="absolute inset-0 bg-grid opacity-50" />
-      <div
-        aria-hidden="true"
-        className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"
+      <Image
+        src="/hero.png"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
       />
       <div
         aria-hidden="true"
-        className="absolute bottom-1/4 -left-32 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl animate-float-slow"
+        className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent to-[60%] lg:hidden"
       />
 
-      <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-slide-up">
-            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 px-4 py-1.5">
-              {t("badge")}
-            </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] mb-6">
-              {t("title1")}
-              <span className="text-gradient block mt-1">{t("title2")}</span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
-              {t("subtitle")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="h-14 px-8 text-base">
-                <Link href="/#contact">
-                  {t("ctaPrimary")}
-                  <ArrowRight aria-hidden="true" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base">
-                <Link href="/#products">{t("ctaSecondary")}</Link>
-              </Button>
-            </div>
+      <div className="relative z-10 container mx-auto px-4 flex flex-1 items-center pt-28 pb-14 md:pt-32">
+        <div className="max-w-2xl animate-slide-up">
+          <p className="text-sm font-semibold uppercase tracking-wider text-brand mb-4">
+            {t("eyebrow")}
+          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.08] text-white mb-6">
+            {t("title")}
+          </h1>
+          <p className="text-lg text-white/80 mb-9 max-w-xl">{t("subtitle")}</p>
 
-            <dl className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-border">
-              {stats.map((stat) => (
-                <div key={stat.key}>
-                  <dt className="sr-only">{tStats(stat.key)}</dt>
-                  <dd className="text-3xl md:text-4xl font-bold text-primary">{stat.value}</dd>
-                  <p className="text-sm text-muted-foreground mt-1">{tStats(stat.key)}</p>
-                </div>
-              ))}
-            </dl>
-          </div>
-
-          <div className="relative hidden lg:block">
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-br from-primary/20 to-amber-500/20 rounded-3xl blur-2xl"
-            />
-            <div className="relative bg-card rounded-3xl overflow-hidden border border-border">
-              <div className="relative w-full h-[500px]">
-                <Image
-                  src={heroImage}
-                  alt={t("imageAlt")}
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="object-cover"
-                />
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <div className="flex items-center gap-4">
-                    <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center text-white">
-                      <Globe aria-hidden="true" />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-lg">{t("globalTrade")}</div>
-                      <div className="text-muted-foreground">{t("tradeRoute")}</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-3.5">
+            <Button asChild variant="brand" size="lg" className="h-[52px] px-7">
+              <Link href="/#contact">
+                {t("ctaOffer")}
+                <ArrowRight aria-hidden="true" />
+              </Link>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="h-[52px] px-7 border-transparent bg-white text-primary hover:bg-white/90 hover:text-primary"
+            >
+              <Link href="/catalog">{t("ctaCatalog")}</Link>
+            </Button>
           </div>
         </div>
+      </div>
+
+      <div className="relative z-10 border-t border-white/10 bg-primary">
+        <ul className="relative container mx-auto px-4 grid grid-cols-1 min-[420px]:grid-cols-2 lg:grid-cols-4 gap-x-6 lg:gap-x-0">
+          {heroStats.map((stat, idx) => {
+            const Icon = stat.icon;
+            return (
+              <li
+                key={stat.key}
+                className={cn(
+                  "flex items-center gap-3 py-5 lg:py-6 lg:px-6",
+                  idx > 0 && "lg:border-l lg:border-white/10"
+                )}
+              >
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/25 text-brand">
+                  <Icon className="h-5 w-5" aria-hidden="true" />
+                </span>
+                <span>
+                  <span className="block text-base font-bold leading-tight text-white">
+                    {t(`stats.${stat.key}.value`)}
+                  </span>
+                  <span className="block text-xs leading-snug text-white/70">
+                    {t(`stats.${stat.key}.label`)}
+                  </span>
+                </span>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );

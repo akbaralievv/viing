@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56.69 56.69">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #102437;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: url(#_Безымянный_градиент_5);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_5" data-name="Безымянный градиент 5" x1="-2339.85" y1="3666.24" x2="-2325.85" y2="3632.24" gradientTransform="translate(2352.8826 3679.4158) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5bc5f0"/>
+      <stop offset=".55" stop-color="#447dbf"/>
+      <stop offset="1" stop-color="#3254a2"/>
+    </linearGradient>
+  </defs>
+  <rect class="cls-1" width="56.69" height="56.69" rx="12.07" ry="12.07"/>
+  <g>
+    <path class="cls-2" d="M28.92,48.11l13.31-22.47,3.42,2.75,1.33-17.73-13.78,7.71,3.42,2.75-13.4,22.58,5.7,4.41Z"/>
+    <path class="cls-3" d="M14.21,15.11l12,31"/>
+  </g>
+</svg>

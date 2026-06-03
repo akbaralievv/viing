@@ -1,22 +1,22 @@
 {
   "meta": {
-    "title": "VIING — Xitoydan import va eksport | VIING MCHJ XK",
+    "title": "VIING — biznes uchun Xitoy tovarlari | ulgurji va Private Label",
     "titleTemplate": "%s | VIING",
-    "description": "VIING MCHJ XK — Xitoydan tovarlarni import va eksport qilish, ulgurji yetkazib berish va O'zbekiston hamda MDH biznesi uchun xususiy brend ostida ishlab chiqarish.",
-    "shortDescription": "Xitoydan tovar import va eksport. Ulgurji yetkazib berish va xususiy brend ostida ishlab chiqarish.",
-    "ogTitle": "VIING — Xitoydan import va eksport",
-    "ogAlt": "VIING — xalqaro savdo",
-    "keywords": "Xitoydan import, eksport, ulgurji savdo, O'zbekiston tashqi savdo, Xitoydan MDHga yetkazish, OEM ishlab chiqarish, VIING",
+    "description": "VIING — Xitoydan tovarlarni import va ulgurji yetkazib berish: gigiyena, qadoqlash, uy va HoReCa tovarlari, shuningdek xususiy brend ostida ishlab chiqarish. O'zbekiston va MDH biznesi uchun ishonchli hamkor.",
+    "shortDescription": "Xitoydan tovar import va ulgurji yetkazib berish. Katalog, Private Label va buyurtma asosida ishlab chiqarish.",
+    "ogTitle": "VIING — biznesingiz uchun Xitoy tovarlari",
+    "ogAlt": "VIING — Xitoydan ulgurji yetkazib berish",
+    "keywords": "Xitoydan ulgurji, ulgurji yetkazib berish, gigiyena ulgurji, qadoqlash materiallari, HoReCa, xususiy brend, ishlab chiqarish, O'zbekiston, VIING",
     "locale": "uz_UZ"
   },
   "nav": {
-    "about": "Biz haqimizda",
+    "catalog": "Tovarlar katalogi",
+    "brand": "Brend ostida ishlab chiqarish",
     "services": "Xizmatlar",
-    "products": "Mahsulotlar",
-    "process": "Qanday ishlaymiz",
-    "faq": "FAQ",
+    "about": "Kompaniya haqida",
     "contact": "Aloqa",
-    "contactCta": "Bog'lanish",
+    "getOffer": "Taklif olish",
+    "search": "Qidiruv",
     "openMenu": "Menyuni ochish",
     "menuTitle": "Navigatsiya menyusi",
     "homeAria": "VIING — bosh sahifa",
@@ -32,191 +32,238 @@
     "uz": "O'zbekcha"
   },
   "hero": {
-    "badge": "MCHJ XK — rasmiy hamkor",
-    "title1": "Ishonchli",
-    "title2": "savdo hamkoringiz",
-    "subtitle": "Xitoydan tovarlarni import va eksport qilish. Ulgurji yetkazib berish va sifat kafolati bilan xususiy brend ostida ishlab chiqarish.",
-    "ctaPrimary": "Maslahat olish",
-    "ctaSecondary": "Mahsulotlarimiz",
+    "eyebrow": "Import va ulgurji yetkazib berish",
+    "title": "Biznesingiz uchun Xitoy tovarlari",
+    "subtitle": "Sifatli mahsulotlarning keng assortimenti, xususiy brendlar va buyurtma asosida ishlab chiqarish. Butun Markaziy Osiyo bo'ylab ulgurji xaridorlar uchun ishonchli hamkor.",
+    "ctaCatalog": "Katalogni ko'rish",
+    "ctaOffer": "Taklif olish",
+    "imageAlt": "VIING mahsulotlari assortimenti",
     "stats": {
-      "years": "Yillik tajriba",
-      "partners": "Hamkorlar",
-      "countries": "Davlatlar"
-    },
-    "imageAlt": "Konteyner terminali — xalqaro savdo",
-    "globalTrade": "Global savdo",
-    "tradeRoute": "Xitoy — MDH — Yevropa"
-  },
-  "partners": {
-    "title": "Yetakchi logistika operatorlari bilan ishlaymiz"
-  },
-  "about": {
-    "badge": "Kompaniya haqida",
-    "title1": "VIING — sizning",
-    "title2": "Osiyo bozorlariga ko'prigingiz",
-    "p1": "VIING MCHJ XK — xalqaro savdo sohasidagi mutaxassislardan iborat professional jamoa. Xitoy va MDH davlatlari o'rtasida import va eksportga ixtisoslashganmiz.",
-    "p2": "Bizning vazifamiz — xalqaro savdoni har bir mijoz uchun shaffof va qulay qilish, tovarlar va xizmat sifatini ta'minlash.",
-    "advantages": [
-      "Ishlab chiqaruvchilar bilan to'g'ridan-to'g'ri shartnomalar",
-      "Har bosqichda sifat nazorati",
-      "To'liq bojxona rasmiylashtirish",
-      "Moslashuvchan to'lov shartlari",
-      "MDH bo'ylab yetkazib berish",
-      "10 yildan ortiq bozorda"
-    ],
-    "images": {
-      "warehouse": "Xalqaro logistika ombori",
-      "shipping": "Konteynerli yuk tashish",
-      "production": "Tovar ishlab chiqarish",
-      "team": "Muzokara jamoasi"
+      "products": { "value": "10 000+", "label": "katalogdagi tovarlar" },
+      "suppliers": { "value": "500+", "label": "tekshirilgan ishlab chiqaruvchilar" },
+      "experience": { "value": "8+ yil", "label": "Xitoy bilan ish tajribasi" },
+      "delivery": { "value": "Yetkazib berish", "label": "O'zbekiston va MDH bo'ylab" }
     }
   },
-  "services": {
-    "badge": "Xizmatlarimiz",
-    "title1": "To'liq",
-    "title2": "savdo yechimlari spektri",
-    "subtitle": "Yetkazib beruvchini topishdan tortib tovarni yetkazishgacha — barcha bosqichlarni o'z zimmamizga olamiz",
-    "items": [
-      {
-        "title": "Xitoydan import",
-        "description": "Tekshirilgan Xitoy ishlab chiqaruvchilaridan to'g'ridan-to'g'ri yetkazish va to'liq bojxona qo'llab-quvvatlash."
-      },
-      {
-        "title": "Mahsulot eksporti",
-        "description": "Mahsulotingizni xalqaro bozorlarga optimal logistika bilan eksport qilish."
-      },
-      {
-        "title": "Xususiy brend",
-        "description": "Sizning brendingiz ostida ishlab chiqarish: dizayn ishlab chiqishdan tortib tayyor mahsulotgacha."
-      },
-      {
-        "title": "Ulgurji savdo",
-        "description": "Chakana savdo tarmoqlari va distribyutorlar uchun keng assortimentdagi ulgurji yetkazish."
-      }
-    ]
+  "categories": {
+    "title": "Tovar kategoriyalari",
+    "viewAll": "Barcha kategoriyalar",
+    "countLabel": "tovar",
+    "explore": "Kategoriyaga o'tish"
   },
-  "products": {
-    "badge": "Mahsulotlar",
-    "title1": "Keng assortimentdagi",
-    "title2": "tovarlar",
-    "subtitle": "Har qanday biznes uchun turli kategoriyadagi tovarlar bilan ishlaymiz",
-    "cta": "To'liq katalogni so'rash",
-    "items": [
-      {
-        "category": "Elektronika",
-        "items": ["Smartfonlar", "Aksessuarlar", "Maishiy texnika", "LED yoritish"]
-      },
-      {
-        "category": "To'qimachilik",
-        "items": ["Kiyim", "Uy to'qimachiligi", "Maxsus kiyim", "Matolar"]
-      },
-      {
-        "category": "Qurilish materiallari",
-        "items": ["Asboblar", "Furnitura", "Pardozlash materiallari", "Santexnika"]
-      },
-      {
-        "category": "Uy uchun tovarlar",
-        "items": ["Idishlar", "Dekor", "Mebel", "Xo'jalik tovarlari"]
-      }
-    ]
+  "popular": {
+    "title": "Ommabop tovarlar",
+    "viewAll": "Barcha tovarlar",
+    "requestPrice": "Narxni so'rash",
+    "prev": "Orqaga",
+    "next": "Oldinga"
   },
-  "process": {
-    "badge": "Qanday ishlaymiz",
-    "title1": "Har bosqichda",
-    "title2": "shaffof",
-    "title3": "jarayon",
-    "subtitle": "Birinchi qo'ng'iroqdan tortib yukni omboringizda qabul qilgungacha besh bosqich",
+  "brand": {
+    "eyebrow": "Private Label",
+    "title": "Sizning brendingiz ostida ishlab chiqarish",
+    "subtitle": "Barcha bosqichlarda to'liq sifat nazorati bilan sizning savdo markangiz ostida mahsulot yaratamiz.",
+    "features": [
+      "Qadoqlash va dizaynni ishlab chiqish",
+      "Mahsulot va materiallarni tanlash",
+      "Tekshirilgan fabrikalarda ishlab chiqarish",
+      "Sifat nazorati va sertifikatlash",
+      "Omboringizgacha yetkazib berish"
+    ],
+    "cta": "Batafsil",
+    "metaTitle": "Xususiy brend ostida ishlab chiqarish (Private Label)",
+    "metaDescription": "Sizning savdo markangiz ostida tovar ishlab chiqarish: qadoqlash va dizaynni ishlab chiqish, materiallarni tanlash, Xitoydagi tekshirilgan fabrikalarda ishlab chiqarish, sifat nazorati va yetkazib berish.",
+    "pageTitle": "Xususiy brend ostida ishlab chiqarish",
+    "pageSubtitle": "G'oyadan to sizning savdo markangiz ostidagi tayyor partiyagacha. Dizayn, ishlab chiqarish, sifat nazorati va yetkazib berishni o'z zimmamizga olamiz — siz o'z logotipingiz bilan tayyor mahsulot olasiz.",
+    "stepsTitle": "Brendingiz ustida qanday ishlaymiz",
     "steps": [
       {
-        "title": "So'rov va brifing",
-        "description": "Vazifa, hajm, byudjet va muddatlarni muhokama qilamiz. Optimal yetkazish sxemasini tanlaymiz."
+        "title": "Brif va mahsulotni tanlash",
+        "description": "Vazifa, hajm va byudjetni muhokama qilamiz, bozoringizga mos tovar va materiallarni tanlaymiz."
       },
       {
-        "title": "Yetkazib beruvchilarni tanlash",
-        "description": "Fabrikalarni topib tekshiramiz, namuna va xususiyatlarni kelishamiz."
+        "title": "Dizayn va qadoqlash",
+        "description": "Qadoqlash maketini ishlab chiqamiz, logotipni qo'llaymiz va ishga tushirishdan oldin namunalarni kelishamiz."
       },
       {
-        "title": "Ishlab chiqarish nazorati",
-        "description": "Muddat, sifat va qadoqlashni nazorat qilamiz. Foto va video hisobotlar tayyorlaymiz."
+        "title": "Fabrikada ishlab chiqarish",
+        "description": "Buyurtmani tekshirilgan fabrikaga joylashtiramiz va ishlab chiqarish muddatlarini nazorat qilamiz."
       },
       {
-        "title": "Logistika va bojxona",
-        "description": "Yetkazishni tashkil qilamiz, hujjatlarni rasmiylashtiramiz, kalit topshirish asosida bojxonadan o'tkazamiz."
+        "title": "Sifat nazorati va sertifikatlash",
+        "description": "Partiyani tekshiramiz, zarur hujjat va sertifikatlarni rasmiylashtiramiz."
       },
       {
-        "title": "Topshirish va qo'llab-quvvatlash",
-        "description": "Yukni omboringizga topshiramiz va keyingi yetkazib berishlar uchun aloqada qolamiz."
-      }
-    ]
-  },
-  "whyUs": {
-    "badge": "Nima uchun biz",
-    "title1": "Har bir yetkazib berishda",
-    "title2": "ishonchlilik",
-    "title3": "va sifat",
-    "subtitle": "Biznesda ishonchlilik qanchalik muhimligini tushunamiz. Shuning uchun har bir bosqich — yetkazib beruvchini tanlashdan tortib yetkazib berishgacha — bizning qattiq nazoratimiz ostida o'tadi.",
-    "items": [
-      {
-        "title": "Sifat nazorati",
-        "description": "Jo'natishdan oldin tovarlarni standartlarga muvofiqligini tekshirish"
-      },
-      {
-        "title": "Tezkor yetkazib berish",
-        "description": "Optimal marshrutlar va 15 kundan boshlangan yetkazish muddatlari"
-      },
-      {
-        "title": "Kalit topshirish",
-        "description": "To'liq qo'llab-quvvatlash: tovar topishdan omborga yetkazib berishgacha"
+        "title": "Logistika va yetkazib berish",
+        "description": "Yetkazib berish va bojxona rasmiylashtirishni omboringizgacha kalit topshirish asosida tashkil qilamiz."
       }
     ],
-    "globalTitle": "Global imkoniyatlar",
-    "stats": {
-      "suppliers": "Yetkazib beruvchilar",
-      "products": "Tovarlar",
-      "successRate": "Muvaffaqiyatli yetkazishlar",
-      "support": "Qo'llab-quvvatlash"
-    }
+    "ctaTitle": "Brendingizni ishga tushirishga tayyormisiz?",
+    "ctaSubtitle": "Mahsulot haqida gapirib bering — hisob-kitob tayyorlab, optimal yechimni taklif qilamiz.",
+    "ctaButton": "Loyihani muhokama qilish"
   },
-  "faq": {
-    "badge": "Tez-tez beriladigan savollar",
-    "title1": "Muhim",
-    "title2": "savollarga javoblar",
-    "subtitle": "Savolingizni topa olmadingizmi — bizga yozing, kun ichida javob beramiz",
+  "whyUs": {
+    "title": "Nega VIINGni tanlashadi",
+    "subtitle": "To'liq jarayonni o'z zimmamizga olamiz — tovarni topishdan omboringizga yetkazishgacha.",
     "items": [
       {
-        "question": "Minimal hajm qancha?",
-        "answer": "1 konteynerdan boshlab yetkazamiz. Yig'ma yuklar bo'yicha — 100 kg dan boshlab. Yirik mijozlar uchun individual shartlar shakllantiramiz."
+        "title": "Tekshirilgan yetkazib beruvchilar",
+        "description": "Faqat Xitoydagi ishonchli ishlab chiqaruvchilar bilan ishlaymiz"
       },
       {
-        "question": "Xitoydan yetkazib berish qancha vaqt oladi?",
-        "answer": "Dengiz orqali — Toshkentgacha 35–45 kun, temir yo'l — 18–25 kun, avia — 5–7 kun. Yakuniy muddat marshrut, hajm va mavsumga bog'liq."
+        "title": "Sifat nazorati",
+        "description": "Ishlab chiqarishning barcha bosqichlarida mahsulotni tekshirish"
       },
       {
-        "question": "Tovar sifatini qanday tekshirasiz?",
-        "answer": "Jo'natishdan oldin fabrikada inspeksiya o'tkazamiz: spetsifikatsiya, qadoqlash, markirovkani tekshiramiz. So'rov bo'yicha har bir partiya uchun foto va video hisobot tayyorlaymiz."
+        "title": "Qulay shartlar",
+        "description": "To'g'ridan-to'g'ri shartnomalar va eng yaxshi ulgurji narxlar"
       },
       {
-        "question": "Bojxonani kalit topshirish asosida rasmiylashtirasizmi?",
-        "answer": "Ha. Barcha hujjatlar, sertifikatlash va bojxona rasmiylashtirishni O'zbekistonda va aksariyat MDH davlatlarida o'z zimmamizga olamiz. Mijoz tayyor yukni o'z omboriga oladi."
-      },
-      {
-        "question": "To'lovni kechiktirish mumkinmi?",
-        "answer": "Doimiy mijozlar va yirik shartnomalar uchun — individual ravishda muhokama qilinadi. Standart: 50% oldindan to'lov, 50% tovar tayyor bo'lganidan keyin."
-      },
-      {
-        "question": "Xususiy brend (OEM) bilan ishlaysizmi?",
-        "answer": "Ha. Qadoqlashni ishlab chiqamiz, logotipni qo'llaymiz, fabrika bilan dizaynni kelishamiz. Minimal tiraj kategoriyaga bog'liq — odatda 500–1000 donadan."
+        "title": "To'liq qo'llab-quvvatlash",
+        "description": "Butun jarayonni o'z zimmamizga olamiz — buyurtmadan yetkazib berishgacha"
       }
     ]
   },
+  "about": {
+    "eyebrow": "Kompaniya haqida",
+    "title": "Xitoydan yetkazib berishda ishonchli hamkor",
+    "p1": "VIING — O'zbekiston va MDH biznesi uchun Xitoydan tovarlarning ulgurji yetkazib beruvchisi. Mahsulotni qulay narxlarda to'g'ridan-to'g'ri fabrikalardan sotib olishga yordam beramiz.",
+    "p2": "8 yildan ortiq vaqtdan beri tekshirilgan ishlab chiqaruvchilar bilan ishlaymiz va butun jarayonni o'z zimmamizga olamiz: tovar tanlash, sifat nazorati, logistika va bojxona rasmiylashtirish.",
+    "advantages": [
+      "Fabrikalar bilan to'g'ridan-to'g'ri shartnomalar",
+      "Har bosqichda sifat nazorati",
+      "To'liq bojxona rasmiylashtirish",
+      "O'zbekiston va MDH bo'ylab yetkazib berish"
+    ]
+  },
+  "cta": {
+    "title": "Xitoydan mahsulot kerakmi?",
+    "subtitle": "So'rov qoldiring va 24 soat ichida tijorat taklifini oling."
+  },
+  "catalog": {
+    "metaTitle": "Tovarlar katalogi",
+    "metaDescription": "Xitoydan ulgurji tovarlar katalogi: gigiyena, qadoqlash materiallari, uy va HoReCa tovarlari. Ulgurji narxlar so'rov bo'yicha, O'zbekiston va MDH bo'ylab yetkazib berish.",
+    "title": "Tovarlar katalogi",
+    "subtitle": "Xitoydan tovarlarni kategoriyalar bo'yicha ulgurji yetkazib berish. Yo'nalishni tanlang — menejer assortimentni tanlab, hajmingizga mos prays yuboradi.",
+    "breadcrumbHome": "Bosh sahifa",
+    "allProducts": "Barcha tovarlar",
+    "requestPrice": "Narxni so'rash",
+    "priceOnRequest": "Narx so'rov bo'yicha",
+    "priceNote": "Ulgurji narxlar buyurtma hajmiga qarab hisoblanadi. So'rov qoldiring — dolzarb prays va yetkazib berish shartlarini yuboramiz.",
+    "specsTitle": "Xususiyatlar",
+    "relatedTitle": "O'xshash tovarlar",
+    "productsLabel": "kategoriyadagi tovarlar",
+    "emptyCategory": "Bu kategoriyadagi tovarlar tez orada paydo bo'ladi. Bizga yozing — so'rovingizga ko'ra topamiz.",
+    "requestProductMessage": "Assalomu alaykum! Quyidagi tovar bo'yicha ulgurji narx va yetkazib berish shartlari qiziqtiradi: {name}.",
+    "categories": {
+      "hygiene": {
+        "name": "Gigiyena",
+        "desc": "Uy va biznes uchun nam salfetkalar, qog'oz mahsulotlari, sovun va antiseptiklar."
+      },
+      "packaging": {
+        "name": "Qadoqlash materiallari",
+        "desc": "Oziq-ovqat plyonkasi, strech-plyonka, skotch va qadoqlash uchun sarf materiallari."
+      },
+      "home": {
+        "name": "Uy uchun tovarlar",
+        "desc": "Xo'jalik tovarlari, tozalash vositalari va kundalik anjomlar."
+      },
+      "horeca": {
+        "name": "Biznes va HoReCa tovarlari",
+        "desc": "Kafe, restoran va yetkazib berish uchun bir martalik idishlar, qadoqlash va sarf materiallari."
+      },
+      "private-label": {
+        "name": "Private Label",
+        "desc": "Sizning savdo markangiz ostida tovar ishlab chiqarish."
+      },
+      "custom": {
+        "name": "Buyurtma asosidagi tovarlar",
+        "desc": "So'rovingiz bo'yicha har qanday tovar"
+      }
+    },
+    "products": {
+      "wet-wipes": {
+        "name": "Klapanli nam salfetkalar",
+        "desc": "Qo'l va yuzalar uchun qayta ishlatiladigan qopqoqli nam salfetkalar. Yumshoq to'qilmagan material, iz qoldirmaydi.",
+        "specs": ["Qadoqdagi soni: 100 dona", "Material: spanleys 50 g/m²", "Minimal buyurtma: 1 000 qadoqdan"]
+      },
+      "paper-towels": {
+        "name": "Qog'oz sochiqlar",
+        "desc": "Uy, ofis va muassasalar uchun rulonli ikki qatlamli qog'oz sochiqlar. Yuqori shimuvchanlik va zich o'ram.",
+        "specs": ["Qatlamlar: 2", "Rulon uzunligi: 20 m", "Minimal buyurtma: 500 qadoqdan"]
+      },
+      "liquid-soap": {
+        "name": "Suyuq sovun, kanistra",
+        "desc": "Tejamkor kanistradagi qo'l uchun suyuq sovun. Neytral pH, dozatorlarni to'ldirish uchun mos.",
+        "specs": ["Hajmi: 5 l", "Hidi: neytral", "Minimal buyurtma: 200 donadan"]
+      },
+      "hand-sanitizer": {
+        "name": "Qo'l uchun antiseptik",
+        "desc": "Spirt asosidagi qo'l uchun antiseptik gel. Tez quriydi, yumshatuvchi tarkib teri qurishining oldini oladi.",
+        "specs": ["Hajmi: 500 ml", "Spirt: 70%", "Minimal buyurtma: 300 donadan"]
+      },
+      "pvc-food-film": {
+        "name": "PVX oziq-ovqat plyonkasi",
+        "desc": "Mahsulotlarni qadoqlash uchun shaffof PVX oziq-ovqat plyonkasi. Yuzaga zich yopishadi, qo'lda va avtomatik qadoqlashga mos.",
+        "specs": ["O'lchami: 30 sm × 300 m", "Material: PVX", "Minimal buyurtma: 500 rulondan"]
+      },
+      "stretch-film-hand": {
+        "name": "Qo'l strech-plyonkasi",
+        "desc": "Pallet va yuklarni qadoqlash uchun qo'l strech-plyonkasi. Yuqori cho'ziluvchanlik va uzilishga chidamlilik.",
+        "specs": ["Eni: 500 mm", "Qalinligi: 23 mkm", "Minimal buyurtma: 200 rulondan"]
+      },
+      "stretch-film-machine": {
+        "name": "Mashina strech-plyonkasi",
+        "desc": "Avtomatik pallet qadoqlash uchun mashina strech-plyonkasi. Barqaror tarangligi va tejamkor sarfi.",
+        "specs": ["Eni: 500 mm", "O'rami: 1 500 m", "Minimal buyurtma: 100 rulondan"]
+      },
+      "packing-tape": {
+        "name": "Qadoqlash skotchi",
+        "desc": "BOPP asosidagi yopishqoq qadoqlash lentasi. Qutilarni ishonchli mahkamlaydi, shaffof va jigarrang variantlari mavjud.",
+        "specs": ["O'lchami: 48 mm × 100 m", "Asos: BOPP", "Minimal buyurtma: 1 000 donadan"]
+      },
+      "trash-bags": {
+        "name": "Axlat xaltalari 120 l",
+        "desc": "Yuqori zichlikdagi mustahkam axlat xaltalari. Yuk ostida yirtilmaydi, uy va korxonalar uchun qulay.",
+        "specs": ["Hajmi: 120 l", "Rulonda: 10 dona", "Minimal buyurtma: 500 qadoqdan"]
+      },
+      "cleaning-set": {
+        "name": "Youreko tozalash to'plami",
+        "desc": "Tozalash to'plami: siquvchi pol artgich, chelak va mikrofibradan almashtiriladigan nasadkalar. Ergonomik dasta.",
+        "specs": ["Tarkibi: artgich + chelak", "Nasadka: mikrofibra", "Minimal buyurtma: 100 donadan"]
+      },
+      "dish-sponges": {
+        "name": "Idish yuvish gubkalari",
+        "desc": "Idish yuvish uchun abraziv qatlamli gubkalar. Yuzalarni tirnamaydi, uzoq xizmat qiladi.",
+        "specs": ["Qadoqda: 10 dona", "O'lchami: 95 × 65 mm", "Minimal buyurtma: 1 000 qadoqdan"]
+      },
+      "household-gloves": {
+        "name": "Xo'jalik qo'lqoplari",
+        "desc": "Ichki qoplamali lateks xo'jalik qo'lqoplari. Tozalash va suv bilan ishlashda qo'llarni himoya qiladi.",
+        "specs": ["Material: lateks", "O'lchamlar: S–XL", "Minimal buyurtma: 500 juftdan"]
+      },
+      "paper-cups": {
+        "name": "Bir qatlamli qog'oz stakanlar",
+        "desc": "Issiq va sovuq ichimliklar uchun bir martalik qog'oz stakanlar. Laminatlangan oziq-ovqat kartoni, logotip bosish uchun mos.",
+        "specs": ["Hajmi: 250 ml", "Qadoqda: 50 dona", "Minimal buyurtma: 1 000 donadan"]
+      },
+      "food-containers": {
+        "name": "Oziq-ovqat konteynerlari",
+        "desc": "Yetkazib berish va tayyor taomlarni qadoqlash uchun bir martalik konteynerlar. Germetik qopqoq, issiqqa chidamli.",
+        "specs": ["Hajmi: 500 ml", "Material: PP", "Minimal buyurtma: 1 000 donadan"]
+      },
+      "wooden-cutlery": {
+        "name": "Yog'och anjomlar",
+        "desc": "Qayindan tayyorlangan ekologik bir martalik anjomlar: vilkalar, qoshiqlar, pichoqlar. Silliq, tikansiz yuza.",
+        "specs": ["To'plam: vilka / qoshiq / pichoq", "Material: qayin", "Minimal buyurtma: 2 000 donadan"]
+      },
+      "dispenser-napkins": {
+        "name": "Dispenser salfetkalari",
+        "desc": "Stol dispenserlari uchun qog'oz salfetkalar. Kafe, restoran va fud-kortlar uchun mos.",
+        "specs": ["Pachkada: 250 dona", "Qatlamlar: 1", "Minimal buyurtma: 500 pachkadan"]
+      }
+    }
+  },
   "contact": {
-    "badge": "Aloqa",
-    "title1": "Biz bilan",
-    "title2": "bog'laning",
-    "subtitle": "Loyihangizni muhokama qilishga tayyormiz? So'rov qoldiring yoki to'g'ridan-to'g'ri yozing — odatda ish vaqtida bir soat ichida javob beramiz.",
-    "phoneLabel": "Telefon",
-    "emailLabel": "Email",
-    "addressLabel": "Manzil",
     "address": "Toshkent shahri, Mirzo Ulug'bek tumani, Shahriobod MFY, Oliy ximmat ko'chasi, 128-A uy",
     "addressLocality": "Toshkent",
     "hoursTitle": "Ish vaqti",
@@ -224,18 +271,17 @@
       { "day": "Dushanba — Juma", "value": "09:00 — 18:00" },
       { "day": "Shanba", "value": "10:00 — 15:00" },
       { "day": "Yakshanba", "value": "Dam olish kuni" }
-    ],
-    "formTitle": "So'rov yuborish"
+    ]
   },
   "form": {
     "name": "Ismingiz",
-    "namePlaceholder": "Ismingizni kiriting",
+    "namePlaceholder": "Ism",
     "phone": "Telefon",
-    "phonePlaceholder": "+998 XX XXX XX XX",
+    "phonePlaceholder": "Telefon",
     "email": "Email",
     "emailPlaceholder": "example@mail.com",
-    "message": "Xabar",
-    "messagePlaceholder": "Nima yetkazib berish kerak, qaysi hajmda va qayerga?",
+    "message": "Izoh",
+    "messagePlaceholder": "Izoh",
     "consent": "Shaxsiy ma'lumotlarni qayta ishlashga roziman, shartlar:",
     "consentLink": "maxfiylik siyosati",
     "submit": "So'rov yuborish",
@@ -261,9 +307,23 @@
     }
   },
   "footer": {
-    "tagline": "VIING MCHJ XK — xalqaro savdoda ishonchli hamkoringiz. Xitoydan tovarlarni import, eksport va ulgurji yetkazish.",
+    "tagline": "O'zbekiston va MDH biznesi uchun Xitoydan keng assortimentdagi tovarlarni ulgurji yetkazib berish.",
+    "catalogTitle": "Tovarlar katalogi",
     "servicesTitle": "Xizmatlar",
+    "services": [
+      "Ishlab chiqaruvchilarni topish",
+      "Brend ostida ishlab chiqarish",
+      "Sifat nazorati",
+      "Logistika va yetkazib berish",
+      "Bojxona rasmiylashtirish"
+    ],
     "companyTitle": "Kompaniya",
+    "company": {
+      "about": "Kompaniya haqida",
+      "advantages": "Bizning afzalliklarimiz",
+      "brand": "Brend ostida ishlab chiqarish",
+      "contact": "Aloqa"
+    },
     "contactsTitle": "Aloqa",
     "copyright": "© {year} VIING MCHJ XK. Barcha huquqlar himoyalangan.",
     "legalNav": "Yuridik ma'lumotlar",

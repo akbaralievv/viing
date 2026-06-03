@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Lora, Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -10,23 +10,8 @@ import { Header } from "@/components/sections/header";
 import { Footer } from "@/components/sections/footer";
 import { FloatingContacts } from "@/components/floating-contacts";
 
-const montserrat = Montserrat({
+const inter = Inter({
   variable: "--font-sans",
-  subsets: ["latin", "cyrillic"],
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
-
-const fraunces = Fraunces({
-  variable: "--font-display",
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-  weight: "variable",
-  axes: ["opsz", "SOFT"],
-});
-
-const lora = Lora({
-  variable: "--font-display-cyrillic",
   subsets: ["latin", "cyrillic"],
   display: "swap",
   weight: ["400", "500", "600", "700"],
@@ -40,8 +25,8 @@ export function generateStaticParams() {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fbf6f0" },
-    { media: "(prefers-color-scheme: dark)", color: "#171210" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#052439" },
   ],
   width: "device-width",
   initialScale: 1,
@@ -157,10 +142,7 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html
-      lang={locale}
-      className={`${montserrat.variable} ${fraunces.variable} ${lora.variable}`}
-    >
+    <html lang={locale} className={inter.variable}>
       <body suppressHydrationWarning className="antialiased">
         <NextIntlClientProvider>
           <Header />

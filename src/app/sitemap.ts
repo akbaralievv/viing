@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { routing } from "@/i18n/routing";
+import { productCategories, products } from "@/lib/catalog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || siteConfig.url;
@@ -12,18 +13,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const languages = (path: string) =>
     Object.fromEntries(routing.locales.map((l) => [l, localePath(l, path)]));
 
-  const pages: MetadataRoute.Sitemap = [];
+  const routes: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly" }[] = [
+    { path: "", priority: 1, changeFrequency: "weekly" },
+    { path: "/catalog", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/brand", priority: 0.8, changeFrequency: "monthly" },
+    ...productCategories.map((c) => ({
+      path: `/catalog/${c.slug}`,
+      priority: 0.7,
+      changeFrequency: "weekly" as const,
+    })),
+    ...products.map((p) => ({
+      path: `/catalog/${p.category}/${p.slug}`,
+      priority: 0.6,
+      changeFrequency: "monthly" as const,
+    })),
+    { path: "/privacy", priority: 0.3, changeFrequency: "yearly" },
+    { path: "/terms", priority: 0.3, changeFrequency: "yearly" },
+  ];
 
-  for (const path of ["/", "/privacy", "/terms"] as const) {
+  const pages: MetadataRoute.Sitemap = [];
+  for (const route of routes) {
     for (const locale of routing.locales) {
       pages.push({
-        url: localePath(locale, path === "/" ? "" : path),
+        url: localePath(locale, route.path),
         lastModified,
-        changeFrequency: path === "/" ? "weekly" : "yearly",
-        priority: path === "/" ? 1 : 0.3,
-        alternates: {
-          languages: languages(path === "/" ? "" : path),
-        },
+        changeFrequency: route.changeFrequency,
+        priority: route.priority,
+        alternates: { languages: languages(route.path) },
       });
     }
   }

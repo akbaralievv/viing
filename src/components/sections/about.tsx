@@ -1,65 +1,49 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Badge } from "@/components/ui/badge";
-import { aboutImages } from "@/lib/site-data";
+import { img } from "@/lib/catalog";
 
 export function About() {
   const t = useTranslations("about");
-  const tImages = useTranslations("about.images");
   const advantages = t.raw("advantages") as string[];
 
   return (
-    <section id="about" className="py-20 md:py-32 bg-muted/30">
+    <section id="about" className="py-16 md:py-24 scroll-mt-20">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="relative">
-            <div
-              aria-hidden="true"
-              className="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-xl"
-            />
-            <div
-              aria-hidden="true"
-              className="absolute -bottom-4 -right-4 w-32 h-32 bg-amber-500/20 rounded-full blur-xl"
-            />
-            <div className="relative grid grid-cols-2 gap-4">
-              {aboutImages.map((image) => (
-                <div
-                  key={image.src}
-                  className={`relative h-64 rounded-2xl overflow-hidden ${image.offset}`}
-                >
-                  <Image
-                    src={image.src}
-                    alt={tImages(image.altKey)}
-                    fill
-                    sizes="(min-width: 1024px) 25vw, 50vw"
-                    className="object-cover"
-                  />
-                </div>
-              ))}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="relative order-2 lg:order-1">
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-border bg-secondary">
+              <Image
+                src={img("1586528116311-ad8dd3c8310d", 800, 600)}
+                alt={t("title")}
+                fill
+                sizes="(min-width: 1024px) 45vw, 100vw"
+                className="object-cover"
+              />
             </div>
+            <div
+              aria-hidden="true"
+              className="absolute -bottom-5 -right-3 w-28 h-28 rounded-2xl bg-brand/10 -z-10"
+            />
           </div>
 
-          <div>
-            <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
-              {t("badge")}
-            </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t("title1")} <span className="text-primary">{t("title2")}</span>
+          <div className="order-1 lg:order-2">
+            <h2 className="text-2xl md:text-[2rem] font-bold text-primary mb-5 leading-tight">
+              {t("title")}
             </h2>
-            <p className="text-muted-foreground text-lg mb-6">{t("p1")}</p>
-            <p className="text-muted-foreground text-lg mb-8">{t("p2")}</p>
+            <p className="text-muted-foreground mb-4">{t("p1")}</p>
+            <p className="text-muted-foreground mb-8">{t("p2")}</p>
 
-            <ul className="grid sm:grid-cols-2 gap-4">
+            <ul className="grid sm:grid-cols-2 gap-3.5">
               {advantages.map((item) => (
                 <li key={item} className="flex items-center gap-3">
                   <span
                     aria-hidden="true"
-                    className="w-6 h-6 bg-primary/10 text-primary rounded-full flex items-center justify-center flex-shrink-0"
+                    className="flex items-center justify-center w-6 h-6 rounded-full bg-mint/25 text-primary shrink-0"
                   >
-                    <Check className="w-4 h-4" />
+                    <Check className="w-3.5 h-3.5" strokeWidth={3} />
                   </span>
-                  <span className="text-sm font-medium">{item}</span>
+                  <span className="text-sm font-medium text-foreground">{item}</span>
                 </li>
               ))}
             </ul>

@@ -9,9 +9,22 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        brand: {
+          DEFAULT: 'hsl(var(--brand))',
+          foreground: 'hsl(var(--brand-foreground))',
+          hover: 'hsl(var(--brand-hover))',
+          active: 'hsl(var(--brand-active))'
+        },
+        mint: {
+          DEFAULT: 'hsl(var(--mint))',
+          foreground: 'hsl(var(--mint-foreground))'
+        },
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
