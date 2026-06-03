@@ -10,48 +10,48 @@ export function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section
-      className="relative flex min-h-[860px] md:min-h-[820px] lg:min-h-[800px] flex-col overflow-hidden bg-primary"
-      aria-label={t("title")}
-    >
-      <Image
-        src="/hero.png"
-        alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-center"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent to-[60%] lg:hidden"
-      />
+    <section className="flex flex-col bg-primary" aria-label={t("title")}>
+      {/* Content area — background image fills only this block (not the stats bar) */}
+      <div className="relative flex min-h-[100svh] items-center overflow-hidden">
+        <Image
+          src="/hero.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent to-[60%] lg:hidden"
+        />
 
-      <div className="relative z-10 container mx-auto px-4 flex flex-1 items-center pt-28 pb-14 md:pt-32">
-        <div className="max-w-2xl animate-slide-up">
-          <p className="text-sm font-semibold uppercase tracking-wider text-brand mb-4">
-            {t("eyebrow")}
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.08] text-white mb-6">
-            {t("title")}
-          </h1>
-          <p className="text-lg text-white/80 mb-9 max-w-xl">{t("subtitle")}</p>
+        <div className="relative z-10 container mx-auto px-4 pt-28 pb-14 md:pt-32">
+          <div className="max-w-2xl animate-slide-up">
+            <p className="text-sm font-semibold uppercase tracking-wider text-brand mb-4">
+              {t("eyebrow")}
+            </p>
+            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.08] text-white mb-6">
+              {t("title")}
+            </h1>
+            <p className="text-lg text-white/80 mb-9 max-w-xl">{t("subtitle")}</p>
 
-          <div className="flex flex-col sm:flex-row gap-3.5">
-            <Button asChild variant="brand" size="lg" className="h-[52px] px-7">
-              <Link href="/#contact">
-                {t("ctaOffer")}
-                <ArrowRight aria-hidden="true" />
-              </Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="h-[52px] px-7 border-transparent bg-white text-primary hover:bg-white/90 hover:text-primary"
-            >
-              <Link href="/catalog">{t("ctaCatalog")}</Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3.5">
+              <Button asChild variant="brand" size="lg" className="h-[52px] px-7">
+                <Link href="/#contact">
+                  {t("ctaOffer")}
+                  <ArrowRight aria-hidden="true" />
+                </Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="h-[52px] px-7 border-transparent bg-white text-primary hover:bg-white/90 hover:text-primary"
+              >
+                <Link href="/catalog">{t("ctaCatalog")}</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

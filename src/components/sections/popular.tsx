@@ -19,8 +19,10 @@ export function Popular() {
   const update = () => {
     const el = trackRef.current;
     if (!el) return;
-    const max = el.scrollWidth - el.clientWidth;
-    const p = max > 4 ? Math.round(max / el.clientWidth) + 1 : 1;
+    const cw = el.clientWidth;
+    const max = el.scrollWidth - cw;
+    const raw = cw > 0 && max > 4 ? Math.round(max / cw) + 1 : 1;
+    const p = Number.isFinite(raw) ? Math.min(Math.max(1, raw), 20) : 1;
     setPages(p);
     setActive(max > 0 ? Math.round((el.scrollLeft / max) * (p - 1)) : 0);
   };

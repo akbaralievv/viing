@@ -46,7 +46,7 @@ export function LanguageSwitcher() {
         )}
       >
         <Globe className="w-3.5 h-3.5 text-white/90 lg:w-4 lg:h-4" aria-hidden="true" />
-        <span className="tracking-wide">{localeShort[locale]}</span>
+        <span className="tracking-wide leading-none">{localeShort[locale]}</span>
         <ChevronDown
           className="w-3 h-3 text-white/60 transition-transform duration-200 group-data-[state=open]:rotate-180 lg:w-3.5 lg:h-3.5"
           aria-hidden="true"
