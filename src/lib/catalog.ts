@@ -60,22 +60,22 @@ export const products: Product[] = [
   { slug: "wet-wipes", category: "hygiene", image: "/products/wet-wipes.png" },
   { slug: "paper-towels", category: "hygiene", image: "/products/paper-towels.png" },
   { slug: "liquid-soap", category: "hygiene", image: "/products/liquid-soap.png" },
-  { slug: "hand-sanitizer", category: "hygiene", image: "1553413077-190dd305871c" },
+  { slug: "hand-sanitizer", category: "hygiene", image: "/products/liquid-soap.png" },
   // Упаковочные материалы
   { slug: "pvc-food-film", category: "packaging", image: "/products/pvc-food-film.png" },
   { slug: "stretch-film-hand", category: "packaging", image: "/products/stretch-film-hand.png" },
   { slug: "stretch-film-machine", category: "packaging", image: "/products/stretch-film-machine.png" },
-  { slug: "packing-tape", category: "packaging", image: "1454165804606-c3d57bc86b40" },
+  { slug: "packing-tape", category: "packaging", image: "/products/stretch-film-machine.png" },
   // Товары для дома
   { slug: "trash-bags", category: "home", image: "/products/trash-bags.png" },
   { slug: "cleaning-set", category: "home", image: "/products/cleaning-set.png" },
-  { slug: "dish-sponges", category: "home", image: "1504307651254-35680f356dfd" },
-  { slug: "household-gloves", category: "home", image: "1498049794561-7780e7231661" },
+  { slug: "dish-sponges", category: "home", image: "/products/cleaning-set.png" },
+  { slug: "household-gloves", category: "home", image: "/products/household-gloves.jpg" },
   // Бизнес и HoReCa
   { slug: "paper-cups", category: "horeca", image: "/products/paper-cups.png" },
-  { slug: "food-containers", category: "horeca", image: "1558171813-4c088753af8f" },
-  { slug: "wooden-cutlery", category: "horeca", image: "1454165804606-c3d57bc86b40" },
-  { slug: "dispenser-napkins", category: "horeca", image: "1578575437130-527eed3abbec" },
+  { slug: "food-containers", category: "horeca", image: "/products/pvc-food-film.png" },
+  { slug: "wooden-cutlery", category: "horeca", image: "/products/paper-cups.png" },
+  { slug: "dispenser-napkins", category: "horeca", image: "/products/paper-towels.png" },
 ];
 
 /** Curated set shown in the "Популярные товары" block on the home page. */

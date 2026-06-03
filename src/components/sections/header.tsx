@@ -10,7 +10,6 @@ import { VisuallyHidden } from "@/components/ui/visually-hidden";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { LogoMark } from "@/components/logo-mark";
 import { navKeys, navHrefs } from "@/lib/site-data";
-import { siteConfig } from "@/lib/site-config";
 
 export function Header() {
   const t = useTranslations("nav");
@@ -59,11 +58,8 @@ export function Header() {
         {t("skipToContent")}
       </a>
       <div className="container mx-auto px-4 h-16 md:h-[72px] flex items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label={t("homeAria")}>
-          <LogoMark className="h-8 md:h-9" />
-          <span className="text-xl md:text-[1.35rem] font-semibold tracking-widest text-white">
-            {siteConfig.name}
-          </span>
+        <Link href="/" className="flex items-center shrink-0" aria-label={t("homeAria")}>
+          <LogoMark className="h-[1.7rem] md:h-[2rem]" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-7" aria-label={t("menuTitle")}>

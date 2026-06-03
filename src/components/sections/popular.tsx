@@ -102,7 +102,7 @@ export function Popular() {
             <ProductCard
               key={product.slug}
               product={product}
-              className="w-full shrink-0 min-[500px]:w-[calc((100%_-_1.25rem)/2)] md:w-[calc((100%_-_2.5rem)/3)] lg:w-[calc((100%_-_3.75rem)/4)]"
+              className="w-full shrink-0 min-[550px]:w-[calc((100%_-_1.25rem)/2)] lg:w-[calc((100%_-_2.5rem)/3)]"
             />
           ))}
         </ul>

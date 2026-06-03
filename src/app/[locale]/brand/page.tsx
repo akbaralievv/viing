@@ -6,7 +6,6 @@ import { Breadcrumb } from "@/components/breadcrumb";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
-import { img } from "@/lib/catalog";
 
 export async function generateMetadata({
   params,
@@ -63,16 +62,13 @@ export default async function BrandPage({
           <div className="relative">
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-border bg-secondary">
               <Image
-                src={img("1494412574643-ff11b0a5c1c3", 800, 600)}
+                src="/brand/your-brand.png"
                 alt={t("pageTitle")}
                 fill
                 priority
                 sizes="(min-width: 1024px) 45vw, 100vw"
                 className="object-cover"
               />
-              <span className="absolute bottom-4 left-4 rounded-lg bg-primary/90 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-primary-foreground backdrop-blur">
-                Your Brand
-              </span>
             </div>
           </div>
         </div>
@@ -98,13 +94,15 @@ export default async function BrandPage({
           <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-10">
             {t("stepsTitle")}
           </h2>
-          <ol className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+          <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
             {steps.map((step, idx) => (
               <li key={step.title} className="rounded-2xl border border-border bg-card p-6">
-                <span className="text-3xl font-bold text-brand/25 leading-none">
-                  {String(idx + 1).padStart(2, "0")}
-                </span>
-                <h3 className="font-bold text-primary mt-3 mb-2">{step.title}</h3>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-2xl font-bold leading-none text-brand/40">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="font-bold leading-tight text-primary">{step.title}</h3>
+                </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">{step.description}</p>
               </li>
             ))}

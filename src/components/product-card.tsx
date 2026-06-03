@@ -29,7 +29,7 @@ export function ProductCard({
   return (
     <li
       className={cn(
-        "flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-xl hover:shadow-primary/10",
+        "flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-[border-color,box-shadow] duration-300 hover:border-brand/40 hover:shadow-lg hover:shadow-primary/10",
         className
       )}
     >

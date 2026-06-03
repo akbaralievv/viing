@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .container {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 1240px;
+    padding-inline: 1rem;
+  }
+}
+
 @layer base {
   :root {
     /* Flexport Climate palette */

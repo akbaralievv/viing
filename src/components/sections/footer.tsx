@@ -26,11 +26,8 @@ export function Footer() {
       <div className="container mx-auto px-4 py-14 md:py-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div className="lg:pr-6">
-            <Link href="/" className="inline-flex items-center gap-2.5 mb-5">
-              <LogoMark className="h-12 w-auto" />
-              <span className="text-xl font-semibold tracking-widest text-white">
-                {siteConfig.name}
-              </span>
+            <Link href="/" className="inline-flex items-center mb-5">
+              <LogoMark className="h-10 w-auto" />
             </Link>
             <p className="text-sm text-white/65 leading-relaxed mb-6">{t("tagline")}</p>
             <div className="flex items-center gap-3">

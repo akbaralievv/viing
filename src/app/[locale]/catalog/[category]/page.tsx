@@ -64,7 +64,7 @@ export default async function CategoryPage({
         </header>
 
         {items.length > 0 ? (
-          <Reveal as="ul" className="grid grid-cols-1 min-[500px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
+          <Reveal as="ul" className="grid grid-cols-1 min-[550px]:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
             {items.map((product) => (
               <ProductCard key={product.slug} product={product} />
             ))}

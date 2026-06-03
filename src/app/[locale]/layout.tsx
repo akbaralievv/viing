@@ -143,10 +143,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={inter.variable}>
-      <body suppressHydrationWarning className="antialiased">
+      <body suppressHydrationWarning className="flex min-h-screen flex-col antialiased">
         <NextIntlClientProvider>
           <Header />
-          {children}
+          <div className="flex flex-1 flex-col">{children}</div>
           <Footer />
           <FloatingContacts />
         </NextIntlClientProvider>
