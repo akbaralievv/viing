@@ -6,7 +6,7 @@ export function CtaBanner() {
   const t = useTranslations("cta");
 
   return (
-    <section id="contact" className="py-16 md:py-24 scroll-mt-20">
+    <section id="contact" className="py-12 md:py-16 scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-10 md:px-12 md:py-14">
           <Image

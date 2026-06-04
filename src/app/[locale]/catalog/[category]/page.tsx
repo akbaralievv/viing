@@ -2,11 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Breadcrumb } from "@/components/breadcrumb";
-import { Reveal } from "@/components/reveal";
-import { ProductCard } from "@/components/product-card";
-import { Link } from "@/i18n/navigation";
-import { Button } from "@/components/ui/button";
-import { getCategory, productsByCategory, productCategories } from "@/lib/catalog";
+import { CatalogBrowser } from "@/components/catalog-browser";
+import { getCategory, productCategories } from "@/lib/catalog";
 
 export function generateStaticParams() {
   return productCategories.map((category) => ({ category: category.slug }));
@@ -40,7 +37,6 @@ export default async function CategoryPage({
 
   const t = await getTranslations({ locale, namespace: "catalog" });
   const tCat = await getTranslations({ locale, namespace: "catalog.categories" });
-  const items = productsByCategory(cat.slug);
   const name = tCat(`${cat.slug}.name`);
 
   return (
@@ -53,30 +49,8 @@ export default async function CategoryPage({
             { label: name },
           ]}
         />
-        <header className="max-w-2xl mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3">{name}</h1>
-          <p className="text-muted-foreground">{tCat(`${cat.slug}.desc`)}</p>
-          {cat.count && (
-            <p className="text-sm text-muted-foreground/70 mt-3">
-              {cat.count} {t("productsLabel")}
-            </p>
-          )}
-        </header>
-
-        {items.length > 0 ? (
-          <Reveal as="ul" className="grid grid-cols-1 min-[550px]:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-            {items.map((product) => (
-              <ProductCard key={product.slug} product={product} />
-            ))}
-          </Reveal>
-        ) : (
-          <div className="rounded-2xl border border-border bg-secondary p-8 text-center">
-            <p className="text-muted-foreground mb-5">{t("emptyCategory")}</p>
-            <Button asChild>
-              <Link href="/#contact">{t("requestPrice")}</Link>
-            </Button>
-          </div>
-        )}
+        <h1 className="sr-only">{name}</h1>
+        <CatalogBrowser initialCategory={cat.slug} />
       </div>
     </main>
   );

@@ -76,7 +76,11 @@ export function Header() {
 
         <div className="flex items-center gap-1.5 sm:gap-3">
           <LanguageSwitcher />
-          <Button asChild variant="brand" className="hidden lg:inline-flex">
+          <Button
+            asChild
+            variant="outline"
+            className="hidden lg:inline-flex border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white hover:border-white/50"
+          >
             <Link href="/#contact">{t("getOffer")}</Link>
           </Button>
 

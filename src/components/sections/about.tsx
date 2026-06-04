@@ -8,7 +8,7 @@ export function About() {
   const advantages = t.raw("advantages") as string[];
 
   return (
-    <section id="about" className="py-16 md:py-24 scroll-mt-20">
+    <section id="about" className="py-12 md:py-16 scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="relative order-2 lg:order-1">

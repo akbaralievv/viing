@@ -195,3 +195,38 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary) / 0.55);
 }
+
+/* Product card — scales its own content with the card's width via container
+   queries, so cards stay proportionate whether shown 1, 2, 3 or 4 per row.
+   Unlayered rules so they override the default Tailwind utilities below 250px. */
+.product-card {
+  container-type: inline-size;
+}
+
+@container (max-width: 250px) {
+  .pc-img { padding: 0.625rem; }
+  .pc-body {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.75rem;
+  }
+  .pc-title {
+    font-size: 0.8125rem;
+    line-height: 1.15rem;
+  }
+  .pc-pill {
+    margin-top: 0.375rem;
+    padding: 0.125rem 0.5rem;
+    font-size: 0.6875rem;
+  }
+  .pc-foot { padding: 0.75rem; }
+  .pc-btn {
+    height: 2rem;
+    font-size: 0.6875rem;
+  }
+}
+
+@container (max-width: 200px) {
+  .pc-img { padding: 0.5rem; }
+  .pc-title { font-size: 0.75rem; }
+}

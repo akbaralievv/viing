@@ -15,16 +15,12 @@ export function Footer() {
   const t = useTranslations("footer");
   const tCat = useTranslations("catalog.categories");
   const tContact = useTranslations("contact");
-  const services = t.raw("services") as string[];
-  // Targets in the same order as footer.services in messages:
-  // [Поиск производителей, Производство под брендом, Контроль качества, Логистика и доставка, Таможенное оформление]
-  const serviceHrefs = ["/catalog", "/brand", "/#why", "/#contact", "/#contact"];
   const year = new Date().getFullYear();
 
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-14 md:py-16">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:pr-6">
             <Link href="/" className="inline-flex items-center mb-5">
               <LogoMark className="h-10 w-auto" />
@@ -59,22 +55,6 @@ export function Footer() {
                 <li key={category.slug}>
                   <Link href={categoryHref(category)} className="hover:text-white transition-colors">
                     {tCat(`${category.slug}.name`)}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h2 className="font-semibold mb-4">{t("servicesTitle")}</h2>
-            <ul className="space-y-2.5 text-sm text-white/65">
-              {services.map((service, i) => (
-                <li key={service}>
-                  <Link
-                    href={serviceHrefs[i] ?? "/#contact"}
-                    className="hover:text-white transition-colors"
-                  >
-                    {service}
                   </Link>
                 </li>
               ))}

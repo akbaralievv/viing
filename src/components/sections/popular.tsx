@@ -75,7 +75,7 @@ export function Popular() {
   };
 
   return (
-    <section id="popular" className="py-16 md:py-24 bg-secondary scroll-mt-20">
+    <section id="popular" className="py-12 md:py-16 bg-secondary scroll-mt-20">
       <div className="container mx-auto px-4">
         <div className="flex items-end justify-between gap-4 mb-8 md:mb-10">
           <h2 className="text-2xl md:text-[2rem] font-bold text-primary">{t("title")}</h2>
@@ -102,7 +102,7 @@ export function Popular() {
             <ProductCard
               key={product.slug}
               product={product}
-              className="w-full shrink-0 min-[550px]:w-[calc((100%_-_1.25rem)/2)] lg:w-[calc((100%_-_2.5rem)/3)]"
+              className="w-full shrink-0 min-[480px]:w-[calc((100%_-_1.25rem)/2)] md:w-[calc((100%_-_2.5rem)/3)] xl:w-[calc((100%_-_3.75rem)/4)]"
             />
           ))}
         </ul>

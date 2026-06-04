@@ -29,7 +29,7 @@ export function ProductCard({
   return (
     <li
       className={cn(
-        "flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-[border-color,box-shadow] duration-300 hover:border-brand/40 hover:shadow-lg hover:shadow-primary/10",
+        "product-card flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-[border-color,box-shadow] duration-300 hover:border-brand/40 hover:shadow-lg hover:shadow-primary/10",
         className
       )}
     >
@@ -39,24 +39,24 @@ export function ProductCard({
             src={imageSrc(product.image, 600, 600)}
             alt={tProd(`${product.slug}.name`)}
             fill
-            sizes="(min-width: 1024px) 280px, (min-width: 640px) 40vw, 70vw"
-            className="object-contain p-4"
+            sizes="(min-width: 1280px) 290px, (min-width: 768px) 30vw, (min-width: 480px) 45vw, 90vw"
+            className="pc-img object-contain p-4"
           />
         </div>
-        <div className="px-4 pt-4">
-          <h3 className="line-clamp-2 text-sm font-semibold leading-snug text-primary transition-colors group-hover:text-brand">
+        <div className="pc-body px-4 pt-4">
+          <h3 className="pc-title line-clamp-2 text-sm font-semibold leading-snug text-primary transition-colors group-hover:text-brand">
             {tProd(`${product.slug}.name`)}
           </h3>
           <span
-            className="mt-2 inline-block rounded-full px-2.5 py-1 text-xs font-medium"
+            className="pc-pill mt-2 inline-block rounded-full px-2.5 py-1 text-xs font-medium"
             style={{ backgroundColor: pill.bg, color: pill.text }}
           >
             {tCat(`${product.category}.name`)}
           </span>
         </div>
       </Link>
-      <div className="mt-auto p-4">
-        <Button asChild variant="outline" size="sm" className="w-full">
+      <div className="pc-foot mt-auto p-4">
+        <Button asChild variant="outline" size="sm" className="pc-btn w-full">
           <Link href="/#contact">{t("requestPrice")}</Link>
         </Button>
       </div>

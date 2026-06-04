@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <section className="flex flex-col bg-primary" aria-label={t("title")}>
       {/* Content area — background image fills only this block (not the stats bar) */}
-      <div className="relative flex min-h-[100svh] items-center overflow-hidden">
+      <div className="relative flex h-[100svh] min-h-[600px] max-h-[800px] items-center overflow-hidden">
         <Image
           src="/hero.png"
           alt=""
@@ -47,7 +47,7 @@ export function Hero() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="h-[52px] px-7 border-transparent bg-white text-primary hover:bg-white/90 hover:text-primary"
+                className="h-[52px] px-7 border-white/40 bg-transparent text-white hover:bg-white/10 hover:text-white hover:border-white/60"
               >
                 <Link href="/catalog">{t("ctaCatalog")}</Link>
               </Button>
