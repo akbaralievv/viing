@@ -65,6 +65,11 @@ export function Footer() {
             <h2 className="font-semibold mb-4">{t("companyTitle")}</h2>
             <ul className="space-y-2.5 text-sm text-white/65">
               <li>
+                <Link href="/about" className="hover:text-white transition-colors">
+                  {t("company.about")}
+                </Link>
+              </li>
+              <li>
                 <Link href="/#why" className="hover:text-white transition-colors">
                   {t("company.advantages")}
                 </Link>

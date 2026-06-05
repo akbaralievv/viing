@@ -48,7 +48,7 @@ export function ProductCard({
             {tProd(`${product.slug}.name`)}
           </h3>
           <span
-            className="pc-pill mt-2 inline-block rounded-full px-2.5 py-1 text-xs font-medium"
+            className="pc-pill mt-2 inline-block rounded-full px-2.5 py-0.5 text-[11px] font-medium"
             style={{ backgroundColor: pill.bg, color: pill.text }}
           >
             {tCat(`${product.category}.name`)}

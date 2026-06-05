@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Search,
   SlidersHorizontal,
@@ -37,6 +37,16 @@ export function CatalogBrowser({
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const topRef = useRef<HTMLDivElement>(null);
+  const pendingScroll = useRef(false);
+
+  // Flagged by pagination only; the actual scroll runs in an effect after the
+  // new page has rendered, so it fires reliably for next/prev and numbers alike.
+  const goToPage = (p: number) => {
+    if (p === page) return;
+    pendingScroll.current = true;
+    setPage(p);
+  };
 
   // Products paired with their translated names so search can match the label.
   const withNames = useMemo(
@@ -57,6 +67,15 @@ export function CatalogBrowser({
   const current = Math.min(page, pageCount);
   const start = (current - 1) * PER_PAGE;
   const pageItems = filtered.slice(start, start + PER_PAGE);
+
+  useEffect(() => {
+    if (!pendingScroll.current) return;
+    pendingScroll.current = false;
+    const el = topRef.current;
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }, [current]);
 
   const selectCategory = (next: Selected) => {
     setCategory(next);
@@ -98,9 +117,9 @@ export function CatalogBrowser({
   );
 
   return (
-    <div className="flex flex-col gap-8 lg:flex-row lg:gap-10">
-      {/* Sidebar — categories (desktop) */}
-      <aside className="hidden lg:block lg:w-56 lg:shrink-0">
+    <div className="flex flex-col gap-8 md:flex-row md:gap-10">
+      {/* Sidebar — categories (>= 768px) */}
+      <aside className="hidden md:block md:w-56 md:shrink-0">
         <div className="sticky top-24">
           <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
             {t("categoriesTitle")}
@@ -110,7 +129,7 @@ export function CatalogBrowser({
       </aside>
 
       {/* Main column */}
-      <div className="min-w-0 flex-1">
+      <div ref={topRef} className="min-w-0 flex-1 scroll-mt-24">
         {/* Search + filters */}
         <div className="mb-6 flex items-center gap-3">
           <div className="relative flex-1">
@@ -131,9 +150,9 @@ export function CatalogBrowser({
             />
           </div>
 
-          {/* Mobile categories sheet */}
+          {/* Categories sheet — only below 768px */}
           <Sheet open={filtersOpen} onOpenChange={setFiltersOpen}>
-            <SheetTrigger asChild className="lg:hidden">
+            <SheetTrigger asChild className="md:hidden">
               <Button variant="outline" className="h-11 shrink-0 gap-2">
                 <SlidersHorizontal className="h-4 w-4" aria-hidden="true" />
                 {t("filters")}
@@ -168,7 +187,7 @@ export function CatalogBrowser({
           <Pagination
             page={current}
             pageCount={pageCount}
-            onChange={setPage}
+            onChange={goToPage}
             prevLabel={t("prevPage")}
             nextLabel={t("nextPage")}
           />

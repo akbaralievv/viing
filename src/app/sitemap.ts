@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes: { path: string; priority: number; changeFrequency: "weekly" | "monthly" | "yearly" }[] = [
     { path: "", priority: 1, changeFrequency: "weekly" },
     { path: "/catalog", priority: 0.9, changeFrequency: "weekly" },
+    { path: "/about", priority: 0.8, changeFrequency: "monthly" },
     { path: "/brand", priority: 0.8, changeFrequency: "monthly" },
     ...productCategories.map((c) => ({
       path: `/catalog/${c.slug}`,

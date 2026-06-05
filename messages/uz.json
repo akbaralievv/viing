@@ -124,16 +124,32 @@
     ]
   },
   "about": {
+    "metaTitle": "Kompaniya haqida",
+    "metaDescription": "VIING — xalqaro kompaniya: Xitoydan sifatli tovarlar va o'z brendi ostida ishlab chiqarish. To'liq tsikl — yetkazib beruvchilarni topishdan dunyoning istalgan nuqtasiga yetkazib berishgacha.",
     "eyebrow": "Kompaniya haqida",
-    "title": "Xitoydan yetkazib berishda ishonchli hamkor",
-    "p1": "VIING — O'zbekiston va MDH biznesi uchun Xitoydan tovarlarning ulgurji yetkazib beruvchisi. Mahsulotni qulay narxlarda to'g'ridan-to'g'ri fabrikalardan sotib olishga yordam beramiz.",
-    "p2": "8 yildan ortiq vaqtdan beri tekshirilgan ishlab chiqaruvchilar bilan ishlaymiz va butun jarayonni o'z zimmamizga olamiz: tovar tanlash, sifat nazorati, logistika va bojxona rasmiylashtirish.",
-    "advantages": [
-      "Fabrikalar bilan to'g'ridan-to'g'ri shartnomalar",
-      "Har bosqichda sifat nazorati",
-      "To'liq bojxona rasmiylashtirish",
-      "O'zbekiston va MDH bo'ylab yetkazib berish"
-    ]
+    "title": "Biznesni imkoniyatlar bilan bog'laymiz",
+    "p1": "VIING — biznesga Xitoydan sifatli tovarlar olishga va o'z brendi ostida mahsulot yaratishga yordam beradigan xalqaro kompaniya.",
+    "p2": "Biz butun jarayonni o'z zimmamizga olamiz: ishonchli yetkazib beruvchilarni topish va sifat nazoratidan tortib ishlab chiqarish, brendlash va dunyoning istalgan nuqtasiga yetkazib berishgacha.",
+    "ctaButton": "Taklif olish",
+    "stats": [
+      { "value": "10+ yil", "label": "ulgurji yetkazib berish va ishlab chiqarish bozorida" },
+      { "value": "1000+", "label": "dunyo bo'ylab mamnun mijozlar" },
+      { "value": "5000+", "label": "katalogda har qanday so'rov uchun tovarlar" },
+      { "value": "30+ davlat", "label": "yetkazib berish va hamkorlik tarmog'i geografiyasi" },
+      { "value": "100%", "label": "barcha bosqichlarda sifat nazorati" }
+    ],
+    "processEyebrow": "Qanday ishlaymiz",
+    "processTitle": "To'liq tsikl — kalit topshirish asosida",
+    "process": [
+      { "title": "Tahlil va tanlash", "description": "Vazifangizni o'rganamiz va eng yaxshi tovar va fabrika variantlarini tanlaymiz." },
+      { "title": "Yetkazib beruvchilarni tekshirish", "description": "Fabrikalar auditini o'tkazamiz, hujjatlar va ishlab chiqarish quvvatini tekshiramiz." },
+      { "title": "Namunalar va kelishuv", "description": "Namunalarni olamiz, sifatni sinab ko'ramiz, barcha tafsilotlar va qadoqni kelishamiz." },
+      { "title": "Ishlab chiqarish va nazorat", "description": "Ishlab chiqarishni tashkil qilamiz va ko'p bosqichli sifat nazoratini amalga oshiramiz." },
+      { "title": "Brendlash va qadoqlash", "description": "Brendingizni tushiramiz, qadoq va hamrohlik materiallarini tayyorlaymiz." },
+      { "title": "Yetkazib berish", "description": "Dunyoning istalgan nuqtasiga optimal muddatlarda yetkazib berishni tashkil qilamiz." }
+    ],
+    "ctaTitle": "Loyihangizni muhokama qilamizmi?",
+    "ctaSubtitle": "So'rov qoldiring — assortimentni tanlab, hajmingizga mos taklif yuboramiz."
   },
   "cta": {
     "title": "Xitoydan mahsulot kerakmi?",

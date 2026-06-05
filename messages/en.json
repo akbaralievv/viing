@@ -124,16 +124,32 @@
     ]
   },
   "about": {
+    "metaTitle": "About us",
+    "metaDescription": "VIING is an international company: quality goods from China and manufacturing under your own brand. A full cycle — from sourcing suppliers to delivery anywhere in the world.",
     "eyebrow": "About us",
-    "title": "A reliable partner for supply from China",
-    "p1": "VIING is a wholesale supplier of goods from China for businesses in Uzbekistan and the CIS. We help you buy products directly from factories at competitive prices.",
-    "p2": "For over 8 years we've worked with verified manufacturers and handled the entire process: product sourcing, quality control, logistics and customs clearance.",
-    "advantages": [
-      "Direct contracts with factories",
-      "Quality control at every stage",
-      "Full customs clearance",
-      "Delivery across Uzbekistan and the CIS"
-    ]
+    "title": "We connect business with opportunities",
+    "p1": "VIING is an international company that helps businesses source quality goods from China and create products under their own brand.",
+    "p2": "We handle the entire process: from finding verified suppliers and quality control to manufacturing, branding and delivery anywhere in the world.",
+    "ctaButton": "Get an offer",
+    "stats": [
+      { "value": "10+ years", "label": "in wholesale supply and manufacturing" },
+      { "value": "1000+", "label": "happy clients worldwide" },
+      { "value": "5000+", "label": "products in the catalog for any request" },
+      { "value": "30+ countries", "label": "supply and partner network coverage" },
+      { "value": "100%", "label": "quality control at every stage" }
+    ],
+    "processEyebrow": "How we work",
+    "processTitle": "A full turnkey cycle",
+    "process": [
+      { "title": "Analysis & sourcing", "description": "We study your goal and pick the best product and factory options." },
+      { "title": "Supplier vetting", "description": "We audit factories, verify documents and production capacity." },
+      { "title": "Samples & approval", "description": "We get samples, test quality and agree on every detail and the packaging." },
+      { "title": "Production & control", "description": "We arrange manufacturing and run multi-stage quality control." },
+      { "title": "Branding & packaging", "description": "We apply your brand and prepare packaging and accompanying materials." },
+      { "title": "Delivery", "description": "We arrange delivery anywhere in the world within optimal timelines." }
+    ],
+    "ctaTitle": "Ready to discuss your project?",
+    "ctaSubtitle": "Leave a request — we'll curate the range and send an offer for your volume."
   },
   "cta": {
     "title": "Need products from China?",

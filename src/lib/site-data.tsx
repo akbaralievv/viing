@@ -1,11 +1,12 @@
 import { ShieldCheck, BadgeCheck, Wallet, Headset } from "lucide-react";
 import { IconBox, IconFactory, IconWeb, IconTruck } from "@/components/hero-icons";
 
-export const navKeys = ["catalog", "brand", "contact"] as const;
+export const navKeys = ["catalog", "about", "brand", "contact"] as const;
 export type NavKey = (typeof navKeys)[number];
 
 export const navHrefs: Record<NavKey, string> = {
   catalog: "/catalog",
+  about: "/about",
   brand: "/brand",
   contact: "/#contact",
 };

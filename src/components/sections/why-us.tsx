@@ -19,11 +19,13 @@ export function WhyUs() {
           {items.map((item, idx) => {
             const Icon = whyUsIcons[idx] ?? whyUsIcons[0];
             return (
-              <li key={item.title} className="text-center sm:text-left">
-                <span className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-brand/10 text-brand mb-4">
-                  <Icon className="w-7 h-7" aria-hidden="true" />
-                </span>
-                <h3 className="font-bold text-primary text-lg mb-2">{item.title}</h3>
+              <li key={item.title}>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-brand/10 text-brand shrink-0">
+                    <Icon className="w-6 h-6" aria-hidden="true" />
+                  </span>
+                  <h3 className="font-bold text-primary text-lg leading-tight">{item.title}</h3>
+                </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
               </li>
             );

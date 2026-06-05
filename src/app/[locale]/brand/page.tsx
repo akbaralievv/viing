@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, PenTool, Boxes, Factory, ShieldCheck, Truck } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
+import { cn } from "@/lib/utils";
+
+/** Icons for the highlight bar — one per brand `features` item (in order). */
+const featureIcons = [PenTool, Boxes, Factory, ShieldCheck, Truck];
 
 export async function generateMetadata({
   params,
@@ -36,60 +40,72 @@ export default async function BrandPage({
   const steps = t.raw("steps") as Step[];
 
   return (
-    <main id="main" className="pt-24 md:pt-28 pb-20">
-      <div className="container mx-auto px-4">
-        <Breadcrumb
-          items={[
-            { label: tCatalog("breadcrumbHome"), href: "/" },
-            { label: t("pageTitle") },
-          ]}
+    <main id="main">
+      {/* Hero — background image (same treatment as the home page hero) */}
+      <section className="relative flex flex-col h-[100svh] min-h-[600px] max-h-[800px] overflow-hidden bg-primary">
+        <Image
+          src="/brand/your-brand.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent to-[60%]"
         />
 
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center mb-16 md:mb-24">
-          <div>
-            <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-primary leading-tight mb-5">
+        <div className="relative z-10 container mx-auto px-4 pt-24 md:pt-28">
+          <Breadcrumb
+            light
+            items={[
+              { label: tCatalog("breadcrumbHome"), href: "/" },
+              { label: t("pageTitle") },
+            ]}
+          />
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4 flex flex-1 items-center pb-14 md:pb-16">
+          <div className="max-w-2xl animate-slide-up">
+            <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight mb-5">
               {t("pageTitle")}
             </h1>
-            <p className="text-muted-foreground text-lg mb-8 max-w-xl">{t("pageSubtitle")}</p>
-            <Button asChild size="lg" className="h-[52px] px-7">
+            <p className="text-lg text-white/80 mb-8 max-w-xl">{t("pageSubtitle")}</p>
+            <Button asChild variant="brand" size="lg" className="h-[52px] px-7">
               <Link href="/#contact">
                 {t("ctaButton")}
                 <ArrowRight aria-hidden="true" />
               </Link>
             </Button>
           </div>
-
-          <div className="relative">
-            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-border bg-secondary">
-              <Image
-                src="/brand/your-brand.png"
-                alt={t("pageTitle")}
-                fill
-                priority
-                sizes="(min-width: 1024px) 45vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-          </div>
         </div>
+      </section>
 
-        <Reveal as="ul" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16 md:mb-24">
-          {features.map((feature) => (
-            <li
-              key={feature}
-              className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5"
-            >
-              <span
-                aria-hidden="true"
-                className="flex items-center justify-center w-9 h-9 rounded-full bg-mint/25 text-primary shrink-0"
+      {/* Highlights bar — quick glance under the hero (same family as the home stats bar) */}
+      <section aria-label={t("stepsTitle")} className="border-y border-white/10 bg-primary">
+        <ul className="container mx-auto px-4 grid grid-cols-1 min-[420px]:grid-cols-2 lg:grid-cols-5">
+          {features.map((feature, idx) => {
+            const Icon = featureIcons[idx] ?? featureIcons[0];
+            return (
+              <li
+                key={feature}
+                className={cn(
+                  "flex items-center gap-3 py-5 lg:px-5 lg:py-7",
+                  idx > 0 && "lg:border-l lg:border-white/10"
+                )}
               >
-                <Check className="w-4 h-4" strokeWidth={3} />
-              </span>
-              <span className="font-medium text-foreground">{feature}</span>
-            </li>
-          ))}
-        </Reveal>
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/15 bg-white/[0.06] text-brand">
+                  <Icon className="h-5 w-5" aria-hidden="true" />
+                </span>
+                <span className="text-sm font-medium leading-snug text-white">{feature}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
 
+      <div className="container mx-auto px-4 py-16 md:py-20">
         <Reveal as="section" className="mb-16 md:mb-20">
           <h2 className="text-2xl md:text-3xl font-bold text-primary text-center mb-10">
             {t("stepsTitle")}
