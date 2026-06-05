@@ -10,6 +10,7 @@
     "locale": "en_US"
   },
   "nav": {
+    "home": "Home",
     "catalog": "Catalog",
     "brand": "Private Label",
     "services": "Services",

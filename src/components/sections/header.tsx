@@ -1,32 +1,62 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { VisuallyHidden } from "@/components/ui/visually-hidden";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { LogoMark } from "@/components/logo-mark";
 import { navKeys, navHrefs } from "@/lib/site-data";
+import { cn } from "@/lib/utils";
 
 export function Header() {
   const t = useTranslations("nav");
+  const pathname = usePathname();
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
 
+  // Active nav link by route (home matches "/" exactly; in-page anchors never match).
+  const isActive = (href: string) => {
+    if (href.startsWith("/#")) return false;
+    if (href === "/") return pathname === "/";
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
+
+  // Mobile menu: close first, then navigate after the Sheet's close animation
+  // (~300ms) so the route change doesn't overlap the closing menu (caused flicker).
+  const navigateFromMenu = (href: string) => {
+    setIsMenuOpen(false);
+    window.setTimeout(() => router.push(href), 300);
+  };
+
+  const lastY = useRef(0);
+  const navGraceUntil = useRef(0);
+
+  // On route change: reveal the bar and briefly ignore the navigation scroll jump
+  // (e.g. landing on #contact) so it isn't mistaken for a user scroll-down.
   useEffect(() => {
-    let lastY = window.scrollY;
+    setHidden(false);
+    navGraceUntil.current = Date.now() + 700;
+    lastY.current = window.scrollY;
+  }, [pathname]);
+
+  useEffect(() => {
+    lastY.current = window.scrollY;
     let ticking = false;
     const update = () => {
       const y = window.scrollY;
       setScrolled(y > 8);
-      // hide when scrolling down past a threshold, reveal when scrolling up
-      if (y > lastY && y > 120) setHidden(true);
-      else if (y < lastY) setHidden(false);
-      lastY = y <= 0 ? 0 : y;
+      // hide on scroll down, reveal on scroll up — but not during the post-nav grace
+      if (Date.now() >= navGraceUntil.current) {
+        if (y > lastY.current && y > 120) setHidden(true);
+        else if (y < lastY.current) setHidden(false);
+      }
+      lastY.current = y <= 0 ? 0 : y;
       ticking = false;
     };
     const onScroll = () => {
@@ -63,15 +93,23 @@ export function Header() {
         </Link>
 
         <nav className="hidden lg:flex items-center gap-7" aria-label={t("menuTitle")}>
-          {navKeys.map((key) => (
-            <Link
-              key={key}
-              href={navHrefs[key]}
-              className="whitespace-nowrap text-sm font-medium text-white/75 hover:text-white"
-            >
-              {t(key)}
-            </Link>
-          ))}
+          {navKeys.map((key) => {
+            const active = isActive(navHrefs[key]);
+            return (
+              <Link
+                key={key}
+                href={navHrefs[key]}
+                aria-current={active ? "page" : undefined}
+                className={cn(
+                  "relative whitespace-nowrap text-sm font-medium transition-colors hover:text-white",
+                  "after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:rounded-full after:bg-brand after:content-['']",
+                  active ? "text-white after:w-full" : "text-white/75 after:w-0"
+                )}
+              >
+                {t(key)}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-1.5 sm:gap-3">
@@ -100,18 +138,34 @@ export function Header() {
                 <VisuallyHidden>{t("menuTitle")}</VisuallyHidden>
               </SheetTitle>
               <nav className="flex flex-col gap-1 mt-10" aria-label={t("menuTitle")}>
-                {navKeys.map((key) => (
-                  <Link
-                    key={key}
-                    href={navHrefs[key]}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="text-base font-medium py-3 border-b border-border hover:text-brand transition-colors"
-                  >
-                    {t(key)}
-                  </Link>
-                ))}
+                {navKeys.map((key) => {
+                  const active = isActive(navHrefs[key]);
+                  return (
+                    <Link
+                      key={key}
+                      href={navHrefs[key]}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        navigateFromMenu(navHrefs[key]);
+                      }}
+                      aria-current={active ? "page" : undefined}
+                      className={cn(
+                        "text-base font-medium py-3 border-b border-border transition-colors hover:text-brand",
+                        active ? "text-brand" : "text-foreground"
+                      )}
+                    >
+                      {t(key)}
+                    </Link>
+                  );
+                })}
                 <Button asChild className="mt-6">
-                  <Link href="/#contact" onClick={() => setIsMenuOpen(false)}>
+                  <Link
+                    href="/#contact"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigateFromMenu("/#contact");
+                    }}
+                  >
                     {t("getOffer")}
                   </Link>
                 </Button>

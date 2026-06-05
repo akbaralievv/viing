@@ -1,11 +1,17 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+
+// useLayoutEffect on the client (runs before paint → no flash), useEffect on the server.
+const useIsomorphicLayoutEffect =
+  typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 /**
  * Fades/slides its children in when they scroll into view.
- * Respects prefers-reduced-motion (renders immediately, no animation).
+ * Content already in view on mount (above the fold, or when landing via an
+ * anchor) is shown instantly with no animation, so navigation doesn't flicker.
+ * Respects prefers-reduced-motion.
  */
 export function Reveal({
   children,
@@ -21,16 +27,20 @@ export function Reveal({
   const ref = useRef<HTMLElement | null>(null);
   const [shown, setShown] = useState(false);
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const el = ref.current;
     if (!el) return;
-    if (
+
+    const reduce =
       typeof window !== "undefined" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // Already visible (or above the fold) on mount → show immediately, no flash.
+    if (reduce || el.getBoundingClientRect().top < window.innerHeight) {
       setShown(true);
       return;
     }
+
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
