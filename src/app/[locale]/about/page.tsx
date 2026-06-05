@@ -42,7 +42,7 @@ export default async function AboutPage({
   return (
     <main id="main" className="pb-20">
       {/* Hero — background image, centered text */}
-      <section className="relative flex flex-col h-[100svh] min-h-[600px] max-h-[800px] overflow-hidden bg-primary">
+      <section className="relative flex flex-col min-h-[600px] max-h-[800px] overflow-hidden bg-primary">
         <Image
           src="/about/about.png"
           alt=""
@@ -57,7 +57,7 @@ export default async function AboutPage({
           className="absolute inset-0 bg-gradient-to-b from-primary/40 via-transparent to-primary/50"
         />
 
-        <div className="relative z-10 container mx-auto px-4 pt-24 md:pt-28">
+        <div className="relative z-10 container mx-auto px-6 pt-24 md:pt-28">
           <Breadcrumb
             light
             items={[
@@ -67,7 +67,7 @@ export default async function AboutPage({
           />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 flex flex-1 items-center justify-center pb-14 md:pb-16">
+        <div className="relative z-10 container mx-auto px-6 flex flex-1 items-center justify-center pt-10 pb-24 md:pb-28">
           <div className="max-w-3xl text-center animate-slide-up">
             <p className="text-sm font-semibold uppercase tracking-wider text-indigo-300 mb-4">
               {t("eyebrow")}
@@ -92,7 +92,7 @@ export default async function AboutPage({
         <div className="container mx-auto px-4">
           <Reveal
             as="ul"
-            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5"
           >
             {stats.map((stat, idx) => {
               const Icon = statIcons[idx] ?? statIcons[0];
@@ -101,7 +101,7 @@ export default async function AboutPage({
                   key={stat.label}
                   className={cn(
                     "flex items-center gap-3.5 p-5 lg:p-6",
-                    idx > 0 && "lg:border-l lg:border-border"
+                    idx > 0 && "max-sm:border-t lg:border-l border-border"
                   )}
                 >
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand/10 text-brand">

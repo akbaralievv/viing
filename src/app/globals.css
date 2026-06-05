@@ -94,6 +94,13 @@
   * {
     @apply border-border;
   }
+  /* Always reserve the scrollbar space so it never appears/disappears between
+     pages — otherwise the viewport width changes on navigation and the fixed
+     header shifts horizontally (the "flicker/jerk" on every page switch). */
+  html {
+    scrollbar-gutter: stable;
+    overflow-y: scroll;
+  }
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;

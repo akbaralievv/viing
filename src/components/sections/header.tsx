@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { VisuallyHidden } from "@/components/ui/visually-hidden";
@@ -15,7 +15,6 @@ import { cn } from "@/lib/utils";
 export function Header() {
   const t = useTranslations("nav");
   const pathname = usePathname();
-  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
@@ -25,13 +24,6 @@ export function Header() {
     if (href.startsWith("/#")) return false;
     if (href === "/") return pathname === "/";
     return pathname === href || pathname.startsWith(`${href}/`);
-  };
-
-  // Mobile menu: close first, then navigate after the Sheet's close animation
-  // (~300ms) so the route change doesn't overlap the closing menu (caused flicker).
-  const navigateFromMenu = (href: string) => {
-    setIsMenuOpen(false);
-    window.setTimeout(() => router.push(href), 300);
   };
 
   const lastY = useRef(0);
@@ -144,10 +136,7 @@ export function Header() {
                     <Link
                       key={key}
                       href={navHrefs[key]}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        navigateFromMenu(navHrefs[key]);
-                      }}
+                      onClick={() => setIsMenuOpen(false)}
                       aria-current={active ? "page" : undefined}
                       className={cn(
                         "text-base font-medium py-3 border-b border-border transition-colors hover:text-brand",
@@ -159,13 +148,7 @@ export function Header() {
                   );
                 })}
                 <Button asChild className="mt-6">
-                  <Link
-                    href="/#contact"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      navigateFromMenu("/#contact");
-                    }}
-                  >
+                  <Link href="/#contact" onClick={() => setIsMenuOpen(false)}>
                     {t("getOffer")}
                   </Link>
                 </Button>
