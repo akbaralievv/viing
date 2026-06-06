@@ -23,12 +23,12 @@ export function Hero() {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent to-[60%] lg:hidden"
+          className="absolute inset-0 bg-black/30"
         />
 
         <div className="relative z-10 container mx-auto px-4 pt-28 pb-14 md:pt-32">
           <div className="max-w-2xl animate-slide-up">
-            <p className="text-sm font-semibold uppercase tracking-wider text-brand mb-4">
+            <p className="text-sm font-semibold uppercase tracking-wider text-indigo-300 mb-4">
               {t("eyebrow")}
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.08] text-white mb-6">

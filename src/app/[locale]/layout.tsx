@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -15,6 +15,14 @@ const inter = Inter({
   subsets: ["latin", "cyrillic"],
   display: "swap",
   weight: ["400", "500", "600", "700"],
+});
+
+// Montserrat — display/headline font used on the case-study sections.
+const montserrat = Montserrat({
+  variable: "--font-display",
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
+  weight: ["600", "700"],
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || siteConfig.url;
@@ -142,7 +150,7 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={locale} className={inter.variable}>
+    <html lang={locale} className={`${inter.variable} ${montserrat.variable}`}>
       <body suppressHydrationWarning className="flex min-h-screen flex-col antialiased">
         <NextIntlClientProvider>
           <Header />

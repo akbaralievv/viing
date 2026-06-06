@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { ArrowRight, Package, Users, Boxes, Globe, ShieldCheck } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Breadcrumb } from "@/components/breadcrumb";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
@@ -35,7 +34,6 @@ export default async function AboutPage({
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "about" });
-  const tCatalog = await getTranslations({ locale, namespace: "catalog" });
   const stats = t.raw("stats") as Stat[];
   const process = t.raw("process") as ProcessStep[];
 
@@ -57,17 +55,7 @@ export default async function AboutPage({
           className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50"
         />
 
-        <div className="relative z-10 container mx-auto px-6 pt-24 md:pt-28">
-          <Breadcrumb
-            light
-            items={[
-              { label: tCatalog("breadcrumbHome"), href: "/" },
-              { label: t("metaTitle") },
-            ]}
-          />
-        </div>
-
-        <div className="relative z-10 container mx-auto px-6 flex flex-1 items-center justify-center pt-10 pb-24 md:pb-28">
+        <div className="relative z-10 container mx-auto px-6 flex flex-1 items-center justify-center py-24 md:py-28">
           <div className="max-w-3xl text-center animate-slide-up">
             <p className="text-sm font-semibold uppercase tracking-wider text-indigo-300 mb-4">
               {t("eyebrow")}

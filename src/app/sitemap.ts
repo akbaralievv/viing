@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { routing } from "@/i18n/routing";
 import { productCategories, products } from "@/lib/catalog";
+import { caseStudies } from "@/lib/cases";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || siteConfig.url;
@@ -18,6 +19,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/catalog", priority: 0.9, changeFrequency: "weekly" },
     { path: "/about", priority: 0.8, changeFrequency: "monthly" },
     { path: "/cases", priority: 0.8, changeFrequency: "monthly" },
+    ...caseStudies.map((c) => ({
+      path: `/cases/${c.slug}`,
+      priority: 0.6,
+      changeFrequency: "monthly" as const,
+    })),
     { path: "/brand", priority: 0.8, changeFrequency: "monthly" },
     ...productCategories.map((c) => ({
       path: `/catalog/${c.slug}`,

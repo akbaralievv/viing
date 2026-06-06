@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { ArrowRight, PenTool, Boxes, Factory, ShieldCheck, Truck } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Breadcrumb } from "@/components/breadcrumb";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
@@ -35,7 +34,6 @@ export default async function BrandPage({
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "brand" });
-  const tCatalog = await getTranslations({ locale, namespace: "catalog" });
   const features = t.raw("features") as string[];
   const steps = t.raw("steps") as Step[];
 
@@ -56,17 +54,7 @@ export default async function BrandPage({
           className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent to-[60%]"
         />
 
-        <div className="relative z-10 container mx-auto px-4 pt-24 md:pt-28">
-          <Breadcrumb
-            light
-            items={[
-              { label: tCatalog("breadcrumbHome"), href: "/" },
-              { label: t("pageTitle") },
-            ]}
-          />
-        </div>
-
-        <div className="relative z-10 container mx-auto px-4 flex flex-1 items-center pb-14 md:pb-16">
+        <div className="relative z-10 container mx-auto px-4 flex flex-1 items-center py-14 md:py-16">
           <div className="max-w-2xl animate-slide-up">
             <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight mb-5">
               {t("pageTitle")}
