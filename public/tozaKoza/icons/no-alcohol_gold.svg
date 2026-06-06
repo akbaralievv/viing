@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.21 29.38">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#_Безымянный_градиент_2-4);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke: url(#_Безымянный_градиент_2-2);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-5 {
+        fill: rgba(255, 255, 255, .55);
+        stroke: url(#_Безымянный_градиент_12);
+        stroke-miterlimit: 11.34;
+        stroke-width: 1.28px;
+      }
+
+      .cls-3 {
+        stroke: url(#_Безымянный_градиент_2);
+      }
+
+      .cls-4 {
+        stroke: url(#_Безымянный_градиент_2-3);
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_12" data-name="Безымянный градиент 12" x1="0" y1="14.69" x2="29.21" y2="14.69" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5a059"/>
+      <stop offset=".5" stop-color="#e8d089"/>
+      <stop offset="1" stop-color="#c5a059"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_2" data-name="Безымянный градиент 2" x1="10.99" y1="6.99" x2="18.23" y2="6.99" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c5a059"/>
+      <stop offset=".5" stop-color="#e8d089"/>
+      <stop offset="1" stop-color="#c5a059"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_2-2" data-name="Безымянный градиент 2" x1="9.12" y1="15.36" x2="20.09" y2="15.36" xlink:href="#_Безымянный_градиент_2"/>
+    <linearGradient id="_Безымянный_градиент_2-3" data-name="Безымянный градиент 2" x1="10.09" y1="17" x2="19.12" y2="17" xlink:href="#_Безымянный_градиент_2"/>
+    <linearGradient id="_Безымянный_градиент_2-4" data-name="Безымянный градиент 2" x1="7.83" y1="14.69" x2="21.39" y2="14.69" xlink:href="#_Безымянный_градиент_2"/>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <g>
+      <ellipse class="cls-5" cx="14.61" cy="14.69" rx="13.97" ry="14.05"/>
+      <g>
+        <path class="cls-3" d="M11.74,6.99h5.74"/>
+        <path class="cls-2" d="M12.99,6.99v4.43l-2.87,7.12c-.9,2.5.72,5.19,3.41,5.19h2.15c2.69,0,4.31-2.69,3.41-5.19l-2.87-7.12v-4.43"/>
+        <path class="cls-4" d="M10.84,17h7.54"/>
+        <path class="cls-1" d="M8.33,24.89L20.89,4.49"/>
+      </g>
+    </g>
+  </g>
+</svg>

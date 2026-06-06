@@ -153,9 +153,13 @@ export function CatalogBrowser({
           {/* Categories sheet — only below 768px */}
           <Sheet open={filtersOpen} onOpenChange={setFiltersOpen}>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="outline" className="h-11 shrink-0 gap-2">
+              <Button
+                variant="outline"
+                aria-label={t("filters")}
+                className="h-11 shrink-0 gap-2 max-[499px]:px-3"
+              >
                 <SlidersHorizontal className="h-4 w-4" aria-hidden="true" />
-                {t("filters")}
+                <span className="hidden min-[500px]:inline">{t("filters")}</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="w-[280px]">

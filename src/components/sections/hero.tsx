@@ -28,13 +28,13 @@ export function Hero() {
 
         <div className="relative z-10 container mx-auto px-4 pt-28 pb-14 md:pt-32">
           <div className="max-w-2xl animate-slide-up">
-            <p className="text-sm font-semibold uppercase tracking-wider text-indigo-300 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-wider text-indigo-300 mb-4">
               {t("eyebrow")}
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.08] text-white mb-6">
+            <h1 className="text-[1.75rem] md:text-5xl lg:text-[3.5rem] font-bold leading-[1.15] md:leading-[1.08] text-white mb-6">
               {t("title")}
             </h1>
-            <p className="text-lg text-white/80 mb-9 max-w-xl">{t("subtitle")}</p>
+            <p className="text-base md:text-lg text-white/80 mb-9 max-w-xl">{t("subtitle")}</p>
 
             <div className="flex flex-col sm:flex-row gap-3.5">
               <Button asChild variant="brand" size="lg" className="h-[52px] px-7">

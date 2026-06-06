@@ -47,13 +47,13 @@ export default async function CasesPage({
       <section className="bg-primary pt-28 pb-16 md:pt-36 md:pb-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl animate-slide-up">
-            <p className="text-sm font-semibold uppercase tracking-wider text-indigo-300 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-wider text-indigo-300 mb-4">
               {t("eyebrow")}
             </p>
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-white leading-[1.1] mb-6">
+            <h1 className="font-display text-[1.75rem] md:text-5xl font-bold text-white leading-[1.15] md:leading-[1.1] mb-6">
               {t("title")}
             </h1>
-            <p className="text-lg text-white/80">{t("subtitle")}</p>
+            <p className="text-base md:text-lg text-white/80">{t("subtitle")}</p>
           </div>
         </div>
       </section>
@@ -96,10 +96,10 @@ export default async function CasesPage({
                         </span>
                       </div>
 
-                      <h2 className="mb-4 font-display text-[28px] md:text-[32px] font-semibold leading-tight text-[#191c1e]">
+                      <h2 className="mb-4 font-display text-2xl md:text-[32px] font-semibold leading-tight text-[#191c1e]">
                         {project.title}
                       </h2>
-                      <p className="mb-8 max-w-md text-[#45464d]">{project.desc}</p>
+                      <p className="mb-8 max-w-md text-sm md:text-base text-[#45464d]">{project.desc}</p>
 
                       <div className="w-full border-t border-[#c6c6cd] pt-6">
                         <div className="grid grid-cols-3 gap-6">
@@ -120,7 +120,9 @@ export default async function CasesPage({
                         </span>
                         <span>
                           <span className="block text-xs text-[#45464d]">{project.quantityLabel}</span>
-                          <span className="block font-bold text-[#191c1e]">{project.quantityValue}</span>
+                          <span className="block text-sm md:text-base font-bold text-[#191c1e]">
+                            {project.quantityValue}
+                          </span>
                         </span>
                       </div>
                     </div>

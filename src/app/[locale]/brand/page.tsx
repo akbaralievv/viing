@@ -49,17 +49,18 @@ export default async function BrandPage({
           sizes="100vw"
           className="object-cover object-center"
         />
+        <div aria-hidden="true" className="absolute inset-0 bg-black/60" />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent to-[60%]"
+          className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50"
         />
 
         <div className="relative z-10 container mx-auto px-4 flex flex-1 items-center py-14 md:py-16">
           <div className="max-w-2xl animate-slide-up">
-            <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight mb-5">
+            <h1 className="text-[1.75rem] md:text-4xl lg:text-[2.75rem] font-bold text-white leading-tight lg:leading-[1.25] mb-5">
               {t("pageTitle")}
             </h1>
-            <p className="text-lg text-white/80 mb-8 max-w-xl">{t("pageSubtitle")}</p>
+            <p className="text-base md:text-lg text-white/80 mb-8 max-w-xl">{t("pageSubtitle")}</p>
             <Button asChild variant="brand" size="lg" className="h-[52px] px-7">
               <Link href="/#contact">
                 {t("ctaButton")}

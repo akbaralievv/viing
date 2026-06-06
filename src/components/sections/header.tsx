@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { VisuallyHidden } from "@/components/ui/visually-hidden";
@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 export function Header() {
   const t = useTranslations("nav");
   const pathname = usePathname();
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
@@ -24,6 +25,13 @@ export function Header() {
     if (href.startsWith("/#")) return false;
     if (href === "/") return pathname === "/";
     return pathname === href || pathname.startsWith(`${href}/`);
+  };
+
+  // Mobile menu: close first, then navigate after the Sheet's close animation
+  // (~300ms) so the route change doesn't overlap the closing menu (it flickered).
+  const navigateFromMenu = (href: string) => {
+    setIsMenuOpen(false);
+    window.setTimeout(() => router.push(href), 300);
   };
 
   const lastY = useRef(0);
@@ -81,10 +89,10 @@ export function Header() {
       </a>
       <div className="container mx-auto px-4 h-16 md:h-[72px] flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center shrink-0" aria-label={t("homeAria")}>
-          <LogoMark className="h-[1.7rem] md:h-[2rem]" />
+          <LogoMark className="h-[1.7rem] md:h-[2rem] lg:h-7 xl:h-[2rem]" />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-7" aria-label={t("menuTitle")}>
+        <nav className="hidden lg:flex items-center lg:gap-4 xl:gap-7" aria-label={t("menuTitle")}>
           {navKeys.map((key) => {
             const active = isActive(navHrefs[key]);
             return (
@@ -93,7 +101,7 @@ export function Header() {
                 href={navHrefs[key]}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "relative whitespace-nowrap text-sm font-medium transition-colors hover:text-white",
+                  "relative whitespace-nowrap text-[13px] xl:text-sm font-medium transition-colors hover:text-white",
                   "after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:rounded-full after:bg-brand after:content-['']",
                   active ? "text-white after:w-full" : "text-white/75 after:w-0"
                 )}
@@ -104,12 +112,12 @@ export function Header() {
           })}
         </nav>
 
-        <div className="flex items-center gap-1.5 sm:gap-3">
+        <div className="flex items-center gap-1.5 sm:gap-3 lg:gap-2 xl:gap-3">
           <LanguageSwitcher />
           <Button
             asChild
             variant="outline"
-            className="hidden lg:inline-flex border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white hover:border-white/50"
+            className="hidden lg:inline-flex border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white hover:border-white/50 lg:h-9 lg:px-3.5 lg:text-[13px] xl:h-10 xl:px-5 xl:text-sm"
           >
             <Link href="/#contact">{t("getOffer")}</Link>
           </Button>
@@ -136,7 +144,10 @@ export function Header() {
                     <Link
                       key={key}
                       href={navHrefs[key]}
-                      onClick={() => setIsMenuOpen(false)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        navigateFromMenu(navHrefs[key]);
+                      }}
                       aria-current={active ? "page" : undefined}
                       className={cn(
                         "text-base font-medium py-3 border-b border-border transition-colors hover:text-brand",
@@ -148,7 +159,13 @@ export function Header() {
                   );
                 })}
                 <Button asChild className="mt-6">
-                  <Link href="/#contact" onClick={() => setIsMenuOpen(false)}>
+                  <Link
+                    href="/#contact"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigateFromMenu("/#contact");
+                    }}
+                  >
                     {t("getOffer")}
                   </Link>
                 </Button>

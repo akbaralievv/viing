@@ -57,13 +57,13 @@ export default async function AboutPage({
 
         <div className="relative z-10 container mx-auto px-6 flex flex-1 items-center justify-center py-24 md:py-28">
           <div className="max-w-3xl text-center animate-slide-up">
-            <p className="text-sm font-semibold uppercase tracking-wider text-indigo-300 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-wider text-indigo-300 mb-4">
               {t("eyebrow")}
             </p>
-            <h1 className="text-3xl md:text-4xl lg:text-[3rem] font-bold text-white leading-[1.1] mb-6">
+            <h1 className="text-[1.75rem] md:text-4xl lg:text-[3rem] font-bold text-white leading-[1.1] lg:leading-[1.2] mb-6">
               {t("title")}
             </h1>
-            <p className="text-lg text-white/85 mb-4">{t("p1")}</p>
+            <p className="text-base md:text-lg text-white/85 mb-4">{t("p1")}</p>
             <p className="text-white/70 mb-8">{t("p2")}</p>
             <Button asChild variant="brand" size="lg" className="h-[52px] px-7">
               <Link href="/#contact">
@@ -76,7 +76,7 @@ export default async function AboutPage({
       </section>
 
       {/* Stats strip */}
-      <section className="pb-12 md:pb-16">
+      <section className="pt-6 pb-12 md:pt-8 md:pb-16 lg:pt-0">
         <div className="container mx-auto px-4">
           <Reveal
             as="ul"
@@ -95,8 +95,8 @@ export default async function AboutPage({
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand/10 text-brand">
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
-                  <span className="min-w-0">
-                    <span className="block text-xl md:text-2xl font-bold leading-none text-primary mb-1.5">
+                  <span>
+                    <span className="block whitespace-nowrap text-xl font-bold leading-none text-primary mb-1.5">
                       {stat.value}
                     </span>
                     <span className="block text-xs leading-snug text-muted-foreground">
