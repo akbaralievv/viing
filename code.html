@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VIING - Реализованные проекты</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#f7f9fb",
+                      "primary": "#000000",
+                      "tertiary": "#000000",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-container": "#006f66",
+                      "surface-variant": "#e0e3e5",
+                      "on-surface-variant": "#45464d",
+                      "surface-container": "#eceef0",
+                      "secondary-container": "#86f2e4",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed": "#d3e4fe",
+                      "on-tertiary-fixed-variant": "#38485d",
+                      "tertiary-container": "#0b1c30",
+                      "inverse-primary": "#bec6e0",
+                      "error": "#ba1a1a",
+                      "surface-bright": "#f7f9fb",
+                      "on-error": "#ffffff",
+                      "secondary-fixed": "#89f5e7",
+                      "on-tertiary-fixed": "#0b1c30",
+                      "tertiary-fixed-dim": "#b7c8e1",
+                      "primary-fixed": "#dae2fd",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed-dim": "#bec6e0",
+                      "error-container": "#ffdad6",
+                      "outline-variant": "#c6c6cd",
+                      "secondary-fixed-dim": "#6bd8cb",
+                      "on-surface": "#191c1e",
+                      "secondary": "#006a61",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed": "#131b2e",
+                      "surface-container-low": "#f2f4f6",
+                      "surface-container-high": "#e6e8ea",
+                      "surface-tint": "#565e74",
+                      "surface-container-highest": "#e0e3e5",
+                      "surface-dim": "#d8dadc",
+                      "on-tertiary-container": "#75859d",
+                      "primary-container": "#131b2e",
+                      "background": "#f7f9fb",
+                      "inverse-surface": "#2d3133",
+                      "on-primary-fixed-variant": "#3f465c",
+                      "on-background": "#191c1e",
+                      "on-secondary-fixed": "#00201d",
+                      "on-secondary-fixed-variant": "#005049",
+                      "on-primary-container": "#7c839b",
+                      "inverse-on-surface": "#eff1f3",
+                      "outline": "#76777d",
+                      "on-primary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "section-mobile": "64px",
+                      "base": "8px",
+                      "section-desktop": "120px",
+                      "max-width": "1280px",
+                      "margin-desktop": "auto",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Montserrat"
+                      ],
+                      "display-xl-mobile": [
+                              "Montserrat"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "label-bold": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "display-xl": [
+                              "Montserrat"
+                      ],
+                      "headline-lg": [
+                              "Montserrat"
+                      ],
+                      "caption": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-xl-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-xl": [
+                              "64px",
+                              {
+                                      "lineHeight": "72px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+      </script>
+<style>
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant shadow-sm transition-all duration-300 ease-in-out">
+<div class="font-headline-md text-headline-md tracking-tighter font-black text-primary">VIING</div>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container px-3 py-2 rounded-DEFAULT font-label-bold text-label-bold duration-300 ease-in-out" href="#">Products</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-bold text-label-bold" href="#">Case Studies</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container px-3 py-2 rounded-DEFAULT font-label-bold text-label-bold duration-300 ease-in-out" href="#">Sustainability</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container px-3 py-2 rounded-DEFAULT font-label-bold text-label-bold duration-300 ease-in-out" href="#">Quality Control</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container px-3 py-2 rounded-DEFAULT font-label-bold text-label-bold duration-300 ease-in-out" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container px-3 py-2 rounded-DEFAULT font-label-bold text-label-bold duration-300 ease-in-out" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-DEFAULT hover:bg-tertiary-container transition-colors hidden md:block">Request Quote</button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center bg-no-repeat" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLs-Nt5zoTQ6ee3EfK0F0DtazZkLV9-GF9DMsNqs8PLtZmzJ905f-FVnMtc8-dVveKJBKzm7Y5o6j3nFYFpJ2vzu2Jy_p2025uCUMmbuydO8c-ar83oJJne3NpwcjFo7peJM5gUJkRimyJID70YfwDYvqGovzUaTtObiRPw1BgoIhF_1hA5xpSRrSsrR0qMbf4UMfKAuOcw1ifqkaY7YwO-akc2ln7VLiDNbQ55YCoHODSi8Uv2_cG3Y8g');"></div>
+<div class="absolute inset-0 bg-primary/60 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 text-center px-gutter max-w-4xl mx-auto fade-up visible">
+<span class="text-secondary-fixed font-label-bold text-label-bold uppercase tracking-widest mb-4 block">Manufacturing Excellence</span>
+<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-surface-container-lowest mb-6">Реализованные проекты</h1>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mx-auto">Premium Manufacturing &amp; Private Label Solutions from China. Providing Factory-Direct Quality, OEM/ODM services, and End-to-End Logistics for global brands.</p>
+</div>
+</section>
+<!-- Projects Grid -->
+<section class="py-section-mobile md:py-section-desktop px-gutter max-w-max-width mx-margin-desktop">
+<div class="flex flex-col gap-24">
+<!-- Project 1: Wet Wipes -->
+<div class="flex flex-col md:flex-row gap-12 items-center fade-up group cursor-pointer project-card visible">
+<div class="w-full md:w-1/2 relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant shadow-sm group-hover:shadow-md transition-shadow duration-300 aspect-[1.37]">
+<img alt="Влажные салфетки" class="w-full h-full object-cover transition-transform duration-700 ease-out project-image" src="https://lh3.googleusercontent.com/aida/AP1WRLuvEMdr8waM8yWD8_v0szaUZ25a42W2lw0wEsO6vLBwMuGlJLRapL9Tmg3hEo1Cx6tIIkzRf7K7sRHm9e1fgXhchgG3cyF3PdCczcD1puViJvsfOigTHHvUkXhIS-f1Y8umkx_xBcR3j-Fr9fDHotSHNUew2pPkih88gFhcH9dyzid4Jn0f79E99_YjDboTvwKNAK3BrB9aBGGIMojQ4hLKLuLj-733PwyIttjQRNtT9mUVUikf07Jzg8I"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 transition-opacity duration-300 project-overlay flex items-center justify-center">
+<span class="bg-surface-container-lowest/90 text-primary px-6 py-3 rounded-full font-label-bold text-label-bold flex items-center gap-2">
+                                View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col items-start">
+<div class="flex gap-3 mb-4">
+<span class="px-3 py-1 rounded-DEFAULT border border-secondary text-secondary font-caption text-caption uppercase tracking-wider">Hygienic</span>
+<span class="px-3 py-1 rounded-DEFAULT border border-outline text-on-surface-variant font-caption text-caption uppercase tracking-wider">Consumer</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Влажные салфетки</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-md">High-capacity manufacturing of premium wet wipes with uncompromising quality control. Engineered for maximum moisture retention and clinical cleanliness. Ideal for private label and OEM/ODM healthcare sectors.</p>
+<div class="w-full border-t border-outline-variant pt-6">
+<div class="grid grid-cols-2 gap-6">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block mb-1">Material</span>
+<span class="font-label-bold text-label-bold text-on-surface">Spunlace Non-woven</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block mb-1">Scale</span>
+<span class="font-label-bold text-label-bold text-on-surface">1M+ Units/Month</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2: Stretch Film -->
+<div class="flex flex-col md:flex-row-reverse gap-12 items-center fade-up group cursor-pointer project-card visible">
+<div class="w-full md:w-1/2 relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant shadow-sm group-hover:shadow-md transition-shadow duration-300 aspect-[1.37]">
+<img alt="Стретч-пленка" class="w-full h-full object-cover transition-transform duration-700 ease-out project-image" src="https://lh3.googleusercontent.com/aida/AP1WRLvfZeeDKMsMJm2mUKuo0BuWbTq7kV3aqRxvpX6wW_QfNB81SGBCVsXFuIBhw6Er7lrJ0pZpBilCRaRaHdkHhXlmw5I4HbS8uGSLPNJc8lmjhnrdaEsfS6rJjk16taAK68nuFN4ZsNYfiyUWZwgqQMeftuhpYhaS8bBPAXWP7sKqgEPnEHnt1BDhre7DvAztmONxBswJMHhpPMjGQ5Z1EBYN9pWkUN9sWOEsHRIm3-ITtDMHgm1vH3RYl-8"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 transition-opacity duration-300 project-overlay flex items-center justify-center">
+<span class="bg-surface-container-lowest/90 text-primary px-6 py-3 rounded-full font-label-bold text-label-bold flex items-center gap-2">
+                                View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col items-start md:pl-12">
+<div class="flex gap-3 mb-4">
+<span class="px-3 py-1 rounded-DEFAULT border border-on-tertiary-container text-on-tertiary-container font-caption text-caption uppercase tracking-wider">Industrial</span>
+<span class="px-3 py-1 rounded-DEFAULT border border-outline text-on-surface-variant font-caption text-caption uppercase tracking-wider">Logistics</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Стретч-пленка</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-md">Industrial-grade stretch film focused on extreme durability and cost-efficiency for wholesale distribution. Designed for robust pallet wrapping and secure global transit with factory-direct pricing.</p>
+<div class="w-full border-t border-outline-variant pt-6">
+<div class="grid grid-cols-2 gap-6">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block mb-1">Thickness</span>
+<span class="font-label-bold text-label-bold text-on-surface">17 - 23 Microns</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block mb-1">Elongation</span>
+<span class="font-label-bold text-label-bold text-on-surface">Up to 300%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 3: Food Cling Film -->
+<div class="flex flex-col md:flex-row gap-12 items-center fade-up group cursor-pointer project-card visible">
+<div class="w-full md:w-1/2 relative overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant shadow-sm group-hover:shadow-md transition-shadow duration-300 aspect-[1.37]">
+<img alt="Пищевая пленка" class="w-full h-full object-cover transition-transform duration-700 ease-out project-image" src="https://lh3.googleusercontent.com/aida/AP1WRLsvBcJY--mnxsKkoNbh6GEPtcz1dxFASWtDrPUE5SsAUedDPhLsvTg8ZecD-Q6OVTXbuP7Vk6u-IUwx5L-JwsEu_57XwzVSbZmKoYe_QerA1GpLL5tqytozL67Ud3Xt0wwsscqHah2BBAa50RyP_HXsexnIxy7Mp2B9hChZuL30zxOzsZ4P_OYR-XGmzPpdNQY1KQoup5w8m65ESLtO8Mea5qA7th1UIozn39SqT6PDZC-DZh2AsIfWPhg"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 transition-opacity duration-300 project-overlay flex items-center justify-center">
+<span class="bg-surface-container-lowest/90 text-primary px-6 py-3 rounded-full font-label-bold text-label-bold flex items-center gap-2">
+                                View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col items-start">
+<div class="flex gap-3 mb-4">
+<span class="px-3 py-1 rounded-DEFAULT border border-secondary text-secondary font-caption text-caption uppercase tracking-wider">Food Grade</span>
+<span class="px-3 py-1 rounded-DEFAULT border border-outline text-on-surface-variant font-caption text-caption uppercase tracking-wider">Retail-Ready</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Пищевая пленка</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-md">Retail-ready food cling film manufactured to strict safety standards. Ultra-clear, food-safe packaging offering exceptional barrier protection and shelf appeal for private label catering and retail brands.</p>
+<div class="w-full border-t border-outline-variant pt-6">
+<div class="grid grid-cols-2 gap-6">
+<div>
+<span class="font-caption text-caption text-on-surface-variant block mb-1">Certification</span>
+<span class="font-label-bold text-label-bold text-on-surface">FDA &amp; EU Compliant</span>
+</div>
+<div>
+<span class="font-caption text-caption text-on-surface-variant block mb-1">Clarity</span>
+<span class="font-label-bold text-label-bold text-on-surface">High-Gloss Transparent</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container py-section-mobile md:py-section-desktop border-t border-outline-variant fade-up visible">
+<div class="max-w-max-width mx-margin-desktop px-gutter text-center">
+<h2 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-primary mb-6">Let's Discuss Your Project</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Partner with VIING for precision manufacturing, private label solutions, and unparalleled quality control. Elevate your product line today.</p>
+<button class="bg-primary text-on-primary font-label-bold text-label-bold px-8 py-4 h-14 rounded-DEFAULT hover:bg-tertiary-container transition-colors shadow-sm inline-flex items-center gap-2">
+                    Contact Procurement
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-desktop px-gutter flex flex-col md:flex-row justify-between items-center max-w-max-width mx-margin-desktop bg-surface-container-high border-t border-outline-variant">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-6 md:mb-0">VIING</div>
+<div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">ISO Certifications</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Global Distribution</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant text-center md:text-right">
+            © 2024 VIING Manufacturing Solutions. All Rights Reserved.
+        </div>
+</footer>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body></html>

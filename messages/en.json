@@ -11,6 +11,7 @@
   },
   "nav": {
     "home": "Home",
+    "cases": "Cases",
     "catalog": "Catalog",
     "brand": "Private Label",
     "services": "Services",
@@ -151,6 +152,54 @@
     ],
     "ctaTitle": "Ready to discuss your project?",
     "ctaSubtitle": "Leave a request — we'll curate the range and send an offer for your volume."
+  },
+  "cases": {
+    "metaTitle": "Case studies",
+    "metaDescription": "VIING case studies: private label manufacturing, OEM/ODM, quality control and end-to-end logistics. Wet wipes, stretch film, food cling film.",
+    "eyebrow": "Manufacturing excellence",
+    "title": "Case studies",
+    "subtitle": "Premium manufacturing and private label solutions from China: factory-direct quality, OEM/ODM services and end-to-end logistics for global brands.",
+    "projects": [
+      {
+        "tag": "Hygiene",
+        "title": "Wet wipes",
+        "desc": "We developed the formula, packaging design and manufactured the product turnkey. Soft, flushable wipes made from 99% water. Alcohol-free, PVC-free.",
+        "quantityLabel": "Produced",
+        "quantityValue": "1,250,000+ packs",
+        "specs": [
+          { "label": "Format", "value": "40 sheets" },
+          { "label": "Material", "value": "Spunlace Non-woven" },
+          { "label": "Markets", "value": "UZ, KZ, KG" }
+        ]
+      },
+      {
+        "tag": "Industrial",
+        "title": "Stretch film",
+        "desc": "High-strength stretch film for palletizing and securing loads. Stable elasticity, high durability and excellent protection in transit.",
+        "quantityLabel": "Delivered",
+        "quantityValue": "850+ tons",
+        "specs": [
+          { "label": "Thickness", "value": "17 – 23 microns" },
+          { "label": "Elongation", "value": "Up to 300%" },
+          { "label": "Roll width", "value": "500 mm" }
+        ]
+      },
+      {
+        "tag": "Food packaging",
+        "title": "Food cling film",
+        "desc": "Food-grade PVC cling film for reliable storage and packaging of products. Safe composition, excellent clarity and ease of use.",
+        "quantityLabel": "Produced",
+        "quantityValue": "2,600,000+ rolls",
+        "specs": [
+          { "label": "Certification", "value": "FDA, EU Compliant" },
+          { "label": "Properties", "value": "High-Gloss Transparent" },
+          { "label": "Use", "value": "HoReCa, Retail, Household" }
+        ]
+      }
+    ],
+    "ctaTitle": "Let's discuss your project",
+    "ctaSubtitle": "Partner with VIING for precision manufacturing, private label solutions and unparalleled quality control. Elevate your product line today.",
+    "ctaButton": "Contact us"
   },
   "cta": {
     "title": "Need products from China?",

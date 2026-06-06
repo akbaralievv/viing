@@ -42,7 +42,7 @@ export default async function AboutPage({
   return (
     <main id="main" className="pb-20">
       {/* Hero — background image, centered text */}
-      <section className="relative flex flex-col min-h-[600px] max-h-[800px] overflow-hidden bg-primary">
+      <section className="relative flex h-[100svh] min-h-[600px] max-h-[900px] flex-col overflow-hidden bg-primary">
         <Image
           src="/about/about.png"
           alt=""
@@ -51,10 +51,10 @@ export default async function AboutPage({
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div aria-hidden="true" className="absolute inset-0 bg-primary/70" />
+        <div aria-hidden="true" className="absolute inset-0 bg-black/70" />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-b from-primary/40 via-transparent to-primary/50"
+          className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50"
         />
 
         <div className="relative z-10 container mx-auto px-6 pt-24 md:pt-28">

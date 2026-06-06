@@ -11,6 +11,7 @@
   },
   "nav": {
     "home": "Bosh sahifa",
+    "cases": "Loyihalar",
     "catalog": "Tovarlar katalogi",
     "brand": "Brend ostida ishlab chiqarish",
     "services": "Xizmatlar",
@@ -151,6 +152,54 @@
     ],
     "ctaTitle": "Loyihangizni muhokama qilamizmi?",
     "ctaSubtitle": "So'rov qoldiring — assortimentni tanlab, hajmingizga mos taklif yuboramiz."
+  },
+  "cases": {
+    "metaTitle": "Amalga oshirilgan loyihalar",
+    "metaDescription": "VIING loyihalari: o'z brendi ostida ishlab chiqarish, OEM/ODM, sifat nazorati va kalit topshirish asosida logistika. Nam salfetkalar, strech plyonka, oziq-ovqat plyonkasi.",
+    "eyebrow": "Ishlab chiqarish mukammalligi",
+    "title": "Amalga oshirilgan loyihalar",
+    "subtitle": "Xitoydan premium ishlab chiqarish va o'z brendi ostidagi yechimlar: to'g'ridan-to'g'ri zavod sifati, OEM/ODM xizmatlari va global brendlar uchun kalit topshirish asosida logistika.",
+    "projects": [
+      {
+        "tag": "Gigiyena",
+        "title": "Nam salfetkalar",
+        "desc": "Retsept, qadoq dizaynini ishlab chiqdik va mahsulotni kalit topshirish asosida ishlab chiqardik. 99% suvdan tayyorlangan yumshoq, yuviladigan salfetkalar. Spirtsiz, PVXsiz.",
+        "quantityLabel": "Ishlab chiqarilgan",
+        "quantityValue": "1 250 000+ paket",
+        "specs": [
+          { "label": "Format", "value": "40 varaq" },
+          { "label": "Material", "value": "Spunlace Non-woven" },
+          { "label": "Bozorlar", "value": "UZ, KZ, KG" }
+        ]
+      },
+      {
+        "tag": "Sanoat",
+        "title": "Strech plyonka",
+        "desc": "Yuklarni palletlash va mahkamlash uchun yuqori mustahkamlikdagi strech plyonka. Barqaror elastiklik, yuqori mustahkamlik va tashishda ajoyib himoya.",
+        "quantityLabel": "Yetkazilgan",
+        "quantityValue": "850+ tonna",
+        "specs": [
+          { "label": "Qalinligi", "value": "17 – 23 mikron" },
+          { "label": "Cho'zilishi", "value": "300% gacha" },
+          { "label": "Rulon eni", "value": "500 mm" }
+        ]
+      },
+      {
+        "tag": "Oziq-ovqat qadog'i",
+        "title": "Oziq-ovqat plyonkasi",
+        "desc": "Mahsulotlarni ishonchli saqlash va qadoqlash uchun oziq-ovqat PVX plyonkasi. Xavfsiz tarkib, ajoyib shaffoflik va qulay foydalanish.",
+        "quantityLabel": "Ishlab chiqarilgan",
+        "quantityValue": "2 600 000+ rulon",
+        "specs": [
+          { "label": "Sertifikatsiya", "value": "FDA, EU mos" },
+          { "label": "Xususiyatlar", "value": "Yuqori yaltiroq" },
+          { "label": "Qo'llanilishi", "value": "HoReCa, Retail, Household" }
+        ]
+      }
+    ],
+    "ctaTitle": "Loyihangizni muhokama qilamiz",
+    "ctaSubtitle": "Aniq ishlab chiqarish, o'z brendi ostidagi yechimlar va beqiyos sifat nazorati uchun VIING bilan hamkorlik qiling. Mahsulot liniyangizni yangi bosqichga ko'taring.",
+    "ctaButton": "Bog'lanish"
   },
   "cta": {
     "title": "Xitoydan mahsulot kerakmi?",

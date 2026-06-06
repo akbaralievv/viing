@@ -53,7 +53,7 @@ export default async function BrandPage({
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent to-[60%]"
+          className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent to-[60%]"
         />
 
         <div className="relative z-10 container mx-auto px-4 pt-24 md:pt-28">
