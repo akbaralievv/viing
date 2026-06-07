@@ -41,10 +41,22 @@
     "ctaOffer": "Get an offer",
     "imageAlt": "VIING product range",
     "stats": {
-      "products": { "value": "10,000+", "label": "products in the catalog" },
-      "suppliers": { "value": "500+", "label": "verified manufacturers" },
-      "experience": { "value": "8+ years", "label": "of experience with China" },
-      "delivery": { "value": "Delivery", "label": "across Uzbekistan and the CIS" }
+      "products": {
+        "value": "10,000+",
+        "label": "products in the catalog"
+      },
+      "suppliers": {
+        "value": "500+",
+        "label": "verified manufacturers"
+      },
+      "experience": {
+        "value": "8+ years",
+        "label": "of experience with China"
+      },
+      "delivery": {
+        "value": "Delivery",
+        "label": "across Uzbekistan and the CIS"
+      }
     }
   },
   "categories": {
@@ -134,21 +146,54 @@
     "p2": "We handle the entire process: from finding verified suppliers and quality control to manufacturing, branding and delivery anywhere in the world.",
     "ctaButton": "Get an offer",
     "stats": [
-      { "value": "10+ years", "label": "in wholesale supply and manufacturing" },
-      { "value": "1000+", "label": "happy clients worldwide" },
-      { "value": "5000+", "label": "products in the catalog for any request" },
-      { "value": "30+ countries", "label": "supply and partner network coverage" },
-      { "value": "100%", "label": "quality control at every stage" }
+      {
+        "value": "10+ years",
+        "label": "in wholesale supply and manufacturing"
+      },
+      {
+        "value": "1000+",
+        "label": "happy clients worldwide"
+      },
+      {
+        "value": "5000+",
+        "label": "products in the catalog for any request"
+      },
+      {
+        "value": "30+ countries",
+        "label": "supply and partner network coverage"
+      },
+      {
+        "value": "100%",
+        "label": "quality control at every stage"
+      }
     ],
     "processEyebrow": "How we work",
     "processTitle": "A full turnkey cycle",
     "process": [
-      { "title": "Analysis & sourcing", "description": "We study your goal and pick the best product and factory options." },
-      { "title": "Supplier vetting", "description": "We audit factories, verify documents and production capacity." },
-      { "title": "Samples & approval", "description": "We get samples, test quality and agree on every detail and the packaging." },
-      { "title": "Production & control", "description": "We arrange manufacturing and run multi-stage quality control." },
-      { "title": "Branding & packaging", "description": "We apply your brand and prepare packaging and accompanying materials." },
-      { "title": "Delivery", "description": "We arrange delivery anywhere in the world within optimal timelines." }
+      {
+        "title": "Analysis & sourcing",
+        "description": "We study your goal and pick the best product and factory options."
+      },
+      {
+        "title": "Supplier vetting",
+        "description": "We audit factories, verify documents and production capacity."
+      },
+      {
+        "title": "Samples & approval",
+        "description": "We get samples, test quality and agree on every detail and the packaging."
+      },
+      {
+        "title": "Production & control",
+        "description": "We arrange manufacturing and run multi-stage quality control."
+      },
+      {
+        "title": "Branding & packaging",
+        "description": "We apply your brand and prepare packaging and accompanying materials."
+      },
+      {
+        "title": "Delivery",
+        "description": "We arrange delivery anywhere in the world within optimal timelines."
+      }
     ],
     "ctaTitle": "Ready to discuss your project?",
     "ctaSubtitle": "Leave a request — we'll curate the range and send an offer for your volume."
@@ -168,9 +213,18 @@
         "quantityLabel": "Produced",
         "quantityValue": "1,250,000+ packs",
         "specs": [
-          { "label": "Format", "value": "40 sheets" },
-          { "label": "Material", "value": "Spunlace Non-woven" },
-          { "label": "Markets", "value": "UZ, KZ, KG" }
+          {
+            "label": "Format",
+            "value": "40 sheets"
+          },
+          {
+            "label": "Material",
+            "value": "Spunlace Non-woven"
+          },
+          {
+            "label": "Markets",
+            "value": "UZ, KZ, KG"
+          }
         ]
       },
       {
@@ -180,9 +234,18 @@
         "quantityLabel": "Delivered",
         "quantityValue": "850+ tons",
         "specs": [
-          { "label": "Roll width", "value": "45 cm" },
-          { "label": "Length", "value": "200 m" },
-          { "label": "Thickness", "value": "50 microns" }
+          {
+            "label": "Roll width",
+            "value": "45 cm"
+          },
+          {
+            "label": "Length",
+            "value": "200 m"
+          },
+          {
+            "label": "Thickness",
+            "value": "50 microns"
+          }
         ]
       },
       {
@@ -192,9 +255,18 @@
         "quantityLabel": "Produced",
         "quantityValue": "2,600,000+ rolls",
         "specs": [
-          { "label": "Certification", "value": "FDA, EU Compliant" },
-          { "label": "Properties", "value": "High-Gloss Transparent" },
-          { "label": "Use", "value": "HoReCa, Retail, Household" }
+          {
+            "label": "Certification",
+            "value": "FDA, EU Compliant"
+          },
+          {
+            "label": "Properties",
+            "value": "High-Gloss Transparent"
+          },
+          {
+            "label": "Use",
+            "value": "HoReCa, Retail, Household"
+          }
         ]
       }
     ],
@@ -259,82 +331,146 @@
       "wet-wipes": {
         "name": "Wet wipes with a lid",
         "desc": "Wet wipes for hands and surfaces with a reusable flip lid. Soft non-woven material that leaves no streaks.",
-        "specs": ["Per pack: 100 pcs", "Material: spunlace 50 g/m²", "Minimum order: from 1,000 packs"]
+        "specs": [
+          "Per pack: 100 pcs",
+          "Material: spunlace 50 g/m²",
+          "Minimum order: from 1,000 packs"
+        ]
       },
       "paper-towels": {
         "name": "Paper towels",
         "desc": "Two-ply paper towels in rolls for home, office and venues. High absorbency and a dense roll.",
-        "specs": ["Plies: 2", "Roll length: 20 m", "Minimum order: from 500 packs"]
+        "specs": [
+          "Plies: 2",
+          "Roll length: 20 m",
+          "Minimum order: from 500 packs"
+        ]
       },
       "liquid-soap": {
         "name": "Liquid soap, canister",
         "desc": "Liquid hand soap in an economical canister. Neutral pH, suitable for refilling dispensers.",
-        "specs": ["Volume: 5 L", "Scent: neutral", "Minimum order: from 200 pcs"]
+        "specs": [
+          "Volume: 5 L",
+          "Scent: neutral",
+          "Minimum order: from 200 pcs"
+        ]
       },
       "hand-sanitizer": {
         "name": "Hand sanitizer",
         "desc": "Alcohol-based hand sanitizer gel. Dries quickly; emollients prevent dry skin.",
-        "specs": ["Volume: 500 ml", "Alcohol: 70%", "Minimum order: from 300 pcs"]
+        "specs": [
+          "Volume: 500 ml",
+          "Alcohol: 70%",
+          "Minimum order: from 300 pcs"
+        ]
       },
       "pvc-food-film": {
         "name": "PVC food film",
         "desc": "Transparent PVC food film for wrapping products. Clings tightly to surfaces, suitable for manual and automatic packing.",
-        "specs": ["Size: 30 cm × 300 m", "Material: PVC", "Minimum order: from 500 rolls"]
+        "specs": [
+          "Size: 30 cm × 300 m",
+          "Material: PVC",
+          "Minimum order: from 500 rolls"
+        ]
       },
       "stretch-film-hand": {
         "name": "Hand stretch film",
         "desc": "Hand stretch film for pallet and cargo wrapping. High stretch and tear resistance.",
-        "specs": ["Width: 500 mm", "Thickness: 23 µm", "Minimum order: from 200 rolls"]
+        "specs": [
+          "Width: 500 mm",
+          "Thickness: 23 µm",
+          "Minimum order: from 200 rolls"
+        ]
       },
       "stretch-film-machine": {
         "name": "Machine stretch film",
         "desc": "Machine stretch film for automatic pallet wrapping. Stable tension and economical usage.",
-        "specs": ["Width: 500 mm", "Roll length: 1,500 m", "Minimum order: from 100 rolls"]
+        "specs": [
+          "Width: 500 mm",
+          "Roll length: 1,500 m",
+          "Minimum order: from 100 rolls"
+        ]
       },
       "packing-tape": {
         "name": "Packing tape",
         "desc": "BOPP adhesive packing tape. Secure box sealing, available clear and brown.",
-        "specs": ["Size: 48 mm × 100 m", "Base: BOPP", "Minimum order: from 1,000 pcs"]
+        "specs": [
+          "Size: 48 mm × 100 m",
+          "Base: BOPP",
+          "Minimum order: from 1,000 pcs"
+        ]
       },
       "trash-bags": {
         "name": "Trash bags 120 L",
         "desc": "Heavy-duty high-density trash bags. Won't tear under load, convenient for home and business.",
-        "specs": ["Volume: 120 L", "Per roll: 10 pcs", "Minimum order: from 500 packs"]
+        "specs": [
+          "Volume: 120 L",
+          "Per roll: 10 pcs",
+          "Minimum order: from 500 packs"
+        ]
       },
       "cleaning-set": {
         "name": "Youreko cleaning set",
         "desc": "A cleaning kit: a mop with a wringer, a bucket and replaceable microfiber pads. Ergonomic handle.",
-        "specs": ["Includes: mop + bucket", "Pad: microfiber", "Minimum order: from 100 pcs"]
+        "specs": [
+          "Includes: mop + bucket",
+          "Pad: microfiber",
+          "Minimum order: from 100 pcs"
+        ]
       },
       "dish-sponges": {
         "name": "Dish sponges",
         "desc": "Foam sponges with an abrasive layer for washing dishes. Won't scratch surfaces and last long.",
-        "specs": ["Per pack: 10 pcs", "Size: 95 × 65 mm", "Minimum order: from 1,000 packs"]
+        "specs": [
+          "Per pack: 10 pcs",
+          "Size: 95 × 65 mm",
+          "Minimum order: from 1,000 packs"
+        ]
       },
       "household-gloves": {
         "name": "Household gloves",
         "desc": "Latex household gloves with an inner coating. Protect hands during cleaning and contact with water.",
-        "specs": ["Material: latex", "Sizes: S–XL", "Minimum order: from 500 pairs"]
+        "specs": [
+          "Material: latex",
+          "Sizes: S–XL",
+          "Minimum order: from 500 pairs"
+        ]
       },
       "paper-cups": {
         "name": "Single-wall paper cups",
         "desc": "Disposable paper cups for hot and cold drinks. Food-grade laminated board, ready for logo printing.",
-        "specs": ["Volume: 250 ml", "Per pack: 50 pcs", "Minimum order: from 1,000 pcs"]
+        "specs": [
+          "Volume: 250 ml",
+          "Per pack: 50 pcs",
+          "Minimum order: from 1,000 pcs"
+        ]
       },
       "food-containers": {
         "name": "Food containers",
         "desc": "Disposable containers for delivery and packing ready meals. Airtight lid, withstand hot food.",
-        "specs": ["Volume: 500 ml", "Material: PP", "Minimum order: from 1,000 pcs"]
+        "specs": [
+          "Volume: 500 ml",
+          "Material: PP",
+          "Minimum order: from 1,000 pcs"
+        ]
       },
       "wooden-cutlery": {
         "name": "Wooden cutlery",
         "desc": "Eco-friendly disposable birch cutlery: forks, spoons, knives. Smooth, splinter-free finish.",
-        "specs": ["Set: fork / spoon / knife", "Material: birch", "Minimum order: from 2,000 pcs"]
+        "specs": [
+          "Set: fork / spoon / knife",
+          "Material: birch",
+          "Minimum order: from 2,000 pcs"
+        ]
       },
       "dispenser-napkins": {
         "name": "Dispenser napkins",
         "desc": "Paper napkins for tabletop dispensers. Suitable for cafés, restaurants and food courts.",
-        "specs": ["Per pack: 250 pcs", "Plies: 1", "Minimum order: from 500 packs"]
+        "specs": [
+          "Per pack: 250 pcs",
+          "Plies: 1",
+          "Minimum order: from 500 packs"
+        ]
       }
     }
   },
@@ -343,9 +479,18 @@
     "addressLocality": "Tashkent",
     "hoursTitle": "Working hours",
     "hours": [
-      { "day": "Monday — Friday", "value": "09:00 — 18:00" },
-      { "day": "Saturday", "value": "10:00 — 15:00" },
-      { "day": "Sunday", "value": "Closed" }
+      {
+        "day": "Monday — Friday",
+        "value": "09:00 — 18:00"
+      },
+      {
+        "day": "Saturday",
+        "value": "10:00 — 15:00"
+      },
+      {
+        "day": "Sunday",
+        "value": "Closed"
+      }
     ]
   },
   "form": {
@@ -434,5 +579,214 @@
     "section3Body": "The Company makes reasonable efforts to keep information up to date but does not guarantee its completeness and accuracy in all cases.",
     "section4Title": "4. Contacts",
     "section4Body": "For questions about the terms of use write to"
+  },
+  "wetWipes": {
+    "back": "Back",
+    "backAria": "Back to projects",
+    "hero": {
+      "tagline": "Premium-quality wet toilet paper",
+      "benefits": [
+        "99% water",
+        "Alcohol-free",
+        "Soft",
+        "PVC-free"
+      ]
+    },
+    "lineup": {
+      "heading": "Product lineup",
+      "sheets": "sheets",
+      "items": [
+        "Compact pack for everyday comfort.",
+        "The optimal format for the whole family.",
+        "A cost-effective format for long-term use."
+      ]
+    },
+    "purity": {
+      "heading": "Purity you can feel",
+      "left": [
+        {
+          "title": "99% water",
+          "desc": "A gentle formula based on purified water"
+        },
+        {
+          "title": "Alcohol-free",
+          "desc": "Contains no alcohol, safe for sensitive skin"
+        },
+        {
+          "title": "Soft",
+          "desc": "Gentle and pleasant to the touch, suitable for the whole family"
+        }
+      ],
+      "right": [
+        {
+          "title": "Flushable",
+          "desc": "Can be flushed down the toilet, dissolves in water"
+        },
+        {
+          "title": "PVC-free",
+          "desc": "Contain no PVC, safe for you and the environment"
+        },
+        {
+          "title": "Halal Certified",
+          "desc": "Certified to Halal standards"
+        }
+      ]
+    },
+    "design": {
+      "heading": "Design and packaging",
+      "items": [
+        {
+          "title": "Design development",
+          "desc": "A unique design inspired by purity and nature."
+        },
+        {
+          "title": "High-quality printing",
+          "desc": "Modern printing technologies deliver vivid colors and crisp detail."
+        },
+        {
+          "title": "Premium materials",
+          "desc": "Durable packaging with a valve keeps moisture and freshness for longer."
+        },
+        {
+          "title": "Transport packaging",
+          "desc": "Reliable boxes for safe delivery anywhere in the world."
+        }
+      ]
+    },
+    "specs": {
+      "heading": "Product specifications",
+      "rows": [
+        {
+          "label": "Sheet size",
+          "value": "150 × 200 mm"
+        },
+        {
+          "label": "Web material",
+          "value": "Non-woven fabric (wood cellulose / viscose)"
+        },
+        {
+          "label": "Composition (INCI)",
+          "value": "Aqua, Citric Acid, Sodium Citrate"
+        },
+        {
+          "label": "Number of sheets",
+          "value": "40 / 80 / 120 pcs"
+        },
+        {
+          "label": "Shelf life",
+          "value": "3 years"
+        },
+        {
+          "label": "Storage conditions",
+          "value": "Store at room temperature, avoid direct sunlight."
+        }
+      ],
+      "callouts": [
+        "Soft texture and embossing for gentle cleansing.",
+        "A reliable valve keeps moisture and freshness."
+      ]
+    },
+    "cta": {
+      "heading": "Ready to launch your brand?",
+      "desc": "VIING is your reliable partner in creating world-class, high-quality products.",
+      "button": "Get in touch"
+    },
+    "meta": {
+      "title": "TOZA KO'ZA — premium-quality wet toilet paper",
+      "description": "TOZA KO'ZA wet toilet paper: 99% water, alcohol-free, soft, flushable, Halal Certified. Private-label manufacturing by VIING."
+    }
+  },
+  "stretchFilm": {
+    "back": "Back",
+    "backAria": "Back to projects",
+    "hero": {
+      "desc": "Industrial stretch film for secure fastening, protection, and safe transportation of cargo.",
+      "features": [
+        "Strength\nand reliability",
+        "High stretch\nup to 300%"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Strength",
+        "desc": "Securely holds cargo on the pallet"
+      },
+      {
+        "title": "Stretch",
+        "desc": "High elasticity up to 300%"
+      },
+      {
+        "title": "Fixation",
+        "desc": "Stable and reliable fixation"
+      },
+      {
+        "title": "Moisture protection",
+        "desc": "Prevents moisture, dust, and dirt from getting in"
+      },
+      {
+        "title": "Cargo protection",
+        "desc": "Preserves the appearance and quality of products"
+      },
+      {
+        "title": "Cost efficiency",
+        "desc": "Reduces material consumption and packaging costs"
+      }
+    ],
+    "specs": {
+      "sizeTitle": "Film size",
+      "dims": [
+        {
+          "value": "45 cm",
+          "label": "width"
+        },
+        {
+          "value": "200 m",
+          "label": "length"
+        },
+        {
+          "value": "50 µm",
+          "label": "thickness"
+        }
+      ],
+      "features": [
+        {
+          "title": "High transparency",
+          "desc": "Enables visual control without removing the packaging."
+        },
+        {
+          "title": "Puncture resistance",
+          "desc": "Reliable protection from damage during transportation."
+        },
+        {
+          "title": "Manual and machine winding",
+          "desc": "Suitable for all types of pallet wrappers."
+        },
+        {
+          "title": "Moisture and dust protection",
+          "desc": "Preserves the appearance and quality of products."
+        }
+      ]
+    },
+    "production": {
+      "heading": "Modern production",
+      "subtitle": "A full stretch-film production cycle with quality control at every stage.",
+      "steps": [
+        "Extrusion",
+        "Cooling",
+        "Winding",
+        "Packaging",
+        "Warehousing",
+        "Logistics"
+      ]
+    },
+    "cta": {
+      "heading": "Ready to launch your brand?",
+      "desc": "VIING is your reliable partner in creating world-class, high-quality products.",
+      "button": "Discuss your project"
+    },
+    "meta": {
+      "title": "GILAM PLYÖNKASI SANOAT — industrial stretch film",
+      "description": "Industrial stretch film for secure fastening, protection and safe cargo transportation. 45 cm × 200 m × 50 µm. Private-label manufacturing by VIING."
+    }
   }
 }

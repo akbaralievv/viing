@@ -1,31 +1,17 @@
+import { useTranslations } from "next-intl";
 import { ZoomableImage } from "@/components/zoomable-image";
 
-type DesignCard = { image: string; title: string; desc: string };
-
-const CARDS: DesignCard[] = [
-  {
-    image: "/tozaKoza/design.png",
-    title: "Разработка дизайна",
-    desc: "Уникальный дизайн, вдохновлённый чистотой и природой.",
-  },
-  {
-    image: "/tozaKoza/print.jpg",
-    title: "Печать высокого качества",
-    desc: "Современные технологии печати обеспечивают яркие цвета и чёткость деталей.",
-  },
-  {
-    image: "/tozaKoza/valve.jpg",
-    title: "Премиальные материалы",
-    desc: "Прочная упаковка с клапаном сохраняет влагу и свежесть надолго.",
-  },
-  {
-    image: "/tozaKoza/box.jpg",
-    title: "Транспортная упаковка",
-    desc: "Надёжные коробки для безопасной доставки в любую точку мира.",
-  },
+const IMAGES = [
+  "/tozaKoza/design.png",
+  "/tozaKoza/print.jpg",
+  "/tozaKoza/valve.jpg",
+  "/tozaKoza/box.jpg",
 ];
 
 export function TozaKozaDesign() {
+  const t = useTranslations("wetWipes");
+  const items = t.raw("design.items") as { title: string; desc: string }[];
+
   return (
     <section className="bg-[#FDFBF7] py-14 md:py-20">
       <div className="container mx-auto px-4">
@@ -34,18 +20,18 @@ export function TozaKozaDesign() {
           <span aria-hidden="true" className="text-lg text-[#B89A56] md:text-2xl">
             ✦
           </span>
-          Дизайн и упаковка
+          {t("design.heading")}
           <span aria-hidden="true" className="text-lg text-[#B89A56] md:text-2xl">
             ✦
           </span>
         </h2>
 
         <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-9 sm:grid-cols-2 md:mt-14 lg:grid-cols-4">
-          {CARDS.map((c) => (
+          {items.map((c, i) => (
             <article key={c.title}>
               <div className="overflow-hidden rounded-2xl border border-[#E6D9C2]/70 bg-gradient-to-br from-[#FFFDF9] to-[#F2EBDD] shadow-[0_10px_30px_rgba(0,0,0,0.04),0_2px_8px_rgba(0,0,0,0.02)]">
                 <ZoomableImage
-                  src={c.image}
+                  src={IMAGES[i]}
                   alt={c.title}
                   className="aspect-[16/10] w-full object-cover"
                 />

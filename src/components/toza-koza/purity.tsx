@@ -1,43 +1,11 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 type Feature = { icon: string; title: string; desc: string };
 
-const LEFT: Feature[] = [
-  {
-    icon: "full-water.svg",
-    title: "99% воды",
-    desc: "Мягкая формула на основе очищенной воды",
-  },
-  {
-    icon: "no_alcohol.svg",
-    title: "Без спирта",
-    desc: "Не содержит спирта, безопасна для чувствительной кожи",
-  },
-  {
-    icon: "textile.svg",
-    title: "Мягкие",
-    desc: "Нежные и приятные на ощупь, подходят для всей семьи",
-  },
-];
-
-const RIGHT: Feature[] = [
-  {
-    icon: "washable.svg",
-    title: "Смываемые",
-    desc: "Можно смывать в унитаз, растворяется в воде",
-  },
-  {
-    icon: "no-pvc.svg",
-    title: "Без ПВХ",
-    desc: "Не содержат ПВХ, безопасны для вас и окружающей среды",
-  },
-  {
-    icon: "halal-certified_ellipse.svg",
-    title: "Halal Certified",
-    desc: "Сертифицировано по стандартам Halal",
-  },
-];
+const LEFT_ICONS = ["full-water.svg", "no_alcohol.svg", "textile.svg"];
+const RIGHT_ICONS = ["washable.svg", "no-pvc.svg", "halal-certified_ellipse.svg"];
 
 function FeatureItem({
   icon,
@@ -91,6 +59,10 @@ function OrbitDecoration() {
 }
 
 export function TozaKozaPurity() {
+  const t = useTranslations("wetWipes");
+  const left = t.raw("purity.left") as Pick<Feature, "title" | "desc">[];
+  const right = t.raw("purity.right") as Pick<Feature, "title" | "desc">[];
+
   return (
     <section className="relative overflow-hidden bg-[#FAF7F1]">
       {/* Scene with jug — desktop (> 850px) */}
@@ -124,9 +96,7 @@ export function TozaKozaPurity() {
           <span aria-hidden="true" className="text-lg text-[#B89A56] md:text-2xl">
             ✦
           </span>
-          <span>
-            Чистота, которую вы <br className="lg:hidden" />чувствуете
-          </span>
+          <span>{t("purity.heading")}</span>
           <span aria-hidden="true" className="text-lg text-[#B89A56] md:text-2xl">
             ✦
           </span>
@@ -148,10 +118,12 @@ export function TozaKozaPurity() {
           <OrbitDecoration />
           <div className="relative flex flex-col gap-8 min-[600px]:flex-row min-[600px]:justify-between min-[600px]:gap-0">
             <ul className="flex flex-col gap-8 min-[600px]:min-h-[440px] min-[600px]:max-w-[42%] min-[600px]:justify-between lg:min-h-[480px] lg:max-w-[280px]">
-              {LEFT.map((f, i) => (
+              {left.map((f, i) => (
                 <FeatureItem
                   key={f.title}
-                  {...f}
+                  icon={LEFT_ICONS[i]}
+                  title={f.title}
+                  desc={f.desc}
                   className={cn(
                     "min-[600px]:flex-row-reverse min-[600px]:text-right",
                     i !== 1 && "min-[600px]:translate-x-8 lg:translate-x-14"
@@ -160,10 +132,12 @@ export function TozaKozaPurity() {
               ))}
             </ul>
             <ul className="flex flex-col gap-8 min-[600px]:min-h-[440px] min-[600px]:max-w-[42%] min-[600px]:justify-between lg:min-h-[480px] lg:max-w-[280px]">
-              {RIGHT.map((f, i) => (
+              {right.map((f, i) => (
                 <FeatureItem
                   key={f.title}
-                  {...f}
+                  icon={RIGHT_ICONS[i]}
+                  title={f.title}
+                  desc={f.desc}
                   className={
                     i !== 1 ? "min-[600px]:-translate-x-8 lg:-translate-x-16" : ""
                   }

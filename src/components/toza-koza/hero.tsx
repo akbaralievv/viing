@@ -1,15 +1,19 @@
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { ArrowLeft } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
-const BENEFITS = [
-  { icon: "full-water_gold.svg", title: "99% воды", sub: "" },
-  { icon: "no-alcohol_gold.svg", title: "Без спирта", sub: "" },
-  { icon: "textile_gold.svg", title: "Мягкие", sub: "" },
-  // { icon: "washable_gold.svg", title: "Смываемые", sub: "" },
-  { icon: "no-pvc_gold.svg", title: "Без ПВХ", sub: "",},
-] as const;
+const BENEFIT_ICONS = [
+  "full-water_gold.svg",
+  "no-alcohol_gold.svg",
+  "textile_gold.svg",
+  "no-pvc_gold.svg",
+];
 
 export function TozaKozaHero() {
+  const t = useTranslations("wetWipes");
+  const benefits = t.raw("hero.benefits") as string[];
+
   return (
     <section className="relative min-h-[100svh] bg-[#FAF7F1]">
       {/* Scene — desktop (>= 600px) */}
@@ -56,41 +60,24 @@ export function TozaKozaHero() {
           </h1>
 
           <p className="font-cormorant font-bold text-[#084b37] text-2xl lg:text-2xl max-w-[20rem] mt-5 mb-7 md:mb-8">
-            Влажная туалетная бумага премиального качества
+            {t("hero.tagline")}
           </p>
 
           {/* Benefits */}
           <ul className="flex flex-col gap-3 lg:flex-row lg:flex-wrap lg:items-start lg:gap-x-7 lg:gap-y-5">
-            {BENEFITS.map((b) => (
+            {benefits.map((title, i) => (
               <li
-                key={`${b.title}-${b.sub}`}
-                className={cn(
-                  "flex items-center gap-3 lg:flex-col lg:items-center lg:gap-2 lg:text-center",
-                  "mobileOnly" in b && b.mobileOnly ? "lg:hidden" : ""
-                )}
+                key={title}
+                className="flex items-center gap-3 lg:flex-col lg:items-center lg:gap-2 lg:text-center"
               >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={`/tozaKoza/icons/${b.icon}`}
-                    alt=""
-                    aria-hidden="true"
-                    className="h-10 w-10 shrink-0 lg:h-[3.25rem] lg:w-[3.25rem]"
-                  />
-                <span className="leading-tight">
-                  {/* mobile: single inline line */}
-                  <span className="text-sm font-semibold text-[#084b37] lg:hidden">
-                    {b.title}
-                    {b.sub ? ` ${b.sub}` : ""}
-                  </span>
-                  {/* desktop: stacked */}
-                  <span className="hidden text-[13px] font-semibold leading-tight text-[#084b37] lg:block">
-                    {b.title}
-                  </span>
-                  {b.sub ? (
-                    <span className="hidden text-[13px] leading-tight text-[#4D5563] lg:block">
-                      {b.sub}
-                    </span>
-                  ) : null}
+                <img
+                  src={`/tozaKoza/icons/${BENEFIT_ICONS[i]}`}
+                  alt=""
+                  aria-hidden="true"
+                  className="h-10 w-10 shrink-0 lg:h-[3.25rem] lg:w-[3.25rem]"
+                />
+                <span className="text-sm font-semibold leading-tight text-[#084b37] lg:text-[13px]">
+                  {title}
                 </span>
               </li>
             ))}

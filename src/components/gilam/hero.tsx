@@ -1,12 +1,14 @@
 import Image from "next/image";
-import { MoveHorizontal, ShieldCheck, type LucideIcon } from "lucide-react";
+import { ArrowLeft, MoveHorizontal, ShieldCheck, type LucideIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
-const FEATURES: { Icon: LucideIcon; title: string }[] = [
-  { Icon: ShieldCheck, title: "Прочность\nи надежность" },
-  { Icon: MoveHorizontal, title: "Высокая растяжимость\nдо 300%" },
-];
+const FEATURE_ICONS: LucideIcon[] = [ShieldCheck, MoveHorizontal];
 
 export function GilamHero() {
+  const t = useTranslations("stretchFilm");
+  const features = t.raw("hero.features") as string[];
+
   return (
     <section className="relative min-h-[100svh] bg-[#F6F1EA]">
       {/* Scene — desktop (>= 900px): roll + box on the right */}
@@ -39,23 +41,25 @@ export function GilamHero() {
           </p>
 
           <p className="mt-5 max-w-md text-base leading-relaxed text-[#4A4038] md:text-lg">
-            Промышленная стретч-пленка для надежной фиксации, защиты и безопасной
-            транспортировки грузов.
+            {t("hero.desc")}
           </p>
 
           <ul className="mt-8 flex flex-wrap gap-x-10 gap-y-5 [@media(max-width:1023px)_and_(max-height:849px)]:hidden">
-            {FEATURES.map(({ Icon, title }) => (
-              <li key={title} className="flex items-center gap-3">
-                <Icon
-                  className="h-8 w-8 shrink-0 text-[#6B2F12]"
-                  strokeWidth={1.5}
-                  aria-hidden="true"
-                />
-                <span className="whitespace-pre-line text-sm font-medium leading-tight text-[#4A4038]">
-                  {title}
-                </span>
-              </li>
-            ))}
+            {features.map((title, i) => {
+              const Icon = FEATURE_ICONS[i];
+              return (
+                <li key={title} className="flex items-center gap-3">
+                  <Icon
+                    className="h-8 w-8 shrink-0 text-[#6B2F12]"
+                    strokeWidth={1.5}
+                    aria-hidden="true"
+                  />
+                  <span className="whitespace-pre-line text-sm font-medium leading-tight text-[#4A4038]">
+                    {title}
+                  </span>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

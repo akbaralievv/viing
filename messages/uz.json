@@ -40,10 +40,22 @@
     "ctaOffer": "Taklif olish",
     "imageAlt": "VIING mahsulotlari assortimenti",
     "stats": {
-      "products": { "value": "10 000+", "label": "katalogdagi tovarlar" },
-      "suppliers": { "value": "500+", "label": "tekshirilgan ishlab chiqaruvchilar" },
-      "experience": { "value": "8+ yil", "label": "Xitoy bilan ish tajribasi" },
-      "delivery": { "value": "Yetkazib berish", "label": "O'zbekiston va MDH bo'ylab" }
+      "products": {
+        "value": "10 000+",
+        "label": "katalogdagi tovarlar"
+      },
+      "suppliers": {
+        "value": "500+",
+        "label": "tekshirilgan ishlab chiqaruvchilar"
+      },
+      "experience": {
+        "value": "8+ yil",
+        "label": "Xitoy bilan ish tajribasi"
+      },
+      "delivery": {
+        "value": "Yetkazib berish",
+        "label": "O'zbekiston va MDH bo'ylab"
+      }
     }
   },
   "categories": {
@@ -133,21 +145,54 @@
     "p2": "Biz butun jarayonni o'z zimmamizga olamiz: ishonchli yetkazib beruvchilarni topish va sifat nazoratidan tortib ishlab chiqarish, brendlash va dunyoning istalgan nuqtasiga yetkazib berishgacha.",
     "ctaButton": "Taklif olish",
     "stats": [
-      { "value": "10+ yil", "label": "ulgurji yetkazib berish va ishlab chiqarish bozorida" },
-      { "value": "1000+", "label": "dunyo bo'ylab mamnun mijozlar" },
-      { "value": "5000+", "label": "katalogda har qanday so'rov uchun tovarlar" },
-      { "value": "30+ davlat", "label": "yetkazib berish va hamkorlik tarmog'i geografiyasi" },
-      { "value": "100%", "label": "barcha bosqichlarda sifat nazorati" }
+      {
+        "value": "10+ yil",
+        "label": "ulgurji yetkazib berish va ishlab chiqarish bozorida"
+      },
+      {
+        "value": "1000+",
+        "label": "dunyo bo'ylab mamnun mijozlar"
+      },
+      {
+        "value": "5000+",
+        "label": "katalogda har qanday so'rov uchun tovarlar"
+      },
+      {
+        "value": "30+ davlat",
+        "label": "yetkazib berish va hamkorlik tarmog'i geografiyasi"
+      },
+      {
+        "value": "100%",
+        "label": "barcha bosqichlarda sifat nazorati"
+      }
     ],
     "processEyebrow": "Qanday ishlaymiz",
     "processTitle": "To'liq tsikl — kalit topshirish asosida",
     "process": [
-      { "title": "Tahlil va tanlash", "description": "Vazifangizni o'rganamiz va eng yaxshi tovar va fabrika variantlarini tanlaymiz." },
-      { "title": "Yetkazib beruvchilarni tekshirish", "description": "Fabrikalar auditini o'tkazamiz, hujjatlar va ishlab chiqarish quvvatini tekshiramiz." },
-      { "title": "Namunalar va kelishuv", "description": "Namunalarni olamiz, sifatni sinab ko'ramiz, barcha tafsilotlar va qadoqni kelishamiz." },
-      { "title": "Ishlab chiqarish va nazorat", "description": "Ishlab chiqarishni tashkil qilamiz va ko'p bosqichli sifat nazoratini amalga oshiramiz." },
-      { "title": "Brendlash va qadoqlash", "description": "Brendingizni tushiramiz, qadoq va hamrohlik materiallarini tayyorlaymiz." },
-      { "title": "Yetkazib berish", "description": "Dunyoning istalgan nuqtasiga optimal muddatlarda yetkazib berishni tashkil qilamiz." }
+      {
+        "title": "Tahlil va tanlash",
+        "description": "Vazifangizni o'rganamiz va eng yaxshi tovar va fabrika variantlarini tanlaymiz."
+      },
+      {
+        "title": "Yetkazib beruvchilarni tekshirish",
+        "description": "Fabrikalar auditini o'tkazamiz, hujjatlar va ishlab chiqarish quvvatini tekshiramiz."
+      },
+      {
+        "title": "Namunalar va kelishuv",
+        "description": "Namunalarni olamiz, sifatni sinab ko'ramiz, barcha tafsilotlar va qadoqni kelishamiz."
+      },
+      {
+        "title": "Ishlab chiqarish va nazorat",
+        "description": "Ishlab chiqarishni tashkil qilamiz va ko'p bosqichli sifat nazoratini amalga oshiramiz."
+      },
+      {
+        "title": "Brendlash va qadoqlash",
+        "description": "Brendingizni tushiramiz, qadoq va hamrohlik materiallarini tayyorlaymiz."
+      },
+      {
+        "title": "Yetkazib berish",
+        "description": "Dunyoning istalgan nuqtasiga optimal muddatlarda yetkazib berishni tashkil qilamiz."
+      }
     ],
     "ctaTitle": "Loyihangizni muhokama qilamizmi?",
     "ctaSubtitle": "So'rov qoldiring — assortimentni tanlab, hajmingizga mos taklif yuboramiz."
@@ -167,9 +212,18 @@
         "quantityLabel": "Ishlab chiqarilgan",
         "quantityValue": "1 250 000+ paket",
         "specs": [
-          { "label": "Format", "value": "40 varaq" },
-          { "label": "Material", "value": "Spunlace Non-woven" },
-          { "label": "Bozorlar", "value": "UZ, KZ, KG" }
+          {
+            "label": "Format",
+            "value": "40 varaq"
+          },
+          {
+            "label": "Material",
+            "value": "Spunlace Non-woven"
+          },
+          {
+            "label": "Bozorlar",
+            "value": "UZ, KZ, KG"
+          }
         ]
       },
       {
@@ -179,9 +233,18 @@
         "quantityLabel": "Yetkazilgan",
         "quantityValue": "850+ tonna",
         "specs": [
-          { "label": "Rulon eni", "value": "45 sm" },
-          { "label": "Uzunligi", "value": "200 m" },
-          { "label": "Qalinligi", "value": "50 mikron" }
+          {
+            "label": "Rulon eni",
+            "value": "45 sm"
+          },
+          {
+            "label": "Uzunligi",
+            "value": "200 m"
+          },
+          {
+            "label": "Qalinligi",
+            "value": "50 mikron"
+          }
         ]
       },
       {
@@ -191,9 +254,18 @@
         "quantityLabel": "Ishlab chiqarilgan",
         "quantityValue": "2 600 000+ rulon",
         "specs": [
-          { "label": "Sertifikatsiya", "value": "FDA, EU mos" },
-          { "label": "Xususiyatlar", "value": "Yuqori yaltiroq" },
-          { "label": "Qo'llanilishi", "value": "HoReCa, Retail, Household" }
+          {
+            "label": "Sertifikatsiya",
+            "value": "FDA, EU mos"
+          },
+          {
+            "label": "Xususiyatlar",
+            "value": "Yuqori yaltiroq"
+          },
+          {
+            "label": "Qo'llanilishi",
+            "value": "HoReCa, Retail, Household"
+          }
         ]
       }
     ],
@@ -258,82 +330,146 @@
       "wet-wipes": {
         "name": "Klapanli nam salfetkalar",
         "desc": "Qo'l va yuzalar uchun qayta ishlatiladigan qopqoqli nam salfetkalar. Yumshoq to'qilmagan material, iz qoldirmaydi.",
-        "specs": ["Qadoqdagi soni: 100 dona", "Material: spanleys 50 g/m²", "Minimal buyurtma: 1 000 qadoqdan"]
+        "specs": [
+          "Qadoqdagi soni: 100 dona",
+          "Material: spanleys 50 g/m²",
+          "Minimal buyurtma: 1 000 qadoqdan"
+        ]
       },
       "paper-towels": {
         "name": "Qog'oz sochiqlar",
         "desc": "Uy, ofis va muassasalar uchun rulonli ikki qatlamli qog'oz sochiqlar. Yuqori shimuvchanlik va zich o'ram.",
-        "specs": ["Qatlamlar: 2", "Rulon uzunligi: 20 m", "Minimal buyurtma: 500 qadoqdan"]
+        "specs": [
+          "Qatlamlar: 2",
+          "Rulon uzunligi: 20 m",
+          "Minimal buyurtma: 500 qadoqdan"
+        ]
       },
       "liquid-soap": {
         "name": "Suyuq sovun, kanistra",
         "desc": "Tejamkor kanistradagi qo'l uchun suyuq sovun. Neytral pH, dozatorlarni to'ldirish uchun mos.",
-        "specs": ["Hajmi: 5 l", "Hidi: neytral", "Minimal buyurtma: 200 donadan"]
+        "specs": [
+          "Hajmi: 5 l",
+          "Hidi: neytral",
+          "Minimal buyurtma: 200 donadan"
+        ]
       },
       "hand-sanitizer": {
         "name": "Qo'l uchun antiseptik",
         "desc": "Spirt asosidagi qo'l uchun antiseptik gel. Tez quriydi, yumshatuvchi tarkib teri qurishining oldini oladi.",
-        "specs": ["Hajmi: 500 ml", "Spirt: 70%", "Minimal buyurtma: 300 donadan"]
+        "specs": [
+          "Hajmi: 500 ml",
+          "Spirt: 70%",
+          "Minimal buyurtma: 300 donadan"
+        ]
       },
       "pvc-food-film": {
         "name": "PVX oziq-ovqat plyonkasi",
         "desc": "Mahsulotlarni qadoqlash uchun shaffof PVX oziq-ovqat plyonkasi. Yuzaga zich yopishadi, qo'lda va avtomatik qadoqlashga mos.",
-        "specs": ["O'lchami: 30 sm × 300 m", "Material: PVX", "Minimal buyurtma: 500 rulondan"]
+        "specs": [
+          "O'lchami: 30 sm × 300 m",
+          "Material: PVX",
+          "Minimal buyurtma: 500 rulondan"
+        ]
       },
       "stretch-film-hand": {
         "name": "Qo'l strech-plyonkasi",
         "desc": "Pallet va yuklarni qadoqlash uchun qo'l strech-plyonkasi. Yuqori cho'ziluvchanlik va uzilishga chidamlilik.",
-        "specs": ["Eni: 500 mm", "Qalinligi: 23 mkm", "Minimal buyurtma: 200 rulondan"]
+        "specs": [
+          "Eni: 500 mm",
+          "Qalinligi: 23 mkm",
+          "Minimal buyurtma: 200 rulondan"
+        ]
       },
       "stretch-film-machine": {
         "name": "Mashina strech-plyonkasi",
         "desc": "Avtomatik pallet qadoqlash uchun mashina strech-plyonkasi. Barqaror tarangligi va tejamkor sarfi.",
-        "specs": ["Eni: 500 mm", "O'rami: 1 500 m", "Minimal buyurtma: 100 rulondan"]
+        "specs": [
+          "Eni: 500 mm",
+          "O'rami: 1 500 m",
+          "Minimal buyurtma: 100 rulondan"
+        ]
       },
       "packing-tape": {
         "name": "Qadoqlash skotchi",
         "desc": "BOPP asosidagi yopishqoq qadoqlash lentasi. Qutilarni ishonchli mahkamlaydi, shaffof va jigarrang variantlari mavjud.",
-        "specs": ["O'lchami: 48 mm × 100 m", "Asos: BOPP", "Minimal buyurtma: 1 000 donadan"]
+        "specs": [
+          "O'lchami: 48 mm × 100 m",
+          "Asos: BOPP",
+          "Minimal buyurtma: 1 000 donadan"
+        ]
       },
       "trash-bags": {
         "name": "Axlat xaltalari 120 l",
         "desc": "Yuqori zichlikdagi mustahkam axlat xaltalari. Yuk ostida yirtilmaydi, uy va korxonalar uchun qulay.",
-        "specs": ["Hajmi: 120 l", "Rulonda: 10 dona", "Minimal buyurtma: 500 qadoqdan"]
+        "specs": [
+          "Hajmi: 120 l",
+          "Rulonda: 10 dona",
+          "Minimal buyurtma: 500 qadoqdan"
+        ]
       },
       "cleaning-set": {
         "name": "Youreko tozalash to'plami",
         "desc": "Tozalash to'plami: siquvchi pol artgich, chelak va mikrofibradan almashtiriladigan nasadkalar. Ergonomik dasta.",
-        "specs": ["Tarkibi: artgich + chelak", "Nasadka: mikrofibra", "Minimal buyurtma: 100 donadan"]
+        "specs": [
+          "Tarkibi: artgich + chelak",
+          "Nasadka: mikrofibra",
+          "Minimal buyurtma: 100 donadan"
+        ]
       },
       "dish-sponges": {
         "name": "Idish yuvish gubkalari",
         "desc": "Idish yuvish uchun abraziv qatlamli gubkalar. Yuzalarni tirnamaydi, uzoq xizmat qiladi.",
-        "specs": ["Qadoqda: 10 dona", "O'lchami: 95 × 65 mm", "Minimal buyurtma: 1 000 qadoqdan"]
+        "specs": [
+          "Qadoqda: 10 dona",
+          "O'lchami: 95 × 65 mm",
+          "Minimal buyurtma: 1 000 qadoqdan"
+        ]
       },
       "household-gloves": {
         "name": "Xo'jalik qo'lqoplari",
         "desc": "Ichki qoplamali lateks xo'jalik qo'lqoplari. Tozalash va suv bilan ishlashda qo'llarni himoya qiladi.",
-        "specs": ["Material: lateks", "O'lchamlar: S–XL", "Minimal buyurtma: 500 juftdan"]
+        "specs": [
+          "Material: lateks",
+          "O'lchamlar: S–XL",
+          "Minimal buyurtma: 500 juftdan"
+        ]
       },
       "paper-cups": {
         "name": "Bir qatlamli qog'oz stakanlar",
         "desc": "Issiq va sovuq ichimliklar uchun bir martalik qog'oz stakanlar. Laminatlangan oziq-ovqat kartoni, logotip bosish uchun mos.",
-        "specs": ["Hajmi: 250 ml", "Qadoqda: 50 dona", "Minimal buyurtma: 1 000 donadan"]
+        "specs": [
+          "Hajmi: 250 ml",
+          "Qadoqda: 50 dona",
+          "Minimal buyurtma: 1 000 donadan"
+        ]
       },
       "food-containers": {
         "name": "Oziq-ovqat konteynerlari",
         "desc": "Yetkazib berish va tayyor taomlarni qadoqlash uchun bir martalik konteynerlar. Germetik qopqoq, issiqqa chidamli.",
-        "specs": ["Hajmi: 500 ml", "Material: PP", "Minimal buyurtma: 1 000 donadan"]
+        "specs": [
+          "Hajmi: 500 ml",
+          "Material: PP",
+          "Minimal buyurtma: 1 000 donadan"
+        ]
       },
       "wooden-cutlery": {
         "name": "Yog'och anjomlar",
         "desc": "Qayindan tayyorlangan ekologik bir martalik anjomlar: vilkalar, qoshiqlar, pichoqlar. Silliq, tikansiz yuza.",
-        "specs": ["To'plam: vilka / qoshiq / pichoq", "Material: qayin", "Minimal buyurtma: 2 000 donadan"]
+        "specs": [
+          "To'plam: vilka / qoshiq / pichoq",
+          "Material: qayin",
+          "Minimal buyurtma: 2 000 donadan"
+        ]
       },
       "dispenser-napkins": {
         "name": "Dispenser salfetkalari",
         "desc": "Stol dispenserlari uchun qog'oz salfetkalar. Kafe, restoran va fud-kortlar uchun mos.",
-        "specs": ["Pachkada: 250 dona", "Qatlamlar: 1", "Minimal buyurtma: 500 pachkadan"]
+        "specs": [
+          "Pachkada: 250 dona",
+          "Qatlamlar: 1",
+          "Minimal buyurtma: 500 pachkadan"
+        ]
       }
     }
   },
@@ -342,9 +478,18 @@
     "addressLocality": "Toshkent",
     "hoursTitle": "Ish vaqti",
     "hours": [
-      { "day": "Dushanba — Juma", "value": "09:00 — 18:00" },
-      { "day": "Shanba", "value": "10:00 — 15:00" },
-      { "day": "Yakshanba", "value": "Dam olish kuni" }
+      {
+        "day": "Dushanba — Juma",
+        "value": "09:00 — 18:00"
+      },
+      {
+        "day": "Shanba",
+        "value": "10:00 — 15:00"
+      },
+      {
+        "day": "Yakshanba",
+        "value": "Dam olish kuni"
+      }
     ]
   },
   "form": {
@@ -433,5 +578,214 @@
     "section3Body": "Kompaniya ma'lumotning dolzarbligini saqlash uchun oqilona harakat qiladi, lekin uning to'liqligi va aniqligini barcha hollarda kafolatlamaydi.",
     "section4Title": "4. Aloqa",
     "section4Body": "Foydalanish shartlari bo'yicha savollar uchun yozing"
+  },
+  "wetWipes": {
+    "back": "Orqaga",
+    "backAria": "Loyihalarga qaytish",
+    "hero": {
+      "tagline": "Premium sifatli nam tualet qog'ozi",
+      "benefits": [
+        "99% suv",
+        "Spirtsiz",
+        "Yumshoq",
+        "PVXsiz"
+      ]
+    },
+    "lineup": {
+      "heading": "Mahsulot liniyasi",
+      "sheets": "varaq",
+      "items": [
+        "Har kungi qulaylik uchun ixcham qadoq.",
+        "Butun oila uchun optimal format.",
+        "Uzoq muddat foydalanish uchun tejamkor format."
+      ]
+    },
+    "purity": {
+      "heading": "Siz his qiladigan tozalik",
+      "left": [
+        {
+          "title": "99% suv",
+          "desc": "Tozalangan suv asosidagi yumshoq formula"
+        },
+        {
+          "title": "Spirtsiz",
+          "desc": "Spirt tutmaydi, sezgir teri uchun xavfsiz"
+        },
+        {
+          "title": "Yumshoq",
+          "desc": "Nozik va yoqimli, butun oila uchun mos"
+        }
+      ],
+      "right": [
+        {
+          "title": "Yuviladigan",
+          "desc": "Unitazga yuvish mumkin, suvda eriydi"
+        },
+        {
+          "title": "PVXsiz",
+          "desc": "PVX tutmaydi, siz va atrof-muhit uchun xavfsiz"
+        },
+        {
+          "title": "Halal Certified",
+          "desc": "Halal standartlari bo'yicha sertifikatlangan"
+        }
+      ]
+    },
+    "design": {
+      "heading": "Dizayn va qadoqlash",
+      "items": [
+        {
+          "title": "Dizayn ishlab chiqish",
+          "desc": "Tozalik va tabiatdan ilhomlangan noyob dizayn."
+        },
+        {
+          "title": "Yuqori sifatli bosma",
+          "desc": "Zamonaviy bosma texnologiyalari yorqin ranglar va aniq detallarni ta'minlaydi."
+        },
+        {
+          "title": "Premium materiallar",
+          "desc": "Klapanli mustahkam qadoq namlik va tozalikni uzoq saqlaydi."
+        },
+        {
+          "title": "Transport qadog'i",
+          "desc": "Dunyoning istalgan nuqtasiga xavfsiz yetkazish uchun ishonchli qutilar."
+        }
+      ]
+    },
+    "specs": {
+      "heading": "Mahsulot xususiyatlari",
+      "rows": [
+        {
+          "label": "Varaq o'lchami",
+          "value": "150 × 200 mm"
+        },
+        {
+          "label": "Mato materiali",
+          "value": "To'qilmagan mato (yog'och sellyulozasi / vizkoza)"
+        },
+        {
+          "label": "Tarkibi (INCI)",
+          "value": "Aqua, Citric Acid, Sodium Citrate"
+        },
+        {
+          "label": "Varaqlar soni",
+          "value": "40 / 80 / 120 dona"
+        },
+        {
+          "label": "Yaroqlilik muddati",
+          "value": "3 yil"
+        },
+        {
+          "label": "Saqlash sharoiti",
+          "value": "Xona haroratida saqlang, to'g'ridan-to'g'ri quyosh nuridan saqlang."
+        }
+      ],
+      "callouts": [
+        "Nozik tozalash uchun yumshoq tekstura va naqsh.",
+        "Ishonchli klapan namlik va tozalikni saqlaydi."
+      ]
+    },
+    "cta": {
+      "heading": "Brendingizni ishga tushirishga tayyormisiz?",
+      "desc": "VIING — jahon darajasidagi yuqori sifatli mahsulotlar yaratishda ishonchli hamkoringiz.",
+      "button": "Bog'lanish"
+    },
+    "meta": {
+      "title": "TOZA KO'ZA — premium sifatli nam tualet qog'ozi",
+      "description": "TOZA KO'ZA nam tualet qog'ozi: 99% suv, spirtsiz, yumshoq, yuviladigan, Halal Certified. VIING tomonidan brend ostida ishlab chiqarish."
+    }
+  },
+  "stretchFilm": {
+    "back": "Orqaga",
+    "backAria": "Loyihalarga qaytish",
+    "hero": {
+      "desc": "Yuklarni ishonchli mahkamlash, himoya qilish va xavfsiz tashish uchun sanoat strech plyonkasi.",
+      "features": [
+        "Mustahkamlik\nva ishonchlilik",
+        "Yuqori cho'ziluvchanlik\n300% gacha"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Mustahkamlik",
+        "desc": "Yukni palletada ishonchli ushlab turadi"
+      },
+      {
+        "title": "Cho'zilish",
+        "desc": "Yuqori elastiklik, 300% gacha"
+      },
+      {
+        "title": "Mahkamlash",
+        "desc": "Barqaror va ishonchli mahkamlash"
+      },
+      {
+        "title": "Namlikdan himoya",
+        "desc": "Namlik, chang va kirning kirishiga to'sqinlik qiladi"
+      },
+      {
+        "title": "Yukni himoya qilish",
+        "desc": "Mahsulotning ko'rinishi va sifatini saqlaydi"
+      },
+      {
+        "title": "Tejamkorlik",
+        "desc": "Material sarfi va qadoqlash xarajatlarini kamaytiradi"
+      }
+    ],
+    "specs": {
+      "sizeTitle": "Plyonka o'lchami",
+      "dims": [
+        {
+          "value": "45 sm",
+          "label": "eni"
+        },
+        {
+          "value": "200 m",
+          "label": "uzunligi"
+        },
+        {
+          "value": "50 mkm",
+          "label": "qalinligi"
+        }
+      ],
+      "features": [
+        {
+          "title": "Yuqori shaffoflik",
+          "desc": "Qadoqni ochmasdan vizual nazorat qilish imkonini beradi."
+        },
+        {
+          "title": "Teshilishga chidamlilik",
+          "desc": "Tashish vaqtida shikastlanishdan ishonchli himoya."
+        },
+        {
+          "title": "Qo'lda va mashinada o'rash",
+          "desc": "Barcha turdagi pallet o'rovchilar uchun mos."
+        },
+        {
+          "title": "Namlik va changdan himoya",
+          "desc": "Mahsulotning ko'rinishi va sifatini saqlaydi."
+        }
+      ]
+    },
+    "production": {
+      "heading": "Zamonaviy ishlab chiqarish",
+      "subtitle": "Har bir bosqichda sifat nazorati bilan strech plyonkasining to'liq ishlab chiqarish tsikli.",
+      "steps": [
+        "Ekstruziya",
+        "Sovutish",
+        "O'rash",
+        "Qadoqlash",
+        "Omborlash",
+        "Logistika"
+      ]
+    },
+    "cta": {
+      "heading": "Brendingizni ishga tushirishga tayyormisiz?",
+      "desc": "VIING — jahon darajasidagi yuqori sifatli mahsulotlar yaratishda ishonchli hamkoringiz.",
+      "button": "Loyihani muhokama qilish"
+    },
+    "meta": {
+      "title": "GILAM PLYÖNKASI SANOAT — sanoat strech plyonkasi",
+      "description": "Yuklarni ishonchli mahkamlash, himoya qilish va xavfsiz tashish uchun sanoat strech plyonkasi. 45 sm × 200 m × 50 mkm. VIING tomonidan brend ostida ishlab chiqarish."
+    }
   }
 }
