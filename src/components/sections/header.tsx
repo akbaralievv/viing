@@ -20,6 +20,9 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
 
+  // The TOZA KO'ZA product page has a light hero → header overlays it transparently.
+  const transparent = pathname === "/cases/wet-wipes";
+
   // Active nav link by route (home matches "/" exactly; in-page anchors never match).
   const isActive = (href: string) => {
     if (href.startsWith("/#")) return false;
@@ -77,9 +80,21 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-primary text-primary-foreground transition-[transform,box-shadow,border-color] duration-300 ease-out ${
-        hidden && !isMenuOpen ? "-translate-y-full" : "translate-y-0"
-      } ${scrolled ? "shadow-lg border-b border-white/10" : "border-b border-transparent"}`}
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-[transform,box-shadow,border-color,background-color] duration-300 ease-out",
+        hidden && !isMenuOpen ? "-translate-y-full" : "translate-y-0",
+        transparent
+          ? cn(
+              "text-[#052439]",
+              scrolled
+                ? "bg-[#FAF7F1]/70 backdrop-blur-md border-b border-[#D7D0C2]/60 shadow-sm"
+                : "bg-transparent border-b border-transparent"
+            )
+          : cn(
+              "bg-primary text-primary-foreground",
+              scrolled ? "shadow-lg border-b border-white/10" : "border-b border-transparent"
+            )
+      )}
     >
       <a
         href="#main"
@@ -89,7 +104,10 @@ export function Header() {
       </a>
       <div className="container mx-auto px-4 h-16 md:h-[72px] flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center shrink-0" aria-label={t("homeAria")}>
-          <LogoMark className="h-[1.7rem] md:h-[2rem] lg:h-7 xl:h-[2rem]" />
+          <LogoMark
+            src={transparent ? "/tozaKoza/icons/logo_text_green.svg" : undefined}
+            className="h-[1.7rem] md:h-[2rem] lg:h-7 xl:h-[2rem]"
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center lg:gap-4 xl:gap-7" aria-label={t("menuTitle")}>
@@ -101,9 +119,17 @@ export function Header() {
                 href={navHrefs[key]}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "relative whitespace-nowrap text-[13px] xl:text-sm font-medium transition-colors hover:text-white",
-                  "after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:rounded-full after:bg-brand after:content-['']",
-                  active ? "text-white after:w-full" : "text-white/75 after:w-0"
+                  "relative whitespace-nowrap text-[13px] xl:text-sm font-medium transition-colors",
+                  "after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:rounded-full after:content-['']",
+                  transparent
+                    ? cn(
+                        "after:bg-[#B89A56] hover:text-[#0E5A4F]",
+                        active ? "text-[#0E5A4F] after:w-full" : "text-[#4D5563] after:w-0"
+                      )
+                    : cn(
+                        "after:bg-brand hover:text-white",
+                        active ? "text-white after:w-full" : "text-white/75 after:w-0"
+                      )
                 )}
               >
                 {t(key)}
@@ -113,11 +139,16 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-1.5 sm:gap-3 lg:gap-2 xl:gap-3">
-          <LanguageSwitcher />
+          <LanguageSwitcher dark={transparent} />
           <Button
             asChild
             variant="outline"
-            className="hidden lg:inline-flex border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white hover:border-white/50 lg:h-9 lg:px-3.5 lg:text-[13px] xl:h-10 xl:px-5 xl:text-sm"
+            className={cn(
+              "hidden lg:inline-flex lg:h-9 lg:px-3.5 lg:text-[13px] xl:h-10 xl:px-5 xl:text-sm",
+              transparent
+                ? "border-transparent bg-[#0E5A4F] text-white hover:bg-[#0A4A42] hover:text-white"
+                : "border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white hover:border-white/50"
+            )}
           >
             <Link href="/#contact">{t("getOffer")}</Link>
           </Button>
@@ -128,7 +159,11 @@ export function Header() {
                 variant="ghost"
                 size="icon"
                 aria-label={t("openMenu")}
-                className="text-white hover:bg-white/10 hover:text-white"
+                className={cn(
+                  transparent
+                    ? "text-[#052439] hover:bg-black/5 hover:text-[#052439]"
+                    : "text-white hover:bg-white/10 hover:text-white"
+                )}
               >
                 <Menu />
               </Button>

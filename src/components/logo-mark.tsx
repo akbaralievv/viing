@@ -5,10 +5,16 @@ import { cn } from "@/lib/utils";
  * light-colored, made for dark backgrounds). Includes the wordmark, so no
  * separate text label is needed. Size it via the height class.
  */
-export function LogoMark({ className }: { className?: string }) {
+export function LogoMark({
+  className,
+  src = "/logo_text.svg",
+}: {
+  className?: string;
+  src?: string;
+}) {
   return (
     <img
-      src="/logo_text.svg"
+      src={src}
       alt=""
       aria-hidden="true"
       className={cn("block h-8 w-auto select-none", className)}

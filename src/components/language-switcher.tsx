@@ -19,7 +19,7 @@ const localeShort: Record<Locale, string> = {
   uz: "UZ",
 };
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
   const t = useTranslations("language");
   const locale = useLocale() as Locale;
   const router = useRouter();
@@ -40,14 +40,22 @@ export function LanguageSwitcher() {
         disabled={pending}
         className={cn(
           "group inline-flex items-center gap-1 h-8 px-1.5 rounded-md lg:h-10 lg:px-2",
-          "text-sm font-medium text-white/85 hover:text-white transition-colors",
-          "focus:outline-none focus-visible:outline-none data-[state=open]:text-white",
-          "disabled:opacity-50"
+          "text-sm font-medium transition-colors",
+          "focus:outline-none focus-visible:outline-none",
+          "disabled:opacity-50",
+          dark
+            ? "text-[#4D5563] hover:text-[#0E5A4F] data-[state=open]:text-[#0E5A4F]"
+            : "text-white/85 hover:text-white data-[state=open]:text-white"
         )}
       >
         <span className="tracking-wide leading-none">{localeShort[locale]}</span>
         <ChevronDown
-          className="w-3.5 h-3.5 text-white/60 transition-transform duration-200 group-data-[state=open]:rotate-180 group-hover:text-white/80"
+          className={cn(
+            "w-3.5 h-3.5 transition-transform duration-200 group-data-[state=open]:rotate-180",
+            dark
+              ? "text-[#4D5563]/70 group-hover:text-[#0E5A4F]"
+              : "text-white/60 group-hover:text-white/80"
+          )}
           aria-hidden="true"
         />
       </DropdownMenuTrigger>

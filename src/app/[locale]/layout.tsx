@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Cormorant_Garamond } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -23,6 +23,14 @@ const montserrat = Montserrat({
   subsets: ["latin", "cyrillic"],
   display: "swap",
   weight: ["600", "700"],
+});
+
+// Cormorant Garamond — serif display font for the TOZA KO'ZA product page.
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
+  weight: ["500", "600", "700"],
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || siteConfig.url;
@@ -150,7 +158,7 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={locale} className={`${inter.variable} ${montserrat.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${montserrat.variable} ${cormorant.variable}`}>
       <body suppressHydrationWarning className="flex min-h-screen flex-col antialiased">
         <NextIntlClientProvider>
           <Header />

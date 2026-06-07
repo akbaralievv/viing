@@ -17,8 +17,11 @@ type Project = {
   specs: Spec[];
 };
 
+// "wet-wipes" has its own dedicated page (cases/wet-wipes), so it's excluded here.
 export function generateStaticParams() {
-  return caseStudies.map((c) => ({ slug: c.slug }));
+  return caseStudies
+    .filter((c) => c.slug !== "wet-wipes")
+    .map((c) => ({ slug: c.slug }));
 }
 
 export async function generateMetadata({
