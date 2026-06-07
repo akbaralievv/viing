@@ -156,10 +156,10 @@
   "cases": {
     "metaTitle": "Case studies",
     "metaDescription": "VIING case studies: private label manufacturing, OEM/ODM, quality control and end-to-end logistics. Wet wipes, stretch film, food cling film.",
-    "eyebrow": "Manufacturing excellence",
+    "eyebrow": "Experience you can trust",
     "title": "Case studies",
     "viewMore": "View case study",
-    "subtitle": "Premium manufacturing and private label solutions from China: factory-direct quality, OEM/ODM services and end-to-end logistics for global brands.",
+    "subtitle": "Real projects we delivered end-to-end — from development and manufacturing to quality control and logistics. The proven experience and results we bring to your brand.",
     "projects": [
       {
         "tag": "Hygiene",
@@ -180,9 +180,9 @@
         "quantityLabel": "Delivered",
         "quantityValue": "850+ tons",
         "specs": [
-          { "label": "Thickness", "value": "17 – 23 microns" },
-          { "label": "Elongation", "value": "Up to 300%" },
-          { "label": "Roll width", "value": "500 mm" }
+          { "label": "Roll width", "value": "45 cm" },
+          { "label": "Length", "value": "200 m" },
+          { "label": "Thickness", "value": "50 microns" }
         ]
       },
       {

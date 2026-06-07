@@ -4,6 +4,8 @@ import { TozaKozaHero } from "@/components/toza-koza/hero";
 import { TozaKozaPurity } from "@/components/toza-koza/purity";
 import { TozaKozaLineup } from "@/components/toza-koza/lineup";
 import { TozaKozaDesign } from "@/components/toza-koza/design";
+import { TozaKozaSpecs } from "@/components/toza-koza/specs";
+import { TozaKozaProduction } from "@/components/toza-koza/production";
 
 export const metadata: Metadata = {
   title: "TOZA KO'ZA — влажная туалетная бумага премиального качества",
@@ -25,6 +27,8 @@ export default async function WetWipesPage({
       <TozaKozaLineup />
       <TozaKozaPurity />
       <TozaKozaDesign />
+      <TozaKozaSpecs />
+      <TozaKozaProduction />
     </main>
   );
 }

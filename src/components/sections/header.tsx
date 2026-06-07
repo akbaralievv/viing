@@ -179,15 +179,23 @@ export function Header() {
                       }}
                       aria-current={active ? "page" : undefined}
                       className={cn(
-                        "text-base font-medium py-3 border-b border-border transition-colors hover:text-brand",
-                        active ? "text-brand" : "text-foreground"
+                        "text-base font-medium py-3 border-b border-border transition-colors",
+                        transparent
+                          ? cn("hover:text-[#0E5A4F]", active ? "text-[#0E5A4F]" : "text-foreground")
+                          : cn("hover:text-brand", active ? "text-brand" : "text-foreground")
                       )}
                     >
                       {t(key)}
                     </Link>
                   );
                 })}
-                <Button asChild className="mt-6">
+                <Button
+                  asChild
+                  className={cn(
+                    "mt-6",
+                    transparent && "bg-[#0E5A4F] text-white hover:bg-[#0A4A42]"
+                  )}
+                >
                   <Link
                     href="/#contact"
                     onClick={(e) => {

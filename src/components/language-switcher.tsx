@@ -44,7 +44,7 @@ export function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
           "focus:outline-none focus-visible:outline-none",
           "disabled:opacity-50",
           dark
-            ? "text-[#4D5563] hover:text-[#0E5A4F] data-[state=open]:text-[#0E5A4F]"
+            ? "text-[#0E5A4F] hover:text-[#0A4A42] data-[state=open]:text-[#0A4A42]"
             : "text-white/85 hover:text-white data-[state=open]:text-white"
         )}
       >
@@ -53,7 +53,7 @@ export function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
           className={cn(
             "w-3.5 h-3.5 transition-transform duration-200 group-data-[state=open]:rotate-180",
             dark
-              ? "text-[#4D5563]/70 group-hover:text-[#0E5A4F]"
+              ? "text-[#0E5A4F]/70 group-hover:text-[#0A4A42]"
               : "text-white/60 group-hover:text-white/80"
           )}
           aria-hidden="true"
@@ -72,14 +72,21 @@ export function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
               onSelect={() => switchTo(l)}
               className={cn(
                 "gap-3 py-2 font-medium",
-                active && "bg-brand/10 text-brand focus:bg-brand/15 focus:text-brand"
+                active &&
+                  (dark
+                    ? "bg-[#0E5A4F]/10 text-[#0E5A4F] focus:bg-[#0E5A4F]/15 focus:text-[#0E5A4F]"
+                    : "bg-brand/10 text-brand focus:bg-brand/15 focus:text-brand")
               )}
             >
               <span
                 aria-hidden="true"
                 className={cn(
                   "inline-flex h-7 w-7 items-center justify-center rounded-full text-[11px] font-bold tracking-wide transition-colors",
-                  active ? "bg-brand text-white" : "bg-secondary text-muted-foreground"
+                  active
+                    ? dark
+                      ? "bg-[#0E5A4F] text-white"
+                      : "bg-brand text-white"
+                    : "bg-secondary text-muted-foreground"
                 )}
               >
                 {localeShort[l]}
