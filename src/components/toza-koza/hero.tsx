@@ -32,11 +32,11 @@ export function TozaKozaHero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 flex min-h-[100svh] flex-col justify-start pt-24 pb-12 md:pt-28 lg:justify-center">
+      <div className="relative z-10 container mx-auto px-4 flex min-h-[100svh] flex-col justify-start pt-24 pb-12 md:pt-28 min-[600px]:justify-center">
         <div className="max-w-xl mt-[25px] min-[600px]:mt-0">
           <h1 className="font-cormorant font-bold leading-[0.92] tracking-tight text-[clamp(3.25rem,9vw,6.875rem)]">
             <span
-              className="inline-block w-fit bg-clip-text text-transparent min-[900px]:block"
+              className="inline-block w-fit bg-clip-text text-transparent lg:block"
               style={{
                 backgroundImage:
                   "linear-gradient(90deg, #1b6c53 0%, #1f745a 20%, #2a8a6d 35%, #3daf8d 50%, #3fb391 55%, #2d8a6f 75%, #1d5c49 100%)",
@@ -45,17 +45,17 @@ export function TozaKozaHero() {
               TOZA
             </span>{" "}
             <span
-              className="inline-block w-fit bg-clip-text text-transparent min-[900px]:block"
+              className="inline-block w-fit bg-clip-text text-transparent lg:block"
               style={{
                 backgroundImage:
-                  "linear-gradient(45deg, #c5a059 0%, #e8d089 50%, #c5a059 100%)",
+                  "linear-gradient(45deg, #c5a059 50%, #e8d089 100%, #c5a059 100%)",
               }}
             >
               KO’ZA
             </span>
           </h1>
 
-          <p className="font-cormorant font-bold text-[#0E5A4F] text-xl lg:text-2xl max-w-[20rem] mt-5 mb-7 md:mb-8">
+          <p className="font-cormorant font-bold text-[#0E5A4F] text-2xl lg:text-2xl max-w-[20rem] mt-5 mb-7 md:mb-8">
             Влажная туалетная бумага премиального качества
           </p>
 
