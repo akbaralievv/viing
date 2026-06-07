@@ -5,6 +5,7 @@ import { TozaKozaPurity } from "@/components/toza-koza/purity";
 import { TozaKozaLineup } from "@/components/toza-koza/lineup";
 import { TozaKozaDesign } from "@/components/toza-koza/design";
 import { TozaKozaSpecs } from "@/components/toza-koza/specs";
+import { TozaKozaCta } from "@/components/toza-koza/cta";
 import { TozaKozaProduction } from "@/components/toza-koza/production";
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ export default async function WetWipesPage({
       <TozaKozaPurity />
       <TozaKozaDesign />
       <TozaKozaSpecs />
-      <TozaKozaProduction />
+      <TozaKozaCta />
     </main>
   );
 }

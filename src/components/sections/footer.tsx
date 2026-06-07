@@ -1,14 +1,10 @@
-"use client";
-
-import Image from "next/image";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { LogoMark } from "@/components/logo-mark";
 import { TelegramIcon, WhatsappIcon } from "@/components/social-icons";
 import { siteConfig } from "@/lib/site-config";
 import { categories, type Category } from "@/lib/catalog";
-import { cn } from "@/lib/utils";
 
 function categoryHref(category: Category): string {
   if (category.kind === "products") return `/catalog/${category.slug}`;
@@ -19,42 +15,15 @@ export function Footer() {
   const t = useTranslations("footer");
   const tCat = useTranslations("catalog.categories");
   const tContact = useTranslations("contact");
-  const pathname = usePathname();
   const year = new Date().getFullYear();
 
-  // The TOZA KO'ZA product page gets a themed (green + ornament) footer background.
-  const wetWipes = pathname === "/cases/wet-wipes";
-
-  // Social buttons: gold hover on the green TOZA footer, brand-blue elsewhere.
-  const socialClass = cn(
-    "flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 transition-colors",
-    wetWipes ? "hover:bg-[#B89A56]" : "hover:bg-brand"
-  );
-
   return (
-    <footer
-      className={cn(
-        "relative overflow-hidden text-primary-foreground",
-        !wetWipes && "bg-primary"
-      )}
-    >
-      {wetWipes && (
-          <Image
-            src="/tozaKoza/footer-back.png"
-            alt=""
-            fill
-            sizes="100vw"
-            className="object-cover object-center"
-          />
-      )}
-      <div className="relative z-10 container mx-auto px-4 py-14 md:py-16">
+    <footer className="bg-primary text-primary-foreground">
+      <div className="container mx-auto px-4 py-14 md:py-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:pr-6">
             <Link href="/" className="inline-flex items-center mb-5">
-              <LogoMark
-                src={wetWipes ? "/tozaKoza/icons/logo_text_white.svg" : undefined}
-                className="h-10 w-auto"
-              />
+              <LogoMark className="h-10 w-auto" />
             </Link>
             <p className="text-sm text-white/65 leading-relaxed mb-6">{t("tagline")}</p>
             <div className="flex items-center gap-3">
@@ -63,7 +32,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Telegram"
-                className={socialClass}
+                className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-brand transition-colors"
               >
                 <TelegramIcon className="w-5 h-5" />
               </a>
@@ -72,7 +41,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
-                className={socialClass}
+                className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-brand transition-colors"
               >
                 <WhatsappIcon className="w-5 h-5" />
               </a>

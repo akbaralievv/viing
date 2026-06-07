@@ -19,7 +19,7 @@ const localeShort: Record<Locale, string> = {
   uz: "UZ",
 };
 
-export function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
+export function LanguageSwitcher() {
   const t = useTranslations("language");
   const locale = useLocale() as Locale;
   const router = useRouter();
@@ -43,18 +43,14 @@ export function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
           "text-sm font-medium transition-colors",
           "focus:outline-none focus-visible:outline-none",
           "disabled:opacity-50",
-          dark
-            ? "text-[#0E5A4F] hover:text-[#0A4A42] data-[state=open]:text-[#0A4A42]"
-            : "text-white/85 hover:text-white data-[state=open]:text-white"
+          "text-white/85 hover:text-white data-[state=open]:text-white"
         )}
       >
         <span className="tracking-wide leading-none">{localeShort[locale]}</span>
         <ChevronDown
           className={cn(
             "w-3.5 h-3.5 transition-transform duration-200 group-data-[state=open]:rotate-180",
-            dark
-              ? "text-[#0E5A4F]/70 group-hover:text-[#0A4A42]"
-              : "text-white/60 group-hover:text-white/80"
+            "text-white/60 group-hover:text-white/80"
           )}
           aria-hidden="true"
         />
@@ -72,21 +68,14 @@ export function LanguageSwitcher({ dark = false }: { dark?: boolean }) {
               onSelect={() => switchTo(l)}
               className={cn(
                 "gap-3 py-2 font-medium",
-                active &&
-                  (dark
-                    ? "bg-[#0E5A4F]/10 text-[#0E5A4F] focus:bg-[#0E5A4F]/15 focus:text-[#0E5A4F]"
-                    : "bg-brand/10 text-brand focus:bg-brand/15 focus:text-brand")
+                active && "bg-brand/10 text-brand focus:bg-brand/15 focus:text-brand"
               )}
             >
               <span
                 aria-hidden="true"
                 className={cn(
                   "inline-flex h-7 w-7 items-center justify-center rounded-full text-[11px] font-bold tracking-wide transition-colors",
-                  active
-                    ? dark
-                      ? "bg-[#0E5A4F] text-white"
-                      : "bg-brand text-white"
-                    : "bg-secondary text-muted-foreground"
+                  active ? "bg-brand text-white" : "bg-secondary text-muted-foreground"
                 )}
               >
                 {localeShort[l]}

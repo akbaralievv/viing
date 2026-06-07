@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ZoomableImage } from "@/components/zoomable-image";
 
 const SPECS: [string, string][] = [
   ["Размер листа", "150 × 200 мм"],
@@ -72,11 +73,9 @@ export function TozaKozaSpecs() {
                 key={c.text}
                 className="flex items-center gap-4 min-[600px]:w-[300px] lg:w-auto"
               >
-                <img
+                <ZoomableImage
                   src={c.image}
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
+                  alt={c.text}
                   className="h-20 w-20 shrink-0 rounded-full object-cover ring-1 ring-[#E6E2D9] shadow-[0_6px_18px_rgba(0,0,0,0.06)] min-[400px]:h-24 min-[400px]:w-24 md:h-28 md:w-28"
                 />
                 <p className="min-w-0 flex-1 text-sm leading-relaxed text-[#4D5563]">

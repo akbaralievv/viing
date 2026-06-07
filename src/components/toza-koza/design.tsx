@@ -1,3 +1,5 @@
+import { ZoomableImage } from "@/components/zoomable-image";
+
 type DesignCard = { image: string; title: string; desc: string };
 
 const CARDS: DesignCard[] = [
@@ -42,10 +44,9 @@ export function TozaKozaDesign() {
           {CARDS.map((c) => (
             <article key={c.title}>
               <div className="overflow-hidden rounded-2xl border border-[#E6D9C2]/70 bg-gradient-to-br from-[#FFFDF9] to-[#F2EBDD] shadow-[0_10px_30px_rgba(0,0,0,0.04),0_2px_8px_rgba(0,0,0,0.02)]">
-                <img
+                <ZoomableImage
                   src={c.image}
                   alt={c.title}
-                  loading="lazy"
                   className="aspect-[16/10] w-full object-cover"
                 />
               </div>

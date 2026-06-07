@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { ZoomableImage } from "@/components/zoomable-image";
 
 type Product = { count: string; image: string; desc: string; active?: boolean };
 
@@ -65,7 +66,7 @@ export function TozaKozaLineup() {
                   листов
                 </div>
               </div>
-              <img
+              <ZoomableImage
                 src={p.image}
                 alt={`TOZA KO'ZA — ${p.count} листов`}
                 className="lc-image w-full object-contain"

@@ -17,10 +17,11 @@ type Project = {
   specs: Spec[];
 };
 
-// "wet-wipes" has its own dedicated page (cases/wet-wipes), so it's excluded here.
+// "wet-wipes" and "stretch-film" have their own dedicated pages, so they're excluded here.
+const DEDICATED = new Set(["wet-wipes", "stretch-film"]);
 export function generateStaticParams() {
   return caseStudies
-    .filter((c) => c.slug !== "wet-wipes")
+    .filter((c) => !DEDICATED.has(c.slug))
     .map((c) => ({ slug: c.slug }));
 }
 
