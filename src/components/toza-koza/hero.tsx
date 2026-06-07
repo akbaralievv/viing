@@ -39,7 +39,7 @@ export function TozaKozaHero() {
               className="inline-block w-fit bg-clip-text text-transparent lg:block"
               style={{
                 backgroundImage:
-                  "linear-gradient(90deg, #1b6c53 0%, #1f745a 20%, #2a8a6d 35%, #3daf8d 50%, #3fb391 55%, #2d8a6f 75%, #1d5c49 100%)",
+                  "linear-gradient(90deg, #1b6c53 100%, #1f745a 20%, #2a8a6d 35%, #3daf8d 50%, #3fb391 55%, #2d8a6f 75%, #1d5c49 100%)",
               }}
             >
               TOZA
@@ -48,14 +48,14 @@ export function TozaKozaHero() {
               className="inline-block w-fit bg-clip-text text-transparent lg:block"
               style={{
                 backgroundImage:
-                  "linear-gradient(45deg, #c5a059 50%, #e8d089 100%, #c5a059 100%)",
+                  "linear-gradient(45deg, #c5a059 100%, #e8d089 100%, #c5a059 100%)",
               }}
             >
               KO’ZA
             </span>
           </h1>
 
-          <p className="font-cormorant font-bold text-[#0E5A4F] text-2xl lg:text-2xl max-w-[20rem] mt-5 mb-7 md:mb-8">
+          <p className="font-cormorant font-bold text-[#084b37] text-2xl lg:text-2xl max-w-[20rem] mt-5 mb-7 md:mb-8">
             Влажная туалетная бумага премиального качества
           </p>
 
@@ -78,12 +78,12 @@ export function TozaKozaHero() {
                   />
                 <span className="leading-tight">
                   {/* mobile: single inline line */}
-                  <span className="text-sm font-semibold text-[#0E5A4F] lg:hidden">
+                  <span className="text-sm font-semibold text-[#084b37] lg:hidden">
                     {b.title}
                     {b.sub ? ` ${b.sub}` : ""}
                   </span>
                   {/* desktop: stacked */}
-                  <span className="hidden text-[13px] font-semibold leading-tight text-[#0E5A4F] lg:block">
+                  <span className="hidden text-[13px] font-semibold leading-tight text-[#084b37] lg:block">
                     {b.title}
                   </span>
                   {b.sub ? (

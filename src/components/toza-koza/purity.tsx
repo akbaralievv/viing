@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 type Feature = { icon: string; title: string; desc: string };
 
@@ -38,16 +39,23 @@ const RIGHT: Feature[] = [
   },
 ];
 
-function FeatureItem({ icon, title, desc }: Feature) {
+function FeatureItem({
+  icon,
+  title,
+  desc,
+  className,
+}: Feature & { className?: string }) {
   return (
-    <li className="flex items-start gap-3.5">
+    <li
+      className={cn("flex items-center gap-3.5 transition-transform", className)}
+    >
       <img
         src={`/tozaKoza/icons/${icon}`}
         alt=""
         aria-hidden="true"
         className="h-12 w-12 shrink-0 lg:h-14 lg:w-14"
       />
-      <div className="max-w-[220px]">
+      <div className="min-[600px]:max-w-[220px]">
         <h3 className="font-cormorant text-xl font-bold leading-tight text-[#052439] lg:text-2xl">
           {title}
         </h3>
@@ -85,15 +93,22 @@ function OrbitDecoration() {
 export function TozaKozaPurity() {
   return (
     <section className="relative overflow-hidden bg-[#FAF7F1]">
+      {/* Scene with jug — desktop (>= 600px) */}
       <Image
         src="/tozaKoza/section2-background.png"
         alt=""
         fill
         sizes="100vw"
-        className="object-cover object-center"
+        className="hidden object-cover object-center min-[600px]:block"
       />
-      {/* light wash so the stacked text stays readable over the scene on mobile */}
-      <div aria-hidden="true" className="absolute inset-0 bg-[#FAF7F1]/45 min-[600px]:bg-transparent" />
+      {/* Background — mobile (< 600px) */}
+      <Image
+        src="/tozaKoza/section2-background_mobile.png"
+        alt=""
+        fill
+        sizes="100vw"
+        className="block object-cover object-center min-[600px]:hidden"
+      />
 
       <div className="relative z-10 container mx-auto px-4 py-14 md:py-20">
         {/* Heading */}
@@ -125,13 +140,26 @@ export function TozaKozaPurity() {
           <OrbitDecoration />
           <div className="relative flex flex-col gap-8 min-[600px]:flex-row min-[600px]:justify-between min-[600px]:gap-0">
             <ul className="flex flex-col gap-8 min-[600px]:min-h-[440px] min-[600px]:max-w-[42%] min-[600px]:justify-between lg:min-h-[480px] lg:max-w-[280px]">
-              {LEFT.map((f) => (
-                <FeatureItem key={f.title} {...f} />
+              {LEFT.map((f, i) => (
+                <FeatureItem
+                  key={f.title}
+                  {...f}
+                  className={cn(
+                    "min-[600px]:flex-row-reverse min-[600px]:text-right",
+                    i !== 1 && "min-[600px]:translate-x-8 lg:translate-x-14"
+                  )}
+                />
               ))}
             </ul>
             <ul className="flex flex-col gap-8 min-[600px]:min-h-[440px] min-[600px]:max-w-[42%] min-[600px]:justify-between lg:min-h-[480px] lg:max-w-[280px]">
-              {RIGHT.map((f) => (
-                <FeatureItem key={f.title} {...f} />
+              {RIGHT.map((f, i) => (
+                <FeatureItem
+                  key={f.title}
+                  {...f}
+                  className={
+                    i !== 1 ? "min-[600px]:-translate-x-8 lg:-translate-x-16" : ""
+                  }
+                />
               ))}
             </ul>
           </div>
