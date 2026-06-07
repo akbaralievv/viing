@@ -96,12 +96,6 @@ export function Header() {
             )
       )}
     >
-      <a
-        href="#main"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:bg-brand focus:px-3 focus:py-2 focus:text-brand-foreground"
-      >
-        {t("skipToContent")}
-      </a>
       <div className="container mx-auto px-4 h-16 md:h-[72px] flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center shrink-0" aria-label={t("homeAria")}>
           <LogoMark
@@ -123,8 +117,8 @@ export function Header() {
                   "after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:rounded-full after:content-['']",
                   transparent
                     ? cn(
-                        "after:bg-[#B89A56] hover:text-[#0E5A4F]",
-                        active ? "text-[#0E5A4F] after:w-full" : "text-[#4D5563] after:w-0"
+                        "after:bg-[#B89A56] hover:text-[#0A4A42]",
+                        active ? "text-[#0A4A42] after:w-full" : "text-[#0E5A4F] after:w-0"
                       )
                     : cn(
                         "after:bg-brand hover:text-white",
@@ -161,7 +155,7 @@ export function Header() {
                 aria-label={t("openMenu")}
                 className={cn(
                   transparent
-                    ? "text-[#052439] hover:bg-black/5 hover:text-[#052439]"
+                    ? "text-[#0E5A4F] hover:bg-black/5 hover:text-[#0A4A42]"
                     : "text-white hover:bg-white/10 hover:text-white"
                 )}
               >

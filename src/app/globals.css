@@ -241,3 +241,31 @@
   .pc-img { padding: 0.5rem; }
   .pc-title { font-size: 0.75rem; }
 }
+
+/* TOZA KO'ZA — lineup card.
+   Default (single column + wide desktop above 1024px): number & image on top, description below.
+   Narrow 3-column range (768–1024px): image on top, with the number + description
+   centered in a row beneath it, so the pack image never overflows the slim card. */
+.lineup-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "num image"
+    "desc desc";
+  align-items: start;
+  column-gap: 1rem;
+  row-gap: 0.75rem;
+}
+.lineup-card > .lc-num { grid-area: num; }
+.lineup-card > .lc-image { grid-area: image; justify-self: center; }
+.lineup-card > .lc-desc { grid-area: desc; align-self: start; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .lineup-card {
+    grid-template-areas:
+      "image image"
+      "num desc";
+    align-items: center;
+  }
+  .lineup-card > .lc-desc { align-self: center; }
+}

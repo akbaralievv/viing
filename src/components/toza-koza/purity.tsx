@@ -93,13 +93,21 @@ function OrbitDecoration() {
 export function TozaKozaPurity() {
   return (
     <section className="relative overflow-hidden bg-[#FAF7F1]">
-      {/* Scene with jug — desktop (>= 600px) */}
+      {/* Scene with jug — desktop (> 850px) */}
       <Image
         src="/tozaKoza/section2-background.png"
         alt=""
         fill
         sizes="100vw"
-        className="hidden object-cover object-center min-[600px]:block"
+        className="hidden object-cover object-center min-[850px]:block"
+      />
+      {/* Background — tablet (600–850px) */}
+      <Image
+        src="/tozaKoza/section2-background_table.png"
+        alt=""
+        fill
+        sizes="100vw"
+        className="hidden object-cover object-center min-[600px]:block min-[850px]:hidden"
       />
       {/* Background — mobile (< 600px) */}
       <Image

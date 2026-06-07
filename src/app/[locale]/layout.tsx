@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Montserrat, Cormorant_Garamond } from "next/font/google";
+import { Inter, Montserrat, Cormorant_Garamond, Bodoni_Moda } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -29,6 +29,15 @@ const montserrat = Montserrat({
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin", "cyrillic"],
+  display: "swap",
+  weight: ["500", "600", "700"],
+  style: ["normal", "italic"],
+});
+
+// Bodoni Moda — high-contrast serif for the TOZA KO'ZA product-card headings.
+const bodoni = Bodoni_Moda({
+  variable: "--font-bodoni",
+  subsets: ["latin"],
   display: "swap",
   weight: ["500", "600", "700"],
 });
@@ -158,7 +167,7 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={locale} className={`${inter.variable} ${montserrat.variable} ${cormorant.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${montserrat.variable} ${cormorant.variable} ${bodoni.variable}`}>
       <body suppressHydrationWarning className="flex min-h-screen flex-col antialiased">
         <NextIntlClientProvider>
           <Header />

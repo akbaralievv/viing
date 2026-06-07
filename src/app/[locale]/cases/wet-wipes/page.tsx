@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { TozaKozaHero } from "@/components/toza-koza/hero";
 import { TozaKozaPurity } from "@/components/toza-koza/purity";
+import { TozaKozaLineup } from "@/components/toza-koza/lineup";
+import { TozaKozaDesign } from "@/components/toza-koza/design";
 
 export const metadata: Metadata = {
   title: "TOZA KO'ZA — влажная туалетная бумага премиального качества",
@@ -20,7 +22,9 @@ export default async function WetWipesPage({
   return (
     <main id="main">
       <TozaKozaHero />
+      <TozaKozaLineup />
       <TozaKozaPurity />
+      <TozaKozaDesign />
     </main>
   );
 }

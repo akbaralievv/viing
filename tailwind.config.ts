@@ -13,6 +13,7 @@ export default {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
         display: ['var(--font-display)', 'var(--font-sans)', 'system-ui', 'sans-serif'],
         cormorant: ['var(--font-cormorant)', 'Cormorant Garamond', 'Georgia', 'serif'],
+        bodoni: ['var(--font-bodoni)', 'Bodoni Moda', 'Didot', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
