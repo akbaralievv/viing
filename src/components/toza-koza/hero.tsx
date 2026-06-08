@@ -1,7 +1,5 @@
 import Image from "next/image";
-import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 
 const BENEFIT_ICONS = [
   "full-water_gold.svg",

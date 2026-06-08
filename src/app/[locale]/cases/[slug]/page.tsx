@@ -17,8 +17,8 @@ type Project = {
   specs: Spec[];
 };
 
-// "wet-wipes" and "stretch-film" have their own dedicated pages, so they're excluded here.
-const DEDICATED = new Set(["wet-wipes", "stretch-film"]);
+// These slugs have their own dedicated pages, so they're excluded here.
+const DEDICATED = new Set(["wet-wipes", "stretch-film", "food-cling-film"]);
 export function generateStaticParams() {
   return caseStudies
     .filter((c) => !DEDICATED.has(c.slug))

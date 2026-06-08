@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { ArrowLeft, MoveHorizontal, ShieldCheck, type LucideIcon } from "lucide-react";
+import { MoveHorizontal, ShieldCheck, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 
 const FEATURE_ICONS: LucideIcon[] = [ShieldCheck, MoveHorizontal];
 
@@ -33,7 +32,7 @@ export function GilamHero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto flex min-h-[100svh] flex-col justify-start px-4 pb-12 pt-24 md:pt-28 min-[900px]:justify-center">
         <div className="mt-4 max-w-xl min-[900px]:mt-0">
-          <h1 className="font-helvetica text-[clamp(2.75rem,8vw,5.5rem)] font-bold uppercase leading-[0.95] tracking-tight text-[#2A1A14]">
+          <h1 className="font-helvetica text-[clamp(2.75rem,8vw,82px)] font-semibold uppercase leading-[0.95] tracking-tight text-[#2A1A14]">
             Gilam Plyönkasi
           </h1>
           <p className="mt-1 font-helvetica text-[clamp(1.5rem,4vw,2.75rem)] font-medium uppercase tracking-[0.08em] text-[#7B4A2C]">
