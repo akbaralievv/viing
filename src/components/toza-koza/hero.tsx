@@ -13,7 +13,7 @@ export function TozaKozaHero() {
   const benefits = t.raw("hero.benefits") as string[];
 
   return (
-    <section className="relative min-h-[100svh] bg-[#FAF7F1]">
+    <section className="relative min-h-[100svh] flex bg-[#FAF7F1] max-h-[900px]">
       {/* Scene — desktop (>= 600px) */}
       <Image
         src="/tozaKoza/40-hero.png"
@@ -34,7 +34,7 @@ export function TozaKozaHero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 flex min-h-[100svh] flex-col justify-start pt-24 pb-12 md:pt-28 min-[600px]:justify-center">
+      <div className="relative z-10 container mx-auto px-4 flex flex-col justify-start pt-24 pb-12 md:pt-28 min-[600px]:justify-center">
         <div className="max-w-xl mt-[25px] min-[600px]:mt-0">
           <h1 className="font-cormorant font-bold leading-[0.92] tracking-tight text-[clamp(3.25rem,9vw,6.875rem)]">
             <span

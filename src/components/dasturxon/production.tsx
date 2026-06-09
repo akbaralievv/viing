@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { ZoomableImage } from "../zoomable-image";
 
 const IMAGES = [
   "/dasturxon/1.png",
@@ -36,7 +37,7 @@ export function DasturxonProduction() {
             return (
               <div key={num} className="flex flex-col items-center text-center">
                 <div className="relative w-full">
-                  <img
+                  <ZoomableImage
                     src={IMAGES[i]}
                     alt={label}
                     loading="lazy"

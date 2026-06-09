@@ -694,6 +694,32 @@
     "meta": {
       "title": "TOZA KO'ZA — premium-quality wet toilet paper",
       "description": "TOZA KO'ZA wet toilet paper: 99% water, alcohol-free, soft, flushable, Halal Certified. Private-label manufacturing by VIING."
+    },
+    "usage": {
+      "heading": "Usage",
+      "subtitle": "Comfort and care in every situation",
+      "items": [
+        {
+          "title": "Everyday hygiene",
+          "desc": "Perfect for cleansing hands anytime."
+        },
+        {
+          "title": "On the go",
+          "desc": "Easy to take on trips and travels."
+        },
+        {
+          "title": "At home",
+          "desc": "For care and hygiene in the bathroom and toilet."
+        },
+        {
+          "title": "Work & study",
+          "desc": "A compact format always at hand."
+        },
+        {
+          "title": "For the whole family",
+          "desc": "Suitable for adults and children."
+        }
+      ]
     }
   },
   "stretchFilm": {
@@ -764,6 +790,33 @@
         {
           "title": "Moisture and dust protection",
           "desc": "Preserves the appearance and quality of products."
+        }
+      ]
+    },
+    "usage": {
+      "badge": "Usage",
+      "heading": "Universal application",
+      "desc": "GILAM PLYÖNKASI SANOAT stretch film provides reliable fastening and protection from dust and moisture, making storage and transport of various goods easier.",
+      "items": [
+        {
+          "title": "Furniture",
+          "desc": "Protects furniture during moving, storage and delivery."
+        },
+        {
+          "title": "Box packaging",
+          "desc": "Securely fastens boxes and prevents them from shifting."
+        },
+        {
+          "title": "Palletizing",
+          "desc": "Secures cargo on the pallet for safe transport."
+        },
+        {
+          "title": "Dust & moisture protection",
+          "desc": "Keeps a marketable look, protecting from dirt and moisture."
+        },
+        {
+          "title": "Construction materials",
+          "desc": "Convenient for packaging and storing various materials."
         }
       ]
     },

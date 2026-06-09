@@ -1,6 +1,5 @@
 import { Droplet, Eye, RotateCw, ShieldCheck, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { ZoomableImage } from "@/components/zoomable-image";
 
 const FEATURE_ICONS: LucideIcon[] = [Eye, ShieldCheck, RotateCw, Droplet];
 
@@ -24,7 +23,7 @@ export function GilamSpecs() {
                   </span>
                   <span className="h-full w-px bg-[#DDD1C3]" />
                 </div>
-                <ZoomableImage
+                <img
                   src="/gilam/stretch_vertical.png"
                   alt="GILAM PLYÖNKASI"
                   className="h-[320px] w-auto object-contain sm:h-[380px]"

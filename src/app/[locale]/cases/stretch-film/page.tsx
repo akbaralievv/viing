@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { GilamHero } from "@/components/gilam/hero";
 import { GilamAdvantages } from "@/components/gilam/advantages";
 import { GilamSpecs } from "@/components/gilam/specs";
+import { GilamUsage } from "@/components/gilam/usage";
 import { GilamProduction } from "@/components/gilam/production";
 import { GilamCta } from "@/components/gilam/cta";
 
@@ -29,6 +30,7 @@ export default async function StretchFilmPage({
       <GilamHero />
       <GilamAdvantages />
       <GilamSpecs />
+      <GilamUsage />
       <GilamProduction />
       <GilamCta />
     </main>

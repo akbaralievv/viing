@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { ZoomableImage } from "../zoomable-image";
 
 export function DasturxonUsage() {
   const t = useTranslations("dasturxon");
@@ -8,7 +9,7 @@ export function DasturxonUsage() {
       <div className="container mx-auto px-4">
         <div className="grid overflow-hidden rounded-2xl border border-[#DCE2EA] md:grid-cols-2">
           {/* Usage photo */}
-          <img
+         <ZoomableImage
             src="/dasturxon/use.png"
             alt="DASTURXON PLYÖNKASI"
             className="h-60 w-full object-cover sm:h-80"

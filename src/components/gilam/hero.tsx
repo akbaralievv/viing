@@ -8,8 +8,8 @@ export function GilamHero() {
   const features = t.raw("hero.features") as string[];
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-[#E8E3D4]">
-      <div className="relative z-10 container mx-auto grid min-h-[100svh] grid-cols-1 content-center items-center gap-8 px-4 pb-12 pt-28 min-[900px]:gap-0 min-[900px]:grid-cols-2">
+    <section className="relative min-h-[100svh] flex overflow-hidden bg-[#E8E3D4]">
+      <div className="relative z-10 container mx-auto grid grid-cols-1 content-center items-center gap-8 px-4 pb-12 pt-28 min-[900px]:gap-0 min-[900px]:grid-cols-2">
         {/* Text */}
         <div className="flex flex-col items-start">
           <h1 className="font-helvetica text-[clamp(3.2rem,5vw,70px)] font-bold uppercase leading-[0.95] tracking-tight text-[#2A1A14]">

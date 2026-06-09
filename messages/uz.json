@@ -693,6 +693,32 @@
     "meta": {
       "title": "TOZA KO'ZA — premium sifatli nam tualet qog'ozi",
       "description": "TOZA KO'ZA nam tualet qog'ozi: 99% suv, spirtsiz, yumshoq, yuviladigan, Halal Certified. VIING tomonidan brend ostida ishlab chiqarish."
+    },
+    "usage": {
+      "heading": "Foydalanish",
+      "subtitle": "Har bir vaziyatda qulaylik va g'amxo'rlik",
+      "items": [
+        {
+          "title": "Kundalik gigiyena",
+          "desc": "Qo'lni istalgan paytda tozalash uchun ideal."
+        },
+        {
+          "title": "Yo'lda",
+          "desc": "Sayohat va safarlarga olib yurish qulay."
+        },
+        {
+          "title": "Uyda",
+          "desc": "Hammom va hojatxonada parvarish va gigiyena uchun."
+        },
+        {
+          "title": "Ish va o'qishda",
+          "desc": "Ixcham format doimo qo'l ostida."
+        },
+        {
+          "title": "Butun oila uchun",
+          "desc": "Kattalar va bolalar uchun mos."
+        }
+      ]
     }
   },
   "stretchFilm": {
@@ -763,6 +789,33 @@
         {
           "title": "Namlik va changdan himoya",
           "desc": "Mahsulotning ko'rinishi va sifatini saqlaydi."
+        }
+      ]
+    },
+    "usage": {
+      "badge": "Foydalanish",
+      "heading": "Universal qo'llanish",
+      "desc": "GILAM PLYÖNKASI SANOAT strech plyonkasi ishonchli mahkamlash, chang va namlikdan himoya qilib, turli yuklarni saqlash va tashishni osonlashtiradi.",
+      "items": [
+        {
+          "title": "Mebel",
+          "desc": "Ko'chish, saqlash va yetkazib berishda mebelni himoya qiladi."
+        },
+        {
+          "title": "Quti qadoqlash",
+          "desc": "Qutilarni ishonchli mahkamlaydi va siljishining oldini oladi."
+        },
+        {
+          "title": "Palletlash",
+          "desc": "Xavfsiz tashish uchun yukni palletga mahkamlaydi."
+        },
+        {
+          "title": "Chang va namlikdan himoya",
+          "desc": "Ifloslik va namlikdan himoya qilib, tovar ko'rinishini saqlaydi."
+        },
+        {
+          "title": "Qurilish materiallari",
+          "desc": "Turli materiallarni qadoqlash va saqlash uchun qulay."
         }
       ]
     },

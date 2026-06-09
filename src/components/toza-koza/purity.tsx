@@ -1,30 +1,28 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { cn } from "@/lib/utils";
 
 type Feature = { icon: string; title: string; desc: string };
 
-const LEFT_ICONS = ["full-water.svg", "no_alcohol.svg", "textile.svg"];
-const RIGHT_ICONS = ["washable.svg", "no-pvc.svg", "halal-certified_ellipse.svg"];
+const ICONS = [
+  "full-water.svg",
+  "no_alcohol.svg",
+  "textile.svg",
+  "washable.svg",
+  "no-pvc.svg",
+  "halal-certified_ellipse.svg",
+];
 
-function FeatureItem({
-  icon,
-  title,
-  desc,
-  className,
-}: Feature & { className?: string }) {
+function FeatureItem({ icon, title, desc }: Feature) {
   return (
-    <li
-      className={cn("flex items-center gap-3.5 transition-transform", className)}
-    >
+    <li className="flex items-center gap-3.5">
       <img
         src={`/tozaKoza/icons/${icon}`}
         alt=""
         aria-hidden="true"
-        className="h-12 w-12 shrink-0 lg:h-14 lg:w-14"
+        className="h-12 w-12 shrink-0"
       />
-      <div className="min-[600px]:max-w-[220px]">
-        <h3 className="font-cormorant text-xl font-bold leading-tight text-[#052439] lg:text-2xl">
+      <div>
+        <h3 className="font-cormorant text-xl font-bold leading-tight text-[#052439]">
           {title}
         </h3>
         <p className="mt-1 text-xs leading-relaxed text-[#4D5563]">{desc}</p>
@@ -33,64 +31,24 @@ function FeatureItem({
   );
 }
 
-/** Custom decorative orbit (dotted ellipse + accent dots) around the jug. Desktop only. */
-function OrbitDecoration() {
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 460 480"
-      fill="none"
-      className="pointer-events-none absolute left-1/2 top-1/2 hidden h-[480px] w-[460px] -translate-x-1/2 -translate-y-1/2 lg:block"
-    >
-      <ellipse
-        cx="230"
-        cy="240"
-        rx="200"
-        ry="228"
-        stroke="#B89A56"
-        strokeOpacity="0.45"
-        strokeWidth="1.5"
-        strokeDasharray="1.5 8"
-      />
-      <circle cx="30" cy="240" r="4" fill="#B89A56" />
-      <circle cx="430" cy="240" r="4" fill="#B89A56" />
-    </svg>
-  );
-}
-
 export function TozaKozaPurity() {
   const t = useTranslations("wetWipes");
   const left = t.raw("purity.left") as Pick<Feature, "title" | "desc">[];
   const right = t.raw("purity.right") as Pick<Feature, "title" | "desc">[];
+  const features = [...left, ...right];
 
   return (
     <section className="relative overflow-hidden bg-[#FAF7F1]">
-      {/* Scene with jug — desktop (> 850px) */}
+      {/* Background — droplets scene */}
       <Image
-        src="/tozaKoza/purity.png"
+        src="/tozaKoza/purity-back.png"
         alt=""
         fill
         sizes="100vw"
-        className="hidden object-cover object-center min-[850px]:block"
-      />
-      {/* Background — tablet (600–850px) */}
-      <Image
-        src="/tozaKoza/section2-background_table.png"
-        alt=""
-        fill
-        sizes="100vw"
-        className="hidden object-cover object-center min-[600px]:block min-[850px]:hidden"
-      />
-      {/* Background — mobile (< 600px) */}
-      <Image
-        src="/tozaKoza/section2-background_mobile.png"
-        alt=""
-        fill
-        sizes="100vw"
-        className="block object-cover object-center min-[600px]:hidden"
+        className="object-cover object-center"
       />
 
-      <div className="relative z-10 container mx-auto px-4 py-14 md:py-20">
+      <div className="relative z-10 container mx-auto pt-8 md:pt-14">
         {/* Heading */}
         <h2 className="flex items-center justify-center gap-3 text-center font-cormorant text-2xl md:gap-4 md:text-[2.5rem] font-bold uppercase tracking-wide text-[#052439]">
           <span aria-hidden="true" className="text-lg text-[#B89A56] md:text-2xl">
@@ -113,37 +71,25 @@ export function TozaKozaPurity() {
           <span className="h-px w-12 bg-gradient-to-l from-transparent to-[#B89A56]/60" />
         </div>
 
-        {/* Features: one column on mobile, two columns flanking the jug on desktop */}
-        <div className="relative mx-auto mt-10 max-w-5xl md:mt-14">
-          <OrbitDecoration />
-          <div className="relative flex flex-col gap-8 min-[600px]:flex-row min-[600px]:justify-between min-[600px]:gap-0">
-            <ul className="flex flex-col gap-8 min-[600px]:min-h-[440px] min-[600px]:max-w-[42%] min-[600px]:justify-between lg:min-h-[480px] lg:max-w-[280px]">
-              {left.map((f, i) => (
-                <FeatureItem
-                  key={f.title}
-                  icon={LEFT_ICONS[i]}
-                  title={f.title}
-                  desc={f.desc}
-                  className={cn(
-                    "min-[600px]:flex-row-reverse min-[600px]:text-right",
-                    i !== 1 && "min-[600px]:translate-x-8 lg:translate-x-14"
-                  )}
-                />
-              ))}
-            </ul>
-            <ul className="flex flex-col gap-8 min-[600px]:min-h-[440px] min-[600px]:max-w-[42%] min-[600px]:justify-between lg:min-h-[480px] lg:max-w-[280px]">
-              {right.map((f, i) => (
-                <FeatureItem
-                  key={f.title}
-                  icon={RIGHT_ICONS[i]}
-                  title={f.title}
-                  desc={f.desc}
-                  className={
-                    i !== 1 ? "min-[600px]:-translate-x-8 lg:-translate-x-16" : ""
-                  }
-                />
-              ))}
-            </ul>
+        {/* Features list (left) + image (right, slightly lower); image drops below on mobile */}
+        <div className="mt-10 flex flex-col md:mt-14 min-[768px]:flex-row">
+          <ul className="flex flex-col gap-7 min-[768px]:shrink-0 pb-[40px]">
+            {features.map((f, i) => (
+              <FeatureItem
+                key={f.title}
+                icon={ICONS[i]}
+                title={f.title}
+                desc={f.desc}
+              />
+            ))}
+          </ul>
+
+          <div className="min-[768px]:flex-1">
+            <img
+              src="/tozaKoza/purity.png"
+              alt="TOZA KO'ZA"
+              className="w-full object-contain"
+            />
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ export function DasturxonHero() {
   const t = useTranslations("dasturxon");
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-[#F8F6F2]">
+    <section className="relative flex min-h-[100svh] overflow-hidden bg-[#F8F6F2]">
       {/* Ornament — left edge, behind content */}
       <img
         src="/dasturxon/pattern.svg"
@@ -24,7 +24,7 @@ export function DasturxonHero() {
       />
 
       {/* Content + product */}
-      <div className="relative z-10 container mx-auto grid min-h-[100svh] grid-cols-1 content-center items-center gap-8 px-4 pb-16 pt-32 text-center min-[900px]:grid-cols-2 min-[900px]:gap-6 min-[900px]:pb-20 min-[900px]:pt-28 min-[900px]:text-left">
+      <div className="relative z-10 container mx-auto grid grid-cols-1 content-center items-center gap-8 px-4 pb-16 pt-32 text-center min-[900px]:grid-cols-2 min-[900px]:gap-6 min-[900px]:pb-20 min-[900px]:pt-28 min-[900px]:text-left">
         {/* Text */}
         <div className="relative mx-auto max-w-xl min-[900px]:mx-0">
           {/* light scrim so the text stays readable over the vegetables behind it */}
