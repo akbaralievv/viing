@@ -29,10 +29,12 @@ export function Header() {
 
   // Mobile menu: close first, then navigate after the Sheet's close animation
   // (~300ms) so the route change doesn't overlap the closing menu (it flickered).
-  const navigateFromMenu = (href: string) => {
-    setIsMenuOpen(false);
-    window.setTimeout(() => router.push(href), 300);
-  };
+const pendingHref = useRef<string | null>(null);
+
+const navigateFromMenu = (href: string) => {
+  pendingHref.current = href;
+  setIsMenuOpen(false);
+};
 
   const lastY = useRef(0);
   const navGraceUntil = useRef(0);
@@ -134,7 +136,11 @@ export function Header() {
                 <Menu />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px]">
+            <SheetContent  onAnimationEnd={() => {
+              if (!isMenuOpen && pendingHref.current) {
+                router.push(pendingHref.current);
+              }
+            }} side="right" className="w-[300px]">
               <SheetTitle asChild>
                 <VisuallyHidden>{t("menuTitle")}</VisuallyHidden>
               </SheetTitle>
