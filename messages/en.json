@@ -788,5 +788,76 @@
       "title": "GILAM PLYÖNKASI SANOAT — industrial stretch film",
       "description": "Industrial stretch film for secure fastening, protection and safe cargo transportation. 45 cm × 200 m × 50 µm. Private-label manufacturing by VIING."
     }
+  },
+  "dasturxon": {
+    "meta": {
+      "title": "DASTURXON PLYÖNKASI — food cling film",
+      "description": "DASTURXON PLYÖNKASI — food cling film for storing products and keeping them fresh. 100 meters. Private-label manufacturing by VIING."
+    },
+    "hero": {
+      "desc": "Food cling film for storing products and keeping them fresh",
+      "badge": "100 METERS"
+    },
+    "advantages": [
+      "For food storage",
+      "Keeps food fresh",
+      "Tight cling",
+      "Odorless",
+      "Food-safe",
+      "Easy to tear"
+    ],
+    "specs": {
+      "heading": "Specifications",
+      "head": [
+        "Parameter",
+        "Value"
+      ],
+      "rows": [
+        {
+          "label": "Length",
+          "value": "100 m"
+        },
+        {
+          "label": "Width",
+          "value": "30 cm"
+        },
+        {
+          "label": "Material",
+          "value": "PE"
+        },
+        {
+          "label": "Color",
+          "value": "Transparent"
+        },
+        {
+          "label": "Food contact",
+          "value": "Yes"
+        },
+        {
+          "label": "Packaging type",
+          "value": "Box with cutter"
+        }
+      ]
+    },
+    "usage": {
+      "heading": "Usage",
+      "desc": "Perfect for vegetables, fruit, meat, baked goods and ready meals"
+    },
+    "production": {
+      "heading": "Production",
+      "subtitle": "A full food-film production cycle with quality control at every stage.",
+      "steps": [
+        "Extrusion",
+        "Winding",
+        "Slitting",
+        "Packaging",
+        "Logistics"
+      ]
+    },
+    "cta": {
+      "heading": "Ready to launch your own brand?",
+      "desc": "VIING is your reliable partner in creating world-class, high-quality products.",
+      "button": "Discuss your project"
+    }
   }
 }

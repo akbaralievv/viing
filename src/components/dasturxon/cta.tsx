@@ -1,10 +1,11 @@
 import Image from "next/image";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-
-const ITEMS = ["OEM / ODM", "Private Label", "Производство под заказ"];
+import { useTranslations } from "next-intl";
 
 export function DasturxonCta() {
+  const t = useTranslations("dasturxon");
+
   return (
     <section id="contacts" className="relative overflow-hidden bg-[#EEF2F8]">
       <Image
@@ -25,16 +26,16 @@ export function DasturxonCta() {
               className="text-3xl font-semibold uppercase leading-tight text-[#223B63]"
               style={{ fontFamily: "Georgia, sans-serif" }}
             >
-              Готовы запустить свой собственный бренд?
+              {t("cta.heading")}
             </h2>
             <p className="mt-5 max-w-md text-base leading-relaxed text-[#344B68] md:text-lg">
-              VIING — ваш надёжный партнёр в создании высококачественной продукции мирового уровня.
+              {t("cta.desc")}
             </p>
             <Link
               href="/#contact"
               className="mt-8 inline-flex items-center gap-2.5 rounded-[5px] bg-[#1F426E] px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#15314F]"
             >
-              Обсудить проект
+              {t("cta.button")}
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </div>

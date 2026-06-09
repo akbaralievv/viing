@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { MoveHorizontal, ShieldCheck, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -9,37 +8,18 @@ export function GilamHero() {
   const features = t.raw("hero.features") as string[];
 
   return (
-    <section className="relative min-h-[100svh] bg-[#F6F1EA]">
-      {/* Scene — desktop (>= 900px): roll + box on the right */}
-      <Image
-        src="/gilam/hero.png"
-        alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="hidden object-cover object-center min-[900px]:block"
-      />
-      {/* Scene — mobile (< 900px): roll + box at the bottom */}
-      <Image
-        src="/gilam/hero_mobile.png"
-        alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="block object-cover object-bottom min-[900px]:hidden"
-      />
-
-      {/* Content */}
-      <div className="relative z-10 container mx-auto flex min-h-[100svh] flex-col justify-start px-4 pb-12 pt-24 md:pt-28 min-[900px]:justify-center">
-        <div className="mt-4 max-w-xl min-[900px]:mt-0">
-          <h1 className="font-helvetica text-[clamp(2.75rem,8vw,82px)] font-semibold uppercase leading-[0.95] tracking-tight text-[#2A1A14]">
+    <section className="relative min-h-[100svh] overflow-hidden bg-[#E8E3D4]">
+      <div className="relative z-10 container mx-auto grid min-h-[100svh] grid-cols-1 content-center items-center gap-8 px-4 pb-12 pt-28 min-[900px]:gap-0 min-[900px]:grid-cols-2">
+        {/* Text */}
+        <div className="flex flex-col items-start">
+          <h1 className="font-helvetica text-[clamp(3.2rem,5vw,70px)] font-bold uppercase leading-[0.95] tracking-tight text-[#2A1A14]">
             Gilam Plyönkasi
           </h1>
-          <p className="mt-1 font-helvetica text-[clamp(1.5rem,4vw,2.75rem)] font-medium uppercase tracking-[0.08em] text-[#7B4A2C]">
+          <p className="mt-1 font-helvetica text-[clamp(2.5rem,3vw,50px)] font-bold uppercase tracking-[0.08em] text-[#7B4A2C]">
             Sanoat
           </p>
 
-          <p className="mt-5 max-w-md text-base leading-relaxed text-[#4A4038] md:text-lg">
+          <p className="mt-5 max-w-md text-base leading-relaxed text-[#4A4038] min-[900px]:mx-0 md:text-lg">
             {t("hero.desc")}
           </p>
 
@@ -53,13 +33,22 @@ export function GilamHero() {
                     strokeWidth={1.5}
                     aria-hidden="true"
                   />
-                  <span className="whitespace-pre-line text-sm font-medium leading-tight text-[#4A4038]">
+                  <span className="whitespace-pre-line text-left text-sm font-medium leading-tight text-[#4A4038]">
                     {title}
                   </span>
                 </li>
               );
             })}
           </ul>
+        </div>
+
+        {/* Product */}
+        <div className="min-[900px]:justify-self-end">
+          <img
+            src="/gilam/stretch-hero.png"
+            alt="GILAM PLYÖNKASI SANOAT"
+            className="w-full object-contain"
+          />
         </div>
       </div>
     </section>

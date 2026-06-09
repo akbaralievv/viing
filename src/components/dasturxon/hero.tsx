@@ -1,4 +1,8 @@
+import { useTranslations } from "next-intl";
+
 export function DasturxonHero() {
+  const t = useTranslations("dasturxon");
+
   return (
     <section className="relative min-h-[100svh] overflow-hidden bg-[#F8F6F2]">
       {/* Ornament — left edge, behind content */}
@@ -39,10 +43,10 @@ export function DasturxonHero() {
             </h1>
             <p className="font-cormorant text-[clamp(2.5rem,4vw,50px)] font-medium leading-[0.92] tracking-[-0.02em] text-[#223B63]">PLYÖNKASI</p>
             <p className="mx-auto mt-5 max-w-sm text-lg leading-[1.7] text-[#344B68] min-[900px]:mx-0">
-              Пищевая плёнка для хранения продуктов и сохранения свежести
+              {t("hero.desc")}
             </p>
             <span className="mt-7 inline-flex leading-none border-2 border-white items-center rounded-full bg-[#1F426E] px-2.5 py-1 text-lg font-semibold tracking-wide text-white">
-              100 МЕТРОВ
+              {t("hero.badge")}
             </span>
           </div>
         </div>

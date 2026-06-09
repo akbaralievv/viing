@@ -787,5 +787,76 @@
       "title": "GILAM PLYÖNKASI SANOAT — sanoat strech plyonkasi",
       "description": "Yuklarni ishonchli mahkamlash, himoya qilish va xavfsiz tashish uchun sanoat strech plyonkasi. 45 sm × 200 m × 50 mkm. VIING tomonidan brend ostida ishlab chiqarish."
     }
+  },
+  "dasturxon": {
+    "meta": {
+      "title": "DASTURXON PLYÖNKASI — oziq-ovqat plyonkasi",
+      "description": "DASTURXON PLYÖNKASI — mahsulotlarni saqlash va yangiligini saqlash uchun oziq-ovqat plyonkasi. 100 metr. VIING tomonidan brend ostida ishlab chiqarish."
+    },
+    "hero": {
+      "desc": "Mahsulotlarni saqlash va yangiligini saqlash uchun oziq-ovqat plyonkasi",
+      "badge": "100 METR"
+    },
+    "advantages": [
+      "Mahsulotlarni saqlash uchun",
+      "Yangiligini saqlaydi",
+      "Zich yopishadi",
+      "Hidsiz",
+      "Oziq-ovqat uchun xavfsiz",
+      "Oson uziladi"
+    ],
+    "specs": {
+      "heading": "Xususiyatlar",
+      "head": [
+        "Parametr",
+        "Qiymat"
+      ],
+      "rows": [
+        {
+          "label": "Uzunligi",
+          "value": "100 m"
+        },
+        {
+          "label": "Eni",
+          "value": "30 sm"
+        },
+        {
+          "label": "Material",
+          "value": "PE"
+        },
+        {
+          "label": "Rangi",
+          "value": "Shaffof"
+        },
+        {
+          "label": "Oziq-ovqat bilan aloqa",
+          "value": "Ha"
+        },
+        {
+          "label": "Qadoq turi",
+          "value": "Pichoqli quti"
+        }
+      ]
+    },
+    "usage": {
+      "heading": "Foydalanish",
+      "desc": "Sabzavotlar, mevalar, go'sht, pishiriqlar va tayyor taomlar uchun ideal"
+    },
+    "production": {
+      "heading": "Ishlab chiqarish",
+      "subtitle": "Har bir bosqichda sifat nazorati bilan oziq-ovqat plyonkasini to'liq ishlab chiqarish tsikli.",
+      "steps": [
+        "Ekstruziya",
+        "O'rash",
+        "Kesish",
+        "Qadoqlash",
+        "Logistika"
+      ]
+    },
+    "cta": {
+      "heading": "O'z brendingizni ishga tushirishga tayyormisiz?",
+      "desc": "VIING — jahon darajasidagi yuqori sifatli mahsulotlar yaratishda ishonchli hamkoringiz.",
+      "button": "Loyihani muhokama qilish"
+    }
   }
 }

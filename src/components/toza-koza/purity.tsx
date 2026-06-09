@@ -67,7 +67,7 @@ export function TozaKozaPurity() {
     <section className="relative overflow-hidden bg-[#FAF7F1]">
       {/* Scene with jug — desktop (> 850px) */}
       <Image
-        src="/tozaKoza/section2-background.png"
+        src="/tozaKoza/purity.png"
         alt=""
         fill
         sizes="100vw"
