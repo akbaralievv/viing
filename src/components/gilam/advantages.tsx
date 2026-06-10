@@ -23,25 +23,25 @@ export function GilamAdvantages() {
   const items = t.raw("advantages") as { title: string; desc: string }[];
 
   return (
-    <section id="advantages" className="bg-[#F6F1EA] pt-14 md:pt-20">
+    <section id="advantages" className="bg-gilam-cream pt-14 md:pt-20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 gap-px bg-[#DDD1C3] md:grid-cols-3 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-px bg-gilam-line md:grid-cols-3 lg:grid-cols-6">
           {items.map(({ title, desc }, i) => {
             const Icon = ICONS[i];
             return (
               <div
                 key={title}
-                className="flex flex-col items-center bg-[#F6F1EA] px-4 py-8 text-center"
+                className="flex flex-col items-center bg-gilam-cream px-4 py-8 text-center"
               >
                 <Icon
-                  className="h-9 w-9 text-[#7B4A2C]"
+                  className="h-9 w-9 text-gilam-brown"
                   strokeWidth={1.4}
                   aria-hidden="true"
                 />
-                <h3 className="mt-4 text-base font-semibold text-[#2A1A14]">
+                <h3 className="mt-4 text-base font-semibold text-gilam-ink">
                   {title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#7D7269]">
+                <p className="mt-2 text-sm leading-relaxed text-gilam-muted">
                   {desc}
                 </p>
               </div>

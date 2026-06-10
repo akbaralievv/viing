@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ZoomableImage } from "@/components/zoomable-image";
 
-const CALLOUT_IMAGES = ["/tozaKoza/textile.png", "/tozaKoza/valve.png"];
+const CALLOUT_IMAGES = ["/toza-koza/textile.png", "/toza-koza/valve.png"];
 
 export function TozaKozaSpecs() {
   const t = useTranslations("wetWipes");
@@ -12,7 +12,7 @@ export function TozaKozaSpecs() {
   return (
     <section className="relative overflow-hidden bg-white">
       <Image
-        src="/tozaKoza/white-background.png"
+        src="/toza-koza/white-background.png"
         alt=""
         fill
         sizes="100vw"
@@ -21,27 +21,27 @@ export function TozaKozaSpecs() {
 
       <div className="relative z-10 container mx-auto px-4 py-14 md:py-20">
         {/* Heading */}
-        <h2 className="font-cormorant text-2xl font-bold uppercase tracking-wide text-[#052439] md:text-[2rem]">
+        <h2 className="font-cormorant text-2xl font-bold uppercase tracking-wide text-toza-ink md:text-[2rem]">
           {t("specs.heading")}
         </h2>
 
         <div className="mt-8 flex flex-col gap-12 lg:flex-row lg:items-start lg:justify-between lg:gap-8">
           {/* Specs table */}
-          <div className="w-full overflow-hidden rounded-xl bg-white/55 ring-1 ring-[#E6E2D9]/70 backdrop-blur-sm lg:max-w-[560px]">
+          <div className="w-full overflow-hidden rounded-xl bg-white/55 ring-1 ring-toza-line/70 backdrop-blur-sm lg:max-w-[560px]">
             <table className="w-full border-collapse text-left align-top">
               <tbody>
                 {rows.map((row) => (
                   <tr
                     key={row.label}
-                    className="border-b border-[#E8E4DB] last:border-b-0"
+                    className="border-b border-toza-table-line last:border-b-0"
                   >
                     <th
                       scope="row"
-                      className="w-2/5 bg-[#F2F0EA]/80 px-4 py-3 text-xs font-semibold text-[#052439] sm:text-sm"
+                      className="w-2/5 bg-toza-table-head/80 px-4 py-3 text-xs font-semibold text-toza-ink sm:text-sm"
                     >
                       {row.label}
                     </th>
-                    <td className="px-4 py-3 text-xs leading-relaxed text-[#5C5C5C] sm:text-sm">
+                    <td className="px-4 py-3 text-xs leading-relaxed text-toza-gray-deep sm:text-sm">
                       {row.value}
                     </td>
                   </tr>
@@ -60,9 +60,9 @@ export function TozaKozaSpecs() {
                 <ZoomableImage
                   src={CALLOUT_IMAGES[i]}
                   alt={text}
-                  className="h-20 w-20 shrink-0 rounded-full object-cover ring-1 ring-[#E6E2D9] shadow-[0_6px_18px_rgba(0,0,0,0.06)] min-[400px]:h-24 min-[400px]:w-24 md:h-28 md:w-28"
+                  className="h-20 w-20 shrink-0 rounded-full object-cover ring-1 ring-toza-line shadow-[0_6px_18px_rgba(0,0,0,0.06)] min-[400px]:h-24 min-[400px]:w-24 md:h-28 md:w-28"
                 />
-                <p className="min-w-0 flex-1 text-sm leading-relaxed text-[#4D5563]">
+                <p className="min-w-0 flex-1 text-sm leading-relaxed text-toza-body">
                   {text}
                 </p>
               </div>

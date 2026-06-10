@@ -1,11 +1,11 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { BackButton } from "@/components/back-button";
 
 const BENEFIT_ICONS = [
-  "full-water_gold.svg",
-  "no-alcohol_gold.svg",
-  "textile_gold.svg",
-  "no-pvc_gold.svg",
+  "full-water-gold.svg",
+  "no-alcohol-gold.svg",
+  "textile-gold.svg",
+  "no-pvc-gold.svg",
 ];
 
 export function TozaKozaHero() {
@@ -13,28 +13,25 @@ export function TozaKozaHero() {
   const benefits = t.raw("hero.benefits") as string[];
 
   return (
-    <section className="relative min-h-[100svh] flex bg-[#FAF7F1] max-h-[900px]">
-      {/* Scene — desktop (>= 600px) */}
-      <Image
-        src="/tozaKoza/40-hero.png"
-        alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="hidden object-cover object-center min-[600px]:block"
-      />
-      {/* Scene — mobile (< 600px) */}
-      <Image
-        src="/tozaKoza/40-hero_mobile.png"
-        alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="block object-cover object-center min-[600px]:hidden"
+    <section className="relative min-h-[100svh] flex bg-toza-cream max-h-[900px]">
+      <BackButton
+        ariaLabel={t("backAria")}
+        className="text-toza-green hover:text-toza-green-soft"
       />
 
+      {/* Scene — <picture> downloads only the matching variant (mobile/desktop) */}
+      <picture>
+        <source media="(max-width: 599px)" srcSet="/toza-koza/hero-mobile.png" />
+        <img
+          src="/toza-koza/hero.png"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+      </picture>
+
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 flex flex-col justify-start pt-24 pb-12 md:pt-28 min-[600px]:justify-center">
+      <div className="relative z-10 container mx-auto px-4 flex flex-col justify-start pt-32 pb-12 md:pt-28 min-[600px]:justify-center">
         <div className="max-w-xl mt-[25px] min-[600px]:mt-0">
           <h1 className="font-cormorant font-bold leading-[0.92] tracking-tight text-[clamp(3.25rem,9vw,6.875rem)]">
             <span
@@ -57,7 +54,7 @@ export function TozaKozaHero() {
             </span>
           </h1>
 
-          <p className="font-cormorant font-bold text-[#084b37] text-2xl lg:text-2xl max-w-[20rem] mt-5 mb-7 md:mb-8">
+          <p className="font-cormorant font-bold text-toza-green text-2xl lg:text-2xl max-w-[20rem] mt-5 mb-7 md:mb-8">
             {t("hero.tagline")}
           </p>
 
@@ -69,12 +66,12 @@ export function TozaKozaHero() {
                 className="flex items-center gap-3 lg:flex-col lg:items-center lg:gap-2 lg:text-center"
               >
                 <img
-                  src={`/tozaKoza/icons/${BENEFIT_ICONS[i]}`}
+                  src={`/toza-koza/icons/${BENEFIT_ICONS[i]}`}
                   alt=""
                   aria-hidden="true"
                   className="h-10 w-10 shrink-0 lg:h-[3.25rem] lg:w-[3.25rem]"
                 />
-                <span className="text-sm font-semibold leading-tight text-[#084b37] lg:text-[13px]">
+                <span className="text-sm font-semibold leading-tight text-toza-green lg:text-[13px]">
                   {title}
                 </span>
               </li>

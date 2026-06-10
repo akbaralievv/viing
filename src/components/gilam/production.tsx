@@ -3,12 +3,12 @@ import { useTranslations } from "next-intl";
 import { ZoomableImage } from "@/components/zoomable-image";
 
 const IMAGES = [
-  "/gilam/1.png",
-  "/gilam/2.png",
-  "/gilam/3.png",
-  "/gilam/4.png",
-  "/gilam/5.png",
-  "/gilam/6.png",
+  "/gilam/production-1.png",
+  "/gilam/production-2.png",
+  "/gilam/production-3.png",
+  "/gilam/production-4.png",
+  "/gilam/production-5.png",
+  "/gilam/production-6.png",
 ];
 
 export function GilamProduction() {
@@ -16,14 +16,14 @@ export function GilamProduction() {
   const steps = t.raw("production.steps") as string[];
 
   return (
-    <section id="production" className="bg-[#F6F1EA] py-14 md:py-20">
+    <section id="production" className="bg-gilam-cream py-14 md:py-20">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between md:gap-8">
-          <h2 className="font-cormorant text-3xl font-semibold uppercase tracking-wide text-[#2A1A14] md:text-[2.5rem]">
+          <h2 className="font-cormorant text-3xl font-semibold uppercase tracking-wide text-gilam-ink md:text-[2.5rem]">
             {t("production.heading")}
           </h2>
-          <p className="max-w-sm text-sm leading-relaxed text-[#7D7269]">
+          <p className="max-w-sm text-sm leading-relaxed text-gilam-muted">
             {t("production.subtitle")}
           </p>
         </div>
@@ -42,16 +42,16 @@ export function GilamProduction() {
                   />
                   {/* connector arrow — desktop single-row only */}
                   {i < steps.length - 1 && (
-                    <span className="absolute -right-5 top-1/2 hidden -translate-y-1/2 text-[#7B4A2C] lg:block">
+                    <span className="absolute -right-5 top-1/2 hidden -translate-y-1/2 text-gilam-brown lg:block">
                       <ArrowRight className="h-5 w-5" aria-hidden="true" />
                     </span>
                   )}
                 </div>
                 <div className="mt-4 flex items-baseline justify-center gap-2">
-                  <span className="text-lg font-semibold text-[#2A1A14] md:text-xl">
+                  <span className="text-lg font-semibold text-gilam-ink md:text-xl">
                     {num}
                   </span>
-                  <span className="text-sm font-medium text-[#4A4038]">
+                  <span className="text-sm font-medium text-gilam-body">
                     {label}
                   </span>
                 </div>

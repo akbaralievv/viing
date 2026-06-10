@@ -7,7 +7,7 @@ export function DasturxonCta() {
   const t = useTranslations("dasturxon");
 
   return (
-    <section id="contacts" className="relative overflow-hidden bg-[#EEF2F8]">
+    <section id="contacts" className="relative overflow-hidden bg-dast-sky">
       <Image
         src="/dasturxon/cta.png"
         alt=""
@@ -23,17 +23,17 @@ export function DasturxonCta() {
           {/* Text + CTA */}
           <div>
             <h2
-              className="text-3xl font-semibold uppercase leading-tight text-[#223B63]"
+              className="text-3xl font-semibold uppercase leading-tight text-dast-ink"
               style={{ fontFamily: "Georgia, sans-serif" }}
             >
               {t("cta.heading")}
             </h2>
-            <p className="mt-5 max-w-md text-base leading-relaxed text-[#344B68] md:text-lg">
+            <p className="mt-5 max-w-md text-base leading-relaxed text-dast-body md:text-lg">
               {t("cta.desc")}
             </p>
             <Link
               href="/#contact"
-              className="mt-8 inline-flex items-center gap-2.5 rounded-[5px] bg-[#1F426E] px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#15314F]"
+              className="mt-8 inline-flex items-center gap-2.5 rounded-[5px] bg-dast-navy px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-dast-navy-deep"
             >
               {t("cta.button")}
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -45,6 +45,8 @@ export function DasturxonCta() {
             <img
               src="/dasturxon/stretch.png"
               alt="DASTURXON PLYÖNKASI"
+              loading="lazy"
+              decoding="async"
               className="ml-auto w-full max-w-[400px] object-contain"
             />
           </div>

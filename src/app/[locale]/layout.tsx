@@ -39,7 +39,8 @@ const bodoni = Bodoni_Moda({
   variable: "--font-bodoni",
   subsets: ["latin"],
   display: "swap",
-  weight: ["500", "600", "700"],
+  // only the semibold weight is actually used (lineup card numbers)
+  weight: ["600"],
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || siteConfig.url;
@@ -94,9 +95,9 @@ export async function generateMetadata({
       description: t("shortDescription"),
       images: [
         {
-          url: "/og.png",
-          width: 1200,
-          height: 630,
+          url: "/hero.png",
+          width: 1717,
+          height: 916,
           alt: t("ogAlt"),
         },
       ],
@@ -105,7 +106,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("ogTitle"),
       description: t("shortDescription"),
-      images: ["/og.png"],
+      images: ["/hero.png"],
     },
     robots: {
       index: true,

@@ -1,13 +1,13 @@
 import { cn } from "@/lib/utils";
 
 /**
- * VIING logo — renders /logo_text.svg (ship "V" mark + "VIING" wordmark,
+ * VIING logo — renders /logo-text.svg (ship "V" mark + "VIING" wordmark,
  * light-colored, made for dark backgrounds). Includes the wordmark, so no
  * separate text label is needed. Size it via the height class.
  */
 export function LogoMark({
   className,
-  src = "/logo_text.svg",
+  src = "/logo-text.svg",
 }: {
   className?: string;
   src?: string;

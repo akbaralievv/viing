@@ -7,8 +7,3 @@ export const caseStudies = [
   { slug: "stretch-film", image: "/portfolio/gilam.png" },
   { slug: "food-cling-film", image: "/portfolio/dasturxon.png" },
 ] as const;
-
-export type CaseStudy = (typeof caseStudies)[number];
-
-export const getCaseIndex = (slug: string): number =>
-  caseStudies.findIndex((c) => c.slug === slug);

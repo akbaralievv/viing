@@ -1,10 +1,16 @@
 import { useTranslations } from "next-intl";
+import { BackButton } from "@/components/back-button";
 
 export function DasturxonHero() {
   const t = useTranslations("dasturxon");
 
   return (
-    <section className="relative flex min-h-[100svh] overflow-hidden bg-[#F8F6F2]">
+    <section className="relative flex min-h-[100svh] overflow-hidden bg-dast-cream">
+      <BackButton
+        ariaLabel={t("backAria")}
+        className="text-dast-navy hover:text-dast-navy-deep"
+      />
+
       {/* Ornament — left edge, behind content */}
       <img
         src="/dasturxon/pattern.svg"
@@ -38,14 +44,14 @@ export function DasturxonHero() {
             }}
           />
           <div className="relative">
-            <h1 className="font-cormorant text-[clamp(3.2rem,8vw,82px)] font-bold leading-[0.92] tracking-[-0.02em] text-[#223B63]">
+            <h1 className="font-cormorant text-[clamp(3.2rem,8vw,82px)] font-bold leading-[0.92] tracking-[-0.02em] text-dast-ink">
               DASTURXON
             </h1>
-            <p className="font-cormorant text-[clamp(2.5rem,4vw,50px)] font-medium leading-[0.92] tracking-[-0.02em] text-[#223B63]">PLYÖNKASI</p>
-            <p className="mx-auto mt-5 max-w-sm text-lg leading-[1.7] text-[#344B68] min-[900px]:mx-0">
+            <p className="font-cormorant text-[clamp(2.5rem,4vw,50px)] font-medium leading-[0.92] tracking-[-0.02em] text-dast-ink">PLYÖNKASI</p>
+            <p className="mx-auto mt-5 max-w-sm text-lg leading-[1.7] text-dast-body min-[900px]:mx-0">
               {t("hero.desc")}
             </p>
-            <span className="mt-7 inline-flex leading-none border-2 border-white items-center rounded-full bg-[#1F426E] px-2.5 py-1 text-lg font-semibold tracking-wide text-white">
+            <span className="mt-7 inline-flex leading-none border-2 border-white items-center rounded-full bg-dast-navy px-2.5 py-1 text-lg font-semibold tracking-wide text-white">
               {t("hero.badge")}
             </span>
           </div>

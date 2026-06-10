@@ -15,6 +15,22 @@ import { cn } from "@/lib/utils";
 
 type Result = "success" | "error";
 
+// Error codes the API may return (see src/app/api/contact/route.ts); each has
+// a matching `form.errors.*` translation key. Unknown codes fall back to
+// `submitFailed`.
+const KNOWN_ERROR_CODES = new Set([
+  "tooManyRequests",
+  "invalidRequest",
+  "nameMin",
+  "nameMax",
+  "phoneRequired",
+  "phoneInvalid",
+  "messageMin",
+  "messageMax",
+  "emailInvalid",
+  "deliveryFailed",
+]);
+
 export function QuickLeadForm() {
   const t = useTranslations("form");
   const tCta = useTranslations("cta");
@@ -59,7 +75,9 @@ export function QuickLeadForm() {
       });
       if (!response.ok) {
         const body = (await response.json().catch(() => ({}))) as { error?: string };
-        throw new Error(body.error || tErrors("submitFailed"));
+        const code =
+          body.error && KNOWN_ERROR_CODES.has(body.error) ? body.error : "submitFailed";
+        throw new Error(tErrors(code));
       }
       setResult("success");
       setResultMessage(tDialog("successMessage"));

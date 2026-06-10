@@ -10,12 +10,28 @@ type ContactPayload = {
   website?: unknown;
 };
 
+/**
+ * Error responses carry stable codes (`{ error: "<code>" }`) that the client
+ * maps to localized messages via the `form.errors.*` translation keys.
+ */
+const err = (code: string, status: number) =>
+  NextResponse.json({ error: code }, { status });
+
 const rateLimitWindowMs = 60_000;
 const rateLimitMax = 5;
+// Best-effort, per-instance limiter (resets on restart; not shared between
+// instances). Good enough for a contact form behind a single deployment.
 const buckets = new Map<string, { count: number; reset: number }>();
+const bucketsSweepAt = 500;
 
 const checkRateLimit = (ip: string) => {
   const now = Date.now();
+  // keep the map bounded: drop expired buckets once it grows
+  if (buckets.size >= bucketsSweepAt) {
+    for (const [key, bucket] of buckets) {
+      if (bucket.reset < now) buckets.delete(key);
+    }
+  }
   const bucket = buckets.get(ip);
   if (!bucket || bucket.reset < now) {
     buckets.set(ip, { count: 1, reset: now + rateLimitWindowMs });
@@ -35,20 +51,16 @@ export async function POST(request: Request) {
     request.headers.get("x-real-ip") ||
     "unknown";
 
-  if (!checkRateLimit(ip)) {
-    return NextResponse.json(
-      { error: "Слишком много запросов. Попробуйте позже." },
-      { status: 429 }
-    );
-  }
+  if (!checkRateLimit(ip)) return err("tooManyRequests", 429);
 
   let payload: ContactPayload;
   try {
     payload = (await request.json()) as ContactPayload;
   } catch {
-    return NextResponse.json({ error: "Неверный формат запроса" }, { status: 400 });
+    return err("invalidRequest", 400);
   }
 
+  // honeypot filled in → pretend success, don't deliver
   if (typeof payload.website === "string" && payload.website.length > 0) {
     return NextResponse.json({ ok: true });
   }
@@ -58,20 +70,14 @@ export async function POST(request: Request) {
   const email = typeof payload.email === "string" ? payload.email.trim() : "";
   const message = typeof payload.message === "string" ? payload.message.trim() : "";
 
-  if (name.length < 2 || name.length > 80) {
-    return NextResponse.json({ error: "Укажите имя (от 2 символов)" }, { status: 400 });
-  }
-  if (phone.length < 5 || phone.length > 32) {
-    return NextResponse.json({ error: "Укажите корректный телефон" }, { status: 400 });
-  }
-  if (message.length < 5 || message.length > 2000) {
-    return NextResponse.json(
-      { error: "Сообщение должно быть от 5 до 2000 символов" },
-      { status: 400 }
-    );
-  }
+  if (name.length < 2) return err("nameMin", 400);
+  if (name.length > 80) return err("nameMax", 400);
+  if (phone.length < 5) return err("phoneRequired", 400);
+  if (phone.length > 32) return err("phoneInvalid", 400);
+  if (message.length < 5) return err("messageMin", 400);
+  if (message.length > 2000) return err("messageMax", 400);
   if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return NextResponse.json({ error: "Некорректный email" }, { status: 400 });
+    return err("emailInvalid", 400);
   }
 
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
@@ -118,18 +124,12 @@ export async function POST(request: Request) {
     if (!tgResponse.ok) {
       const detail = await tgResponse.text();
       console.error("[contact] Telegram delivery failed:", tgResponse.status, detail);
-      return NextResponse.json(
-        { error: "Не удалось доставить заявку. Напишите нам напрямую." },
-        { status: 502 }
-      );
+      return err("deliveryFailed", 502);
     }
 
     return NextResponse.json({ ok: true, delivered: true });
-  } catch (err) {
-    console.error("[contact] Telegram delivery error:", err);
-    return NextResponse.json(
-      { error: "Сервис временно недоступен. Попробуйте позже." },
-      { status: 502 }
-    );
+  } catch (error) {
+    console.error("[contact] Telegram delivery error:", error);
+    return err("deliveryFailed", 502);
   }
 }

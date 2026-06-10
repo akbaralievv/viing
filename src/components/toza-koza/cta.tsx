@@ -9,7 +9,7 @@ export function TozaKozaCta() {
   return (
     <section className="relative overflow-hidden">
       <Image
-        src="/tozaKoza/cta-back.png"
+        src="/toza-koza/cta-back.png"
         alt=""
         fill
         sizes="100vw"
@@ -28,7 +28,7 @@ export function TozaKozaCta() {
           </p>
           <Link
             href="/#contact"
-            className="mt-8 inline-flex items-center gap-2.5 rounded-[5px] bg-[#d49038] px-6 py-3.5 text-sm font-semibold text-[#fff] transition-colors"
+            className="mt-8 inline-flex items-center gap-2.5 rounded-[5px] bg-amber-cta px-6 py-3.5 text-sm font-semibold text-white transition-colors"
           >
             {t("cta.button")}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />

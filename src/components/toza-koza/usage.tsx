@@ -3,11 +3,11 @@ import { useTranslations } from "next-intl";
 import { ZoomableImage } from "@/components/zoomable-image";
 
 const IMAGES = [
-  "/tozaKoza/use1.png",
-  "/tozaKoza/use2.jpg",
-  "/tozaKoza/use3.jpg",
-  "/tozaKoza/use4.png",
-  "/tozaKoza/use5.jpg",
+  "/toza-koza/use-1.png",
+  "/toza-koza/use-2.jpg",
+  "/toza-koza/use-3.jpg",
+  "/toza-koza/use-4.png",
+  "/toza-koza/use-5.jpg",
 ];
 
 const ICONS: LucideIcon[] = [Hand, Car, Home, Briefcase, Users];
@@ -17,34 +17,36 @@ export function TozaKozaUsage() {
   const items = t.raw("usage.items") as { title: string; desc: string }[];
 
   return (
-    <section className="bg-[#FAF7F1] py-14 md:py-20">
+    <section className="bg-toza-cream py-14 md:py-20">
       <div className="container mx-auto px-4">
         {/* Header: centered title + subtitle, product pack floated top-right on desktop */}
         <div className="relative">
           <div className="text-center">
-            <h2 className="flex items-center justify-center gap-3 font-cormorant text-2xl font-bold uppercase tracking-wide text-[#052439] md:gap-4 md:text-[2.5rem]">
+            <h2 className="flex items-center justify-center gap-3 font-cormorant text-2xl font-bold uppercase tracking-wide text-toza-ink md:gap-4 md:text-[2.5rem]">
               <span
                 aria-hidden="true"
-                className="text-lg text-[#B89A56] md:text-2xl"
+                className="text-lg text-toza-gold md:text-2xl"
               >
                 ✦
               </span>
               {t("usage.heading")}
               <span
                 aria-hidden="true"
-                className="text-lg text-[#B89A56] md:text-2xl"
+                className="text-lg text-toza-gold md:text-2xl"
               >
                 ✦
               </span>
             </h2>
-            <p className="mt-3 text-sm text-[#4D5563] md:text-base">
+            <p className="mt-3 text-sm text-toza-body md:text-base">
               {t("usage.subtitle")}
             </p>
           </div>
 
           <img
-            src="/tozaKoza/80-pieces.png"
+            src="/toza-koza/80-pieces.png"
             alt="TOZA KO'ZA"
+            loading="lazy"
+            decoding="async"
             className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 select-none object-contain lg:block"
             style={{ width: "clamp(220px, 24vw, 340px)" }}
           />
@@ -56,7 +58,7 @@ export function TozaKozaUsage() {
             const Icon = ICONS[i];
             return (
               <article key={it.title}>
-                <div className="overflow-hidden rounded-2xl border border-[#E6D9C2]/70 shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
+                <div className="overflow-hidden rounded-2xl border border-toza-sand/70 shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
                   <ZoomableImage
                     src={IMAGES[i]}
                     alt={it.title}
@@ -65,18 +67,18 @@ export function TozaKozaUsage() {
                 </div>
 
                 <div className="mt-4 flex items-start gap-3">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white ring-1 ring-[#B89A56]/35">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white ring-1 ring-toza-gold/35">
                     <Icon
-                      className="h-[18px] w-[18px] text-[#B89A56]"
+                      className="h-[18px] w-[18px] text-toza-gold"
                       strokeWidth={1.6}
                       aria-hidden="true"
                     />
                   </span>
                   <div className="min-w-0">
-                    <h3 className="text-xs font-bold uppercase tracking-wide text-[#052439]">
+                    <h3 className="text-xs font-bold uppercase tracking-wide text-toza-ink">
                       {it.title}
                     </h3>
-                    <p className="mt-1 text-xs leading-relaxed text-[#4D5563]">
+                    <p className="mt-1 text-xs leading-relaxed text-toza-body">
                       {it.desc}
                     </p>
                   </div>

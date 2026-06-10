@@ -22,7 +22,6 @@
     "openMenu": "Open menu",
     "menuTitle": "Navigation menu",
     "homeAria": "VIING — home",
-    "skipToContent": "Skip to content",
     "back": "Back home",
     "writeWhatsapp": "Message us on WhatsApp",
     "writeTelegram": "Message us on Telegram"
@@ -271,8 +270,7 @@
       }
     ],
     "ctaTitle": "Let's discuss your project",
-    "ctaSubtitle": "Partner with VIING for precision manufacturing, private label solutions and unparalleled quality control. Elevate your product line today.",
-    "ctaButton": "Contact us"
+    "ctaSubtitle": "Partner with VIING for precision manufacturing, private label solutions and unparalleled quality control. Elevate your product line today."
   },
   "cta": {
     "title": "Need products from China?",
@@ -516,7 +514,10 @@
       "messageMin": "Describe your request — at least a few words",
       "messageMax": "Message is too long",
       "consentRequired": "Consent to personal data processing is required",
-      "submitFailed": "Something went wrong. Try again or message us on Telegram."
+      "submitFailed": "Something went wrong. Try again or message us on Telegram.",
+      "tooManyRequests": "Too many requests. Please try again later.",
+      "invalidRequest": "Invalid request format. Refresh the page and try again.",
+      "deliveryFailed": "Could not deliver your request. Please contact us directly."
     },
     "dialog": {
       "successTitle": "Request sent",
@@ -581,7 +582,6 @@
     "section4Body": "For questions about the terms of use write to"
   },
   "wetWipes": {
-    "back": "Back",
     "backAria": "Back to projects",
     "hero": {
       "tagline": "Premium-quality wet toilet paper",
@@ -723,7 +723,6 @@
     }
   },
   "stretchFilm": {
-    "back": "Back",
     "backAria": "Back to projects",
     "hero": {
       "desc": "Industrial stretch film for secure fastening, protection, and safe transportation of cargo.",
@@ -843,6 +842,7 @@
     }
   },
   "dasturxon": {
+    "backAria": "Back to projects",
     "meta": {
       "title": "DASTURXON PLYÖNKASI — food cling film",
       "description": "DASTURXON PLYÖNKASI — food cling film for storing products and keeping them fresh. 100 meters. Private-label manufacturing by VIING."
@@ -912,5 +912,8 @@
       "desc": "VIING is your reliable partner in creating world-class, high-quality products.",
       "button": "Discuss your project"
     }
+  },
+  "common": {
+    "close": "Close"
   }
 }

@@ -10,7 +10,7 @@ export function GilamCta() {
   return (
     <section id="contacts" className="relative overflow-hidden">
       <Image
-        src="/gilam/back.png"
+        src="/gilam/cta-back.png"
         alt=""
         fill
         sizes="100vw"
@@ -31,7 +31,7 @@ export function GilamCta() {
             </p>
             <Link
               href="/#contact"
-              className="mt-8 inline-flex items-center gap-2.5 rounded-[5px] bg-[#d49038] px-6 py-3.5 text-sm font-semibold text-[#fff] transition-colors"
+              className="mt-8 inline-flex items-center gap-2.5 rounded-[5px] bg-amber-cta px-6 py-3.5 text-sm font-semibold text-white transition-colors"
             >
               {t("cta.button")}
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -41,7 +41,7 @@ export function GilamCta() {
           {/* Product */}
           <div className="hidden min-[900px]:block">
             <ZoomableImage
-              src="/gilam/stretch_horizontal.png"
+              src="/gilam/stretch-horizontal.png"
               alt="GILAM PLYÖNKASI"
               className="ml-auto w-full max-w-[420px] object-contain"
             />

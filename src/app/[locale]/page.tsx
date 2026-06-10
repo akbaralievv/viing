@@ -22,7 +22,7 @@ export default async function Home({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: siteConfig.legalName,
-    image: `${siteConfig.url}/og.png`,
+    image: `${siteConfig.url}/hero.png`,
     telephone: siteConfig.contacts.phone,
     email: siteConfig.contacts.email,
     url: siteConfig.url,

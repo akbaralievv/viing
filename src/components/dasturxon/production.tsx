@@ -3,11 +3,11 @@ import { useTranslations } from "next-intl";
 import { ZoomableImage } from "../zoomable-image";
 
 const IMAGES = [
-  "/dasturxon/1.png",
-  "/dasturxon/2.png",
-  "/dasturxon/3.png",
-  "/dasturxon/4.png",
-  "/dasturxon/5.png",
+  "/dasturxon/production-1.png",
+  "/dasturxon/production-2.png",
+  "/dasturxon/production-3.png",
+  "/dasturxon/production-4.png",
+  "/dasturxon/production-5.png",
 ];
 
 export function DasturxonProduction() {
@@ -15,17 +15,17 @@ export function DasturxonProduction() {
   const steps = t.raw("production.steps") as string[];
 
   return (
-    <section className="bg-[#F8F6F2] py-14 md:py-20">
+    <section className="bg-dast-cream py-14 md:py-20">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between md:gap-8">
           <h2
-            className="text-2xl font-medium uppercase tracking-wide text-[#223B63] md:text-[2rem]"
+            className="text-2xl font-medium uppercase tracking-wide text-dast-ink md:text-[2rem]"
             style={{ fontFamily: "Georgia, sans-serif" }}
           >
             {t("production.heading")}
           </h2>
-          <p className="max-w-sm text-sm leading-relaxed text-[#6B7A92]">
+          <p className="max-w-sm text-sm leading-relaxed text-dast-muted">
             {t("production.subtitle")}
           </p>
         </div>
@@ -45,16 +45,16 @@ export function DasturxonProduction() {
                   />
                   {/* connector arrow — desktop single-row only */}
                   {i < steps.length - 1 && (
-                    <span className="absolute -right-5 top-1/2 hidden -translate-y-1/2 text-[#1F426E] lg:block">
+                    <span className="absolute -right-5 top-1/2 hidden -translate-y-1/2 text-dast-navy lg:block">
                       <ArrowRight className="h-5 w-5" aria-hidden="true" />
                     </span>
                   )}
                 </div>
                 <div className="mt-4 flex items-baseline justify-center gap-2">
-                  <span className="text-lg font-semibold text-[#223B63] md:text-xl">
+                  <span className="text-lg font-semibold text-dast-ink md:text-xl">
                     {num}
                   </span>
-                  <span className="text-sm font-medium text-[#344B68]">
+                  <span className="text-sm font-medium text-dast-body">
                     {label}
                   </span>
                 </div>

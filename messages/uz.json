@@ -270,8 +270,7 @@
       }
     ],
     "ctaTitle": "Loyihangizni muhokama qilamiz",
-    "ctaSubtitle": "Aniq ishlab chiqarish, o'z brendi ostidagi yechimlar va beqiyos sifat nazorati uchun VIING bilan hamkorlik qiling. Mahsulot liniyangizni yangi bosqichga ko'taring.",
-    "ctaButton": "Bog'lanish"
+    "ctaSubtitle": "Aniq ishlab chiqarish, o'z brendi ostidagi yechimlar va beqiyos sifat nazorati uchun VIING bilan hamkorlik qiling. Mahsulot liniyangizni yangi bosqichga ko'taring."
   },
   "cta": {
     "title": "Xitoydan mahsulot kerakmi?",
@@ -515,7 +514,10 @@
       "messageMin": "So'rovingizni tasvirlang — kamida bir necha so'z",
       "messageMax": "Xabar juda uzun",
       "consentRequired": "Shaxsiy ma'lumotlarni qayta ishlashga rozilik talab qilinadi",
-      "submitFailed": "Nimadir noto'g'ri ketdi. Qaytadan urinib ko'ring yoki Telegram orqali yozing."
+      "submitFailed": "Nimadir noto'g'ri ketdi. Qaytadan urinib ko'ring yoki Telegram orqali yozing.",
+      "tooManyRequests": "So'rovlar juda ko'p. Keyinroq urinib ko'ring.",
+      "invalidRequest": "So'rov formati noto'g'ri. Sahifani yangilab, qayta urinib ko'ring.",
+      "deliveryFailed": "So'rovni yetkazib bo'lmadi. Biz bilan to'g'ridan-to'g'ri bog'laning."
     },
     "dialog": {
       "successTitle": "So'rov yuborildi",
@@ -580,7 +582,6 @@
     "section4Body": "Foydalanish shartlari bo'yicha savollar uchun yozing"
   },
   "wetWipes": {
-    "back": "Orqaga",
     "backAria": "Loyihalarga qaytish",
     "hero": {
       "tagline": "Premium sifatli nam tualet qog'ozi",
@@ -722,7 +723,6 @@
     }
   },
   "stretchFilm": {
-    "back": "Orqaga",
     "backAria": "Loyihalarga qaytish",
     "hero": {
       "desc": "Yuklarni ishonchli mahkamlash, himoya qilish va xavfsiz tashish uchun sanoat strech plyonkasi.",
@@ -842,6 +842,7 @@
     }
   },
   "dasturxon": {
+    "backAria": "Loyihalarga qaytish",
     "meta": {
       "title": "DASTURXON PLYÖNKASI — oziq-ovqat plyonkasi",
       "description": "DASTURXON PLYÖNKASI — mahsulotlarni saqlash va yangiligini saqlash uchun oziq-ovqat plyonkasi. 100 metr. VIING tomonidan brend ostida ishlab chiqarish."
@@ -911,5 +912,8 @@
       "desc": "VIING — jahon darajasidagi yuqori sifatli mahsulotlar yaratishda ishonchli hamkoringiz.",
       "button": "Loyihani muhokama qilish"
     }
+  },
+  "common": {
+    "close": "Yopish"
   }
 }
