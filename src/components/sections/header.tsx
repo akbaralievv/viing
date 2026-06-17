@@ -138,7 +138,9 @@ const navigateFromMenu = (href: string) => {
             </SheetTrigger>
             <SheetContent  onAnimationEnd={() => {
               if (!isMenuOpen && pendingHref.current) {
-                router.push(pendingHref.current);
+                const href = pendingHref.current;
+                pendingHref.current = null;
+                router.push(href);
               }
             }} side="right" className="w-[300px]">
               <SheetTitle asChild>
