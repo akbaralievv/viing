@@ -848,53 +848,119 @@
       "description": "DASTURXON PLYÖNKASI — mahsulotlarni saqlash va yangiligini saqlash uchun oziq-ovqat plyonkasi. 100 metr. VIING tomonidan brend ostida ishlab chiqarish."
     },
     "hero": {
-      "desc": "Mahsulotlarni saqlash va yangiligini saqlash uchun oziq-ovqat plyonkasi",
-      "badge": "100 METR"
+      "title": "Nafas oluvchi",
+      "subtitle": "Oziq-ovqat strech plyonkasi",
+      "tagline": "Mahsulotlarni uzoqroq yangi saqlaydi",
+      "note": "Tabiiy havo almashinuvi tufayli",
+      "features": [
+        "Eko mahsulot",
+        "Havo\no'tkazadi",
+        "Mikroto'lqinli\npech uchun"
+      ]
     },
-    "advantages": [
-      "Mahsulotlarni saqlash uchun",
-      "Yangiligini saqlaydi",
-      "Zich yopishadi",
-      "Hidsiz",
-      "Oziq-ovqat uchun xavfsiz",
-      "Oson uziladi"
-    ],
-    "specs": {
-      "heading": "Xususiyatlar",
-      "head": [
-        "Parametr",
-        "Qiymat"
+    "advantages": {
+      "heading": "Assortimentdagi oʻlchamlar",
+      "sizes": [
+        "45 sm × 200 m × 10 mic",
+        "35 sm × 400 m × 10 mic",
+        "45 sm × 400 m × 10 mic",
+        "30 sm × 100 m × 10 mic",
+        "30 sm × 50 m × 10 mic",
+        "30 sm × 30 m × 10 mic"
       ],
-      "rows": [
+      "items": [
         {
-          "label": "Uzunligi",
-          "value": "100 m"
+          "title": "Yangiligini saqlaydi",
+          "desc": "Tabiiy havo almashinuvi mahsulotlar saqlash muddatini uzaytiradi."
         },
         {
-          "label": "Eni",
-          "value": "30 sm"
+          "title": "Qurib qolishdan himoya",
+          "desc": "Mahsulotlarning namligi va teksturasini saqlaydi."
         },
         {
-          "label": "Material",
-          "value": "PE"
+          "title": "Mahsulotlar uchun xavfsiz",
+          "desc": "Oziq-ovqat xomashyosidan tayyorlangan, kontaktda xavfsiz."
         },
         {
-          "label": "Rangi",
-          "value": "Shaffof"
-        },
-        {
-          "label": "Oziq-ovqat bilan aloqa",
-          "value": "Ha"
-        },
-        {
-          "label": "Qadoq turi",
-          "value": "Pichoqli quti"
+          "title": "Muzlatkichlar uchun mos",
+          "desc": "Past haroratlarga chidamli, elastikligini yoʻqotmaydi."
         }
       ]
     },
+    "specs": {
+      "packaging": {
+        "heading": "Qadoqlash va yetkazib berish",
+        "items": [
+          {
+            "title": "Quti:",
+            "desc": "1 × 6 rulon\n45 sm × 400 m × 10 mic"
+          },
+          {
+            "title": "Ishonchli qadoqlash",
+            "desc": "Mahsulotni tashishda himoya qiladi"
+          },
+          {
+            "title": "Qulay saqlash va logistika"
+          },
+          {
+            "title": "Har bir partiyada barqaror sifat"
+          }
+        ]
+      },
+      "tech": {
+        "heading": "Texnik xususiyatlar",
+        "rows": [
+          {
+            "label": "Qalinlik",
+            "value": "10 mic"
+          },
+          {
+            "label": "Material",
+            "value": "LDPE"
+          },
+          {
+            "label": "Turi",
+            "value": "Nafas oluvchi strech plyonka"
+          },
+          {
+            "label": "Maqsadi",
+            "value": "Oziq-ovqat qadoqlash"
+          },
+          {
+            "label": "Ishlab chiqarish",
+            "value": "Xitoy"
+          },
+          {
+            "label": "Importyor",
+            "value": "VIING MCHJ XK"
+          }
+        ]
+      }
+    },
     "usage": {
-      "heading": "Foydalanish",
-      "desc": "Sabzavotlar, mevalar, go'sht, pishiriqlar va tayyor taomlar uchun ideal"
+      "heading": "Qayerda ishlatiladi",
+      "items": [
+        {
+          "title": "Supermarketlar",
+          "desc": "Sabzavot va mevalarni qadoqlash"
+        },
+        {
+          "title": "Goʻsht boʻlimlari",
+          "desc": "Goʻsht va yarim tayyor mahsulotlarni qadoqlash"
+        },
+        {
+          "title": "Restoran va kafelar",
+          "desc": "Ingredient va taomlarni saqlash"
+        },
+        {
+          "title": "Ishlab chiqarish",
+          "desc": "Mahsulotlarni sanoat qadoqlash"
+        },
+        {
+          "title": "Uyda",
+          "desc": "Mahsulot va tayyor taomlarni saqlash"
+        }
+      ]
     },
     "production": {
       "heading": "Ishlab chiqarish",
@@ -908,7 +974,7 @@
       ]
     },
     "cta": {
-      "heading": "O'z brendingizni ishga tushirishga tayyormisiz?",
+      "heading": "Brendingizni ishga tushirishga tayyormisiz?",
       "desc": "VIING — jahon darajasidagi yuqori sifatli mahsulotlar yaratishda ishonchli hamkoringiz.",
       "button": "Loyihani muhokama qilish"
     }

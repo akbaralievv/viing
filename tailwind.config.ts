@@ -114,9 +114,13 @@ export default {
           'head-bg': '#E9EEF4',    // table head row
           'row-line': '#E1E5EC',   // table row divider
           line: '#DCE2EA',
+          night: '#001532',        // hero background (dark theme)
+          lime: '#709921',         // hero accent text + icons
+          'lime-deep': '#5C7D1B',  // lime button hover
         },
         // shared CTA button color on the toza & gilam pages
         'amber-cta': '#D49038',
+        'amber-cta-deep': '#B97A26', // hover
       },
       borderRadius: {
         lg: 'var(--radius)',

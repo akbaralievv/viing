@@ -848,53 +848,119 @@
       "description": "DASTURXON PLYÖNKASI — food cling film for storing products and keeping them fresh. 100 meters. Private-label manufacturing by VIING."
     },
     "hero": {
-      "desc": "Food cling film for storing products and keeping them fresh",
-      "badge": "100 METERS"
+      "title": "Breathable",
+      "subtitle": "Food stretch film",
+      "tagline": "Keeps food fresh longer",
+      "note": "Thanks to natural air exchange",
+      "features": [
+        "Eco product",
+        "Lets air\nthrough",
+        "Microwave\nsafe"
+      ]
     },
-    "advantages": [
-      "For food storage",
-      "Keeps food fresh",
-      "Tight cling",
-      "Odorless",
-      "Food-safe",
-      "Easy to tear"
-    ],
-    "specs": {
-      "heading": "Specifications",
-      "head": [
-        "Parameter",
-        "Value"
+    "advantages": {
+      "heading": "Sizes available",
+      "sizes": [
+        "45 cm × 200 m × 10 mic",
+        "35 cm × 400 m × 10 mic",
+        "45 cm × 400 m × 10 mic",
+        "30 cm × 100 m × 10 mic",
+        "30 cm × 50 m × 10 mic",
+        "30 cm × 30 m × 10 mic"
       ],
-      "rows": [
+      "items": [
         {
-          "label": "Length",
-          "value": "100 m"
+          "title": "Keeps food fresh",
+          "desc": "Natural air exchange extends the shelf life of food."
         },
         {
-          "label": "Width",
-          "value": "30 cm"
+          "title": "Prevents drying out",
+          "desc": "Retains the moisture and texture of food."
         },
         {
-          "label": "Material",
-          "value": "PE"
+          "title": "Food-safe",
+          "desc": "Made from food-grade material, safe in contact with food."
         },
         {
-          "label": "Color",
-          "value": "Transparent"
-        },
-        {
-          "label": "Food contact",
-          "value": "Yes"
-        },
-        {
-          "label": "Packaging type",
-          "value": "Box with cutter"
+          "title": "Fridge-friendly",
+          "desc": "Withstands low temperatures without losing elasticity."
         }
       ]
     },
+    "specs": {
+      "packaging": {
+        "heading": "Packaging & delivery",
+        "items": [
+          {
+            "title": "Box:",
+            "desc": "1 × 6 rolls\n45 cm × 400 m × 10 mic"
+          },
+          {
+            "title": "Reliable packaging",
+            "desc": "Protects the product during transport"
+          },
+          {
+            "title": "Easy storage and logistics"
+          },
+          {
+            "title": "Consistent quality in every batch"
+          }
+        ]
+      },
+      "tech": {
+        "heading": "Technical specifications",
+        "rows": [
+          {
+            "label": "Thickness",
+            "value": "10 mic"
+          },
+          {
+            "label": "Material",
+            "value": "LDPE"
+          },
+          {
+            "label": "Type",
+            "value": "Breathable stretch film"
+          },
+          {
+            "label": "Use",
+            "value": "Food packaging"
+          },
+          {
+            "label": "Made in",
+            "value": "China"
+          },
+          {
+            "label": "Importer",
+            "value": "VIING MCHJ XK"
+          }
+        ]
+      }
+    },
     "usage": {
-      "heading": "Usage",
-      "desc": "Perfect for vegetables, fruit, meat, baked goods and ready meals"
+      "heading": "Where it is used",
+      "items": [
+        {
+          "title": "Supermarkets",
+          "desc": "Packing vegetables and fruit"
+        },
+        {
+          "title": "Meat departments",
+          "desc": "Wrapping meat and semi-finished products"
+        },
+        {
+          "title": "Restaurants & cafes",
+          "desc": "Storing ingredients and dishes"
+        },
+        {
+          "title": "Manufacturing",
+          "desc": "Industrial packaging of products"
+        },
+        {
+          "title": "At home",
+          "desc": "Storing food and cooked meals"
+        }
+      ]
     },
     "production": {
       "heading": "Production",
@@ -908,7 +974,7 @@
       ]
     },
     "cta": {
-      "heading": "Ready to launch your own brand?",
+      "heading": "Ready to launch your brand?",
       "desc": "VIING is your reliable partner in creating world-class, high-quality products.",
       "button": "Discuss your project"
     }

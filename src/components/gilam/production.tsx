@@ -20,10 +20,10 @@ export function GilamProduction() {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between md:gap-8">
-          <h2 className="font-cormorant text-3xl font-semibold uppercase tracking-wide text-gilam-ink md:text-[2.5rem]">
+          <h2 className="font-cormorant text-2xl font-semibold uppercase tracking-wide text-gilam-ink md:text-[2.5rem]">
             {t("production.heading")}
           </h2>
-          <p className="max-w-sm text-sm leading-relaxed text-gilam-muted">
+          <p className="max-w-sm text-base leading-relaxed text-gilam-muted">
             {t("production.subtitle")}
           </p>
         </div>

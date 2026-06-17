@@ -25,7 +25,7 @@ export function DasturxonProduction() {
           >
             {t("production.heading")}
           </h2>
-          <p className="max-w-sm text-sm leading-relaxed text-dast-muted">
+          <p className="max-w-sm text-base leading-relaxed text-dast-muted">
             {t("production.subtitle")}
           </p>
         </div>

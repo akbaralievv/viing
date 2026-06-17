@@ -29,8 +29,8 @@ export default async function FoodClingFilmPage({
     <main id="main">
       <DasturxonHero />
       <DasturxonAdvantages />
-      <DasturxonSpecs />
       <DasturxonUsage />
+      <DasturxonSpecs />
       <DasturxonProduction />
       <DasturxonCta />
     </main>

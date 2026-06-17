@@ -1,32 +1,47 @@
 import { useTranslations } from "next-intl";
 import { ZoomableImage } from "../zoomable-image";
 
+const IMAGES = [
+  "/dasturxon/use-supermarket.png",
+  "/dasturxon/use-meat.png",
+  "/dasturxon/use-restaurant.png",
+  "/dasturxon/use-production.png",
+  "/dasturxon/use-home.png",
+];
+
 export function DasturxonUsage() {
   const t = useTranslations("dasturxon");
+  const items = t.raw("usage.items") as { title: string; desc: string }[];
 
   return (
-    <section className="bg-dast-cream pt-14 md:pt-20">
+    <section className="bg-white pt-14 md:pt-20">
       <div className="container mx-auto px-4">
-        <div className="grid overflow-hidden rounded-2xl border border-dast-line md:grid-cols-2">
-          {/* Usage photo */}
-         <ZoomableImage
-            src="/dasturxon/use.png"
-            alt="DASTURXON PLYÖNKASI"
-            className="h-60 w-full object-cover sm:h-80"
-          />
+        {/* Section heading */}
+        <h2
+          className="text-center text-2xl font-medium uppercase tracking-wide text-dast-ink md:text-[2rem]"
+          style={{ fontFamily: "Georgia, serif" }}
+        >
+          {t("usage.heading")}
+        </h2>
 
-          {/* Text panel */}
-          <div className="flex flex-col justify-center px-6 py-12 md:px-8 md:py-14">
-            <h2
-              className="text-2xl font-medium uppercase tracking-wide text-dast-ink lg:text-[2rem]"
-              style={{ fontFamily: "Georgia, sans-serif" }}
-            >
-              {t("usage.heading")}
-            </h2>
-            <p className="mt-5 max-w-sm text-lg leading-[1.7] text-dast-body">
-              {t("usage.desc")}
-            </p>
-          </div>
+        {/* Cards — image on top, caption below */}
+        <div className="mt-10 grid grid-cols-1 gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-5">
+          {items.map(({ title, desc }, i) => (
+            <article key={title} className="text-center">
+              <div className="overflow-hidden rounded">
+                <ZoomableImage
+                  src={IMAGES[i]}
+                  alt={title}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </div>
+              <h3 className="mt-4 text-base font-bold uppercase tracking-wide text-dast-ink">
+                {title}
+              </h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-dast-muted">{desc}</p>
+            </article>
+          ))}
         </div>
       </div>
     </section>

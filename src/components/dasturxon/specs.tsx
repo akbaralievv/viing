@@ -1,64 +1,91 @@
+import { Box, ShieldCheck, Truck, CircleCheck, type LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
+
+const PACKAGING_ICONS: LucideIcon[] = [Box, ShieldCheck, Truck, CircleCheck];
+
+function SectionTitle({ children }: { children: string }) {
+  return (
+    <div className="text-center">
+      <h2
+        className="text-2xl font-medium uppercase tracking-wide text-dast-ink md:text-[2rem]"
+        style={{ fontFamily: "Georgia, serif" }}
+      >
+        {children}
+      </h2>
+    </div>
+  );
+}
 
 export function DasturxonSpecs() {
   const t = useTranslations("dasturxon");
-  const head = t.raw("specs.head") as string[];
-  const rows = t.raw("specs.rows") as { label: string; value: string }[];
+  const items = t.raw("specs.packaging.items") as { title: string; desc?: string }[];
+  const rows = t.raw("specs.tech.rows") as { label: string; value: string }[];
 
   return (
-    <section className="bg-dast-cream">
-      <div className="container mx-auto px-4">
-        <div className="mx-auto grid max-w-4xl items-stretch gap-8 md:grid-cols-2">
-          {/* Specs card */}
-          <div className="rounded-2xl border border-dast-line bg-white/45 p-6 shadow-[0_8px_30px_rgba(34,59,99,0.05)] md:p-8">
-            <h2
-              className="text-2xl font-medium uppercase tracking-wide text-dast-ink md:text-[2rem]"
-              style={{ fontFamily: "Georgia, sans-serif" }}
-            >
-              {t("specs.heading")}
-            </h2>
+    <section className="bg-white py-14 md:py-20">
+      <div className="container mx-auto grid gap-14 px-4 lg:grid-cols-12 lg:gap-12">
+        {/* Packaging & delivery */}
+        <div className="lg:col-span-7">
+          <SectionTitle>{t("specs.packaging.heading")}</SectionTitle>
 
-            <table className="mt-6 w-full border-collapse text-left">
-              <thead>
-                <tr className="bg-dast-head-bg">
-                  <th className="w-2/5 px-4 py-3 text-sm font-semibold text-dast-muted">
-                    {head[0]}
-                  </th>
-                  <th className="px-4 py-3 text-sm font-semibold text-dast-muted">
-                    {head[1]}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
+          <div className="mt-8 grid items-center gap-8 sm:grid-cols-2 sm:gap-6">
+            <img
+              src="/dasturxon/box.png"
+              alt="DASTURXON PLYÖNKASI"
+              loading="lazy"
+              decoding="async"
+              className="mx-auto w-full max-w-[380px] select-none object-contain"
+            />
+
+            <ul className="flex flex-col gap-6">
+              {items.map(({ title, desc }, i) => {
+                const Icon = PACKAGING_ICONS[i];
+                return (
+                  <li key={title} className="flex items-start gap-3.5">
+                    <Icon
+                      className="mt-0.5 h-6 w-6 shrink-0 text-dast-navy"
+                      strokeWidth={1.5}
+                      aria-hidden="true"
+                    />
+                    <div>
+                      <h3 className="text-sm font-bold uppercase tracking-wide text-dast-ink">
+                        {title}
+                      </h3>
+                      {desc && (
+                        <p className="mt-1 whitespace-pre-line text-sm leading-relaxed text-dast-muted">
+                          {desc}
+                        </p>
+                      )}
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+
+        {/* Technical specifications */}
+        <div className="lg:col-span-5">
+          <SectionTitle>{t("specs.tech.heading")}</SectionTitle>
+
+          <div className="mx-auto mt-8 max-w-md overflow-hidden rounded-xl border border-dast-line">
+            <table className="w-full text-left text-sm">
+              <tbody className="divide-y divide-dast-row-line">
                 {rows.map((row) => (
-                  <tr
-                    key={row.label}
-                    className="border-b border-dast-row-line last:border-b-0"
-                  >
+                  <tr key={row.label} className="even:bg-dast-sky/50">
                     <th
                       scope="row"
-                      className="px-4 py-3 text-left text-sm font-normal text-dast-body"
+                      className="w-2/5 px-5 py-3.5 font-normal text-dast-body"
                     >
                       {row.label}
                     </th>
-                    <td className="px-4 py-3 text-sm font-semibold text-dast-ink">
+                    <td className="px-5 py-3.5 font-semibold text-dast-ink">
                       {row.value}
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
-          </div>
-
-          {/* Brand label design */}
-          <div className="hidden md:block">
-            <img
-              src="/dasturxon/design.png"
-            loading="lazy"
-            decoding="async"
-              alt="DASTURXON PLYÖNKASI"
-              className="h-full w-full rounded-2xl object-cover"
-            />
           </div>
         </div>
       </div>

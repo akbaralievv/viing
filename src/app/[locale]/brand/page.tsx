@@ -125,7 +125,7 @@ export default async function BrandPage({
           <div className="relative z-10 max-w-2xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">{t("ctaTitle")}</h2>
             <p className="text-white/80 mb-7">{t("ctaSubtitle")}</p>
-            <Button asChild variant="brand" size="lg" className="h-[52px] px-8">
+            <Button asChild variant="brand" size="lg" className="h-[52px] px-8 rounded-lg">
               <Link href="/#contact">
                 {t("ctaButton")}
                 <ArrowRight aria-hidden="true" />
