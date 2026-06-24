@@ -41,7 +41,7 @@ export function GilamUsage() {
             <span className="inline-flex rounded-[3px] bg-gilam-brown px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-gilam-cream">
               {t("usage.badge")}
             </span>
-            <h2 className="mt-5 font-helvetica text-[2rem] font-bold uppercase leading-[1.05] tracking-tight text-gilam-ink">
+            <h2 className="mt-5 font-cormorant text-[2rem] font-bold uppercase leading-[1.05] tracking-tight text-gilam-ink">
               {t("usage.heading")}
             </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-gilam-muted">

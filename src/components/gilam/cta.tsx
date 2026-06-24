@@ -17,7 +17,7 @@ export function GilamCta() {
         className="object-cover object-center"
       />
       {/* Darkening: veil below 900px, dark-to-clear gradient from 900px */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/50 min-[900px]:hidden" />
 
       <div className="relative z-10 container mx-auto px-4 py-5">
         <div className="grid items-center gap-10 min-[900px]:grid-cols-2">

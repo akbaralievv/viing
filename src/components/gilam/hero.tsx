@@ -28,7 +28,7 @@ export function GilamHero() {
         className="text-white/80 hover:text-white"
       />
 
-      <div className="relative z-10 container mx-auto grid grid-cols-1 content-center items-center gap-8 px-4 pb-12 pt-28 min-[900px]:gap-0 min-[900px]:grid-cols-2">
+      <div className="relative z-10 container mx-auto grid grid-cols-1 content-center items-center gap-8 px-4 pb-12 pt-40 min-[900px]:gap-0 min-[900px]:grid-cols-2 min-[900px]:pt-28">
         {/* Text */}
         <div className="flex flex-col items-center min-[900px]:items-start">
           <h1 className="font-merriweather text-[clamp(4rem,6vw,80px)] font-black uppercase leading-[0.95] tracking-[0.08em] text-gilam-cream">
@@ -44,19 +44,22 @@ export function GilamHero() {
             {t("hero.desc")}
           </p>
 
-          <ul className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-6 min-[900px]:justify-start">
+          <ul className="mt-8 flex w-full max-w-md flex-nowrap items-start justify-center gap-2 min-[400px]:gap-4 min-[900px]:max-w-none min-[900px]:justify-start min-[900px]:gap-6">
             {features.map((title, i) => {
               const Icon = FEATURE_ICONS[i];
               return (
-                <li key={title} className="flex flex-col items-center gap-2.5 text-center">
-                  <span className="flex h-[4.5rem] w-[4.5rem] rounded-full items-center justify-center rounded-2xl border-2 border-gilam-cream/40 bg-gilam-title">
+                <li
+                  key={title}
+                  className="flex min-w-0 flex-1 flex-col items-center gap-2 text-center min-[900px]:flex-none"
+                >
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-gilam-cream/40 bg-gilam-title min-[400px]:h-14 min-[400px]:w-14 min-[900px]:h-16 min-[900px]:w-16">
                     <Icon
-                      className="h-10 w-10 text-white"
+                      className="h-7 w-7 text-white min-[900px]:h-10 min-[900px]:w-10"
                       strokeWidth={2}
                       aria-hidden="true"
                     />
                   </span>
-                  <span className="whitespace-pre-line text-xs font-bold uppercase leading-tight tracking-wide text-gilam-cream">
+                  <span className="whitespace-pre-line text-[10px] font-bold uppercase leading-tight tracking-wide text-gilam-cream min-[400px]:text-xs">
                     {title}
                   </span>
                 </li>

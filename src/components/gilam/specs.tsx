@@ -28,7 +28,7 @@ export function GilamSpecs() {
 
           {/* Specifications */}
           <div>
-            <h2 className="font-helvetica text-2xl font-bold uppercase tracking-tight text-gilam-ink md:text-[2rem]">
+            <h2 className="font-cormorant text-2xl font-bold uppercase tracking-tight text-gilam-ink md:text-[2rem]">
               {t("specs.heading")}
             </h2>
 
