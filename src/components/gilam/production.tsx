@@ -5,7 +5,6 @@ import { ZoomableImage } from "@/components/zoomable-image";
 const IMAGES = [
   "/gilam/production-1.png",
   "/gilam/production-2.png",
-  "/gilam/production-3.png",
   "/gilam/production-4.png",
   "/gilam/production-5.png",
   "/gilam/production-6.png",
@@ -16,7 +15,7 @@ export function GilamProduction() {
   const steps = t.raw("production.steps") as string[];
 
   return (
-    <section id="production" className="bg-gilam-cream py-14 md:py-20">
+    <section id="production" className="bg-[#f4f0ee] py-14 md:py-20">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between md:gap-8">
@@ -29,7 +28,7 @@ export function GilamProduction() {
         </div>
 
         {/* Steps */}
-        <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 md:mt-12 lg:grid-cols-6 lg:gap-x-6">
+        <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 md:mt-12 lg:grid-cols-5 lg:gap-x-6">
           {steps.map((label, i) => {
             const num = String(i + 1).padStart(2, "0");
             return (

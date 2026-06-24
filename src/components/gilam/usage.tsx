@@ -24,13 +24,13 @@ export function GilamUsage() {
   const items = t.raw("usage.items") as { title: string; desc: string }[];
 
   return (
-    <section id="usage" className="bg-gilam-cream pt-14 md:pt-20">
+    <section id="usage" className="bg-[#f4f0ee] pt-14 md:pt-20">
       <div className="container mx-auto px-4">
         {/* Header: badge + title + description on the left, roll floated top-right */}
         <div className="relative">
           <img
-            src="/gilam/stretch-horizontal.png"
-            alt="GILAM PLYÖNKASI SANOAT"
+            src="/gilam/roll.png"
+            alt="GILAM PALLET QADOQLASH PLYONKASI"
             loading="lazy"
             decoding="async"
             className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 select-none object-contain lg:block"
@@ -51,7 +51,7 @@ export function GilamUsage() {
         </div>
 
         {/* Use-case cards */}
-        <div className="relative z-10 mt-10 grid grid-cols-2 gap-x-5 gap-y-9 sm:grid-cols-3 md:mt-14 lg:grid-cols-5">
+        <div className="relative z-10 mt-10 grid grid-cols-1 gap-x-5 gap-y-9 min-[400px]:grid-cols-2 sm:grid-cols-3 md:mt-14 lg:grid-cols-5">
           {items.map((it, i) => {
             const Icon = ICONS[i];
             return (

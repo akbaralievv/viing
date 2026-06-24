@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Montserrat, Cormorant_Garamond, Bodoni_Moda } from "next/font/google";
+import { Inter, Montserrat, Cormorant_Garamond, Bodoni_Moda, Merriweather } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -41,6 +41,14 @@ const bodoni = Bodoni_Moda({
   display: "swap",
   // only the semibold weight is actually used (lineup card numbers)
   weight: ["600"],
+});
+
+// Merriweather — GILAM hero wordmark (sturdy classic serif).
+const merriweather = Merriweather({
+  variable: "--font-merriweather",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["700", "900"],
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || siteConfig.url;
@@ -168,7 +176,7 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={locale} className={`${inter.variable} ${montserrat.variable} ${cormorant.variable} ${bodoni.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${montserrat.variable} ${cormorant.variable} ${bodoni.variable} ${merriweather.variable}`}>
       <body suppressHydrationWarning className="flex min-h-screen flex-col antialiased">
         <NextIntlClientProvider>
           <Header />

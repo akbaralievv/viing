@@ -5,7 +5,6 @@ import { ZoomableImage } from "../zoomable-image";
 const IMAGES = [
   "/dasturxon/production-1.png",
   "/dasturxon/production-2.png",
-  "/dasturxon/production-3.png",
   "/dasturxon/production-4.png",
   "/dasturxon/production-5.png",
 ];

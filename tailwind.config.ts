@@ -13,6 +13,7 @@ export default {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
         display: ['var(--font-display)', 'var(--font-sans)', 'system-ui', 'sans-serif'],
         cormorant: ['var(--font-cormorant)', 'Cormorant Garamond', 'Georgia', 'serif'],
+        merriweather: ['var(--font-merriweather)', 'Merriweather', 'Georgia', 'serif'],
         bodoni: ['var(--font-bodoni)', 'Bodoni Moda', 'Didot', 'serif'],
         helvetica: ['"Helvetica LT Pro"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
       },
@@ -91,6 +92,7 @@ export default {
         // gilam — GILAM PLYÖNKASI (stretch film), brown on warm cream
         gilam: {
           ink: '#2A1A14',
+          title: '#631D15',        // hero product wordmark
           brown: '#7B4A2C',
           'brown-deep': '#5E3720', // hover
           rust: '#6B2F12',         // feature icons

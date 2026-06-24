@@ -235,15 +235,15 @@
         "specs": [
           {
             "label": "Roll width",
-            "value": "45 cm"
+            "value": "50 cm"
           },
           {
             "label": "Length",
-            "value": "200 m"
+            "value": "400 m"
           },
           {
             "label": "Thickness",
-            "value": "50 microns"
+            "value": "17 microns"
           }
         ]
       },
@@ -727,8 +727,9 @@
     "hero": {
       "desc": "Industrial stretch film for secure fastening, protection, and safe transportation of cargo.",
       "features": [
-        "Strength\nand reliability",
-        "High stretch\nup to 300%"
+        "High\nstrength",
+        "High\nelasticity",
+        "Eco-friendly"
       ]
     },
     "advantages": [
@@ -758,44 +759,46 @@
       }
     ],
     "specs": {
-      "sizeTitle": "Film size",
-      "dims": [
+      "heading": "Product specifications",
+      "rows": [
         {
-          "value": "45 cm",
-          "label": "width"
+          "label": "Type",
+          "value": "Stretch film"
         },
         {
-          "value": "200 m",
-          "label": "length"
+          "label": "Length",
+          "value": "400 m"
         },
         {
-          "value": "50 µm",
-          "label": "thickness"
-        }
-      ],
-      "features": [
-        {
-          "title": "High transparency",
-          "desc": "Enables visual control without removing the packaging."
+          "label": "Width",
+          "value": "500 mm"
         },
         {
-          "title": "Puncture resistance",
-          "desc": "Reliable protection from damage during transportation."
+          "label": "Thickness",
+          "value": "17–23 µm"
         },
         {
-          "title": "Manual and machine winding",
-          "desc": "Suitable for all types of pallet wrappers."
+          "label": "Color",
+          "value": "Transparent"
         },
         {
-          "title": "Moisture and dust protection",
-          "desc": "Preserves the appearance and quality of products."
+          "label": "Use",
+          "value": "Palletizing"
+        },
+        {
+          "label": "Core",
+          "value": "Full-color print"
+        },
+        {
+          "label": "Brand",
+          "value": "GILAM"
         }
       ]
     },
     "usage": {
       "badge": "Usage",
       "heading": "Universal application",
-      "desc": "GILAM PLYÖNKASI SANOAT stretch film provides reliable fastening and protection from dust and moisture, making storage and transport of various goods easier.",
+      "desc": "GILAM PALLET QADOQLASH PLYONKASI stretch film provides reliable fastening and protection from dust and moisture, making storage and transport of various goods easier.",
       "items": [
         {
           "title": "Furniture",
@@ -825,7 +828,6 @@
       "steps": [
         "Extrusion",
         "Cooling",
-        "Winding",
         "Packaging",
         "Warehousing",
         "Logistics"
@@ -837,7 +839,7 @@
       "button": "Discuss your project"
     },
     "meta": {
-      "title": "GILAM PLYÖNKASI SANOAT — industrial stretch film",
+      "title": "GILAM PALLET QADOQLASH PLYONKASI — industrial stretch film",
       "description": "Industrial stretch film for secure fastening, protection and safe cargo transportation. 45 cm × 200 m × 50 µm. Private-label manufacturing by VIING."
     }
   },

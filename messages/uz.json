@@ -235,15 +235,15 @@
         "specs": [
           {
             "label": "Rulon eni",
-            "value": "45 sm"
+            "value": "50 sm"
           },
           {
             "label": "Uzunligi",
-            "value": "200 m"
+            "value": "400 m"
           },
           {
             "label": "Qalinligi",
-            "value": "50 mikron"
+            "value": "17 mikron"
           }
         ]
       },
@@ -727,8 +727,9 @@
     "hero": {
       "desc": "Yuklarni ishonchli mahkamlash, himoya qilish va xavfsiz tashish uchun sanoat strech plyonkasi.",
       "features": [
-        "Mustahkamlik\nva ishonchlilik",
-        "Yuqori cho'ziluvchanlik\n300% gacha"
+        "Yuqori\nmustahkamlik",
+        "Yuqori\nelastiklik",
+        "Ekologik toza"
       ]
     },
     "advantages": [
@@ -758,44 +759,46 @@
       }
     ],
     "specs": {
-      "sizeTitle": "Plyonka o'lchami",
-      "dims": [
+      "heading": "Mahsulot xususiyatlari",
+      "rows": [
         {
-          "value": "45 sm",
-          "label": "eni"
+          "label": "Turi",
+          "value": "Strech plyonka"
         },
         {
-          "value": "200 m",
-          "label": "uzunligi"
+          "label": "O'rami",
+          "value": "400 m"
         },
         {
-          "value": "50 mkm",
-          "label": "qalinligi"
-        }
-      ],
-      "features": [
-        {
-          "title": "Yuqori shaffoflik",
-          "desc": "Qadoqni ochmasdan vizual nazorat qilish imkonini beradi."
+          "label": "Eni",
+          "value": "500 mm"
         },
         {
-          "title": "Teshilishga chidamlilik",
-          "desc": "Tashish vaqtida shikastlanishdan ishonchli himoya."
+          "label": "Qalinligi",
+          "value": "17–23 mkm"
         },
         {
-          "title": "Qo'lda va mashinada o'rash",
-          "desc": "Barcha turdagi pallet o'rovchilar uchun mos."
+          "label": "Rangi",
+          "value": "Shaffof"
         },
         {
-          "title": "Namlik va changdan himoya",
-          "desc": "Mahsulotning ko'rinishi va sifatini saqlaydi."
+          "label": "Maqsadi",
+          "value": "Palletlash"
+        },
+        {
+          "label": "G'altak",
+          "value": "To'liq rangli bosma"
+        },
+        {
+          "label": "Brend",
+          "value": "GILAM"
         }
       ]
     },
     "usage": {
       "badge": "Foydalanish",
       "heading": "Universal qo'llanish",
-      "desc": "GILAM PLYÖNKASI SANOAT strech plyonkasi ishonchli mahkamlash, chang va namlikdan himoya qilib, turli yuklarni saqlash va tashishni osonlashtiradi.",
+      "desc": "GILAM PALLET QADOQLASH PLYONKASI strech plyonkasi ishonchli mahkamlash, chang va namlikdan himoya qilib, turli yuklarni saqlash va tashishni osonlashtiradi.",
       "items": [
         {
           "title": "Mebel",
@@ -837,7 +840,7 @@
       "button": "Loyihani muhokama qilish"
     },
     "meta": {
-      "title": "GILAM PLYÖNKASI SANOAT — sanoat strech plyonkasi",
+      "title": "GILAM PALLET QADOQLASH PLYONKASI — sanoat strech plyonkasi",
       "description": "Yuklarni ishonchli mahkamlash, himoya qilish va xavfsiz tashish uchun sanoat strech plyonkasi. 45 sm × 200 m × 50 mkm. VIING tomonidan brend ostida ishlab chiqarish."
     }
   },
