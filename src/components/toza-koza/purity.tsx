@@ -43,7 +43,7 @@ export function TozaKozaPurity() {
     <section className="relative overflow-hidden bg-toza-cream">
       {/* Background — droplets scene */}
       <Image
-        src="/toza-koza/purity-back.png"
+        src="/toza-koza/purity-back.webp"
         alt=""
         fill
         sizes="100vw"
@@ -88,7 +88,7 @@ export function TozaKozaPurity() {
 
           <div className="min-[768px]:flex-1">
             <img
-              src="/toza-koza/purity.png"
+              src="/toza-koza/purity.webp"
               loading="lazy"
               decoding="async"
               alt="TOZA KO'ZA"

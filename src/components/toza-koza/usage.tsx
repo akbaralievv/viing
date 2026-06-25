@@ -3,11 +3,11 @@ import { useTranslations } from "next-intl";
 import { ZoomableImage } from "@/components/zoomable-image";
 
 const IMAGES = [
-  "/toza-koza/use-1.png",
-  "/toza-koza/use-2.jpg",
-  "/toza-koza/use-3.jpg",
-  "/toza-koza/use-4.png",
-  "/toza-koza/use-5.jpg",
+  "/toza-koza/use-1.webp",
+  "/toza-koza/use-2.webp",
+  "/toza-koza/use-3.webp",
+  "/toza-koza/use-4.webp",
+  "/toza-koza/use-5.webp",
 ];
 
 const ICONS: LucideIcon[] = [Hand, Car, Home, Briefcase, Users];
@@ -43,7 +43,7 @@ export function TozaKozaUsage() {
           </div>
 
           <img
-            src="/toza-koza/80-pieces.png"
+            src="/toza-koza/80-pieces.webp"
             alt="TOZA KO'ZA"
             loading="lazy"
             decoding="async"

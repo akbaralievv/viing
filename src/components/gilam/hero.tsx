@@ -9,12 +9,13 @@ export function GilamHero() {
   const features = t.raw("hero.features") as string[];
 
   return (
-    <section className="relative min-h-[100svh] flex overflow-hidden">
-      {/* Background scene */}
+    <section className="relative flex min-h-[100svh] overflow-hidden bg-gilam-ink">
+      {/* Background scene — dark section bg prevents a white flash before it loads */}
       <img
-        src="/gilam/hero-back.png"
+        src="/gilam/hero-back.webp"
         alt=""
         aria-hidden="true"
+        fetchPriority="high"
         className="pointer-events-none absolute inset-0 z-0 h-full w-full select-none object-cover"
       />
       {/* Scrim for text legibility (darker on the text side) */}
@@ -71,7 +72,7 @@ export function GilamHero() {
         {/* Product */}
         <div className="min-[900px]:justify-self-end max-w-[600px] mx-auto">
           <img
-            src="/gilam/hero.png"
+            src="/gilam/hero.webp"
             alt="GILAM PALLET QADOQLASH PLYONKASI"
             className="w-full object-contain"
           />

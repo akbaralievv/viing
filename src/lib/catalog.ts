@@ -34,12 +34,12 @@ export type Category = {
 };
 
 export const categories: Category[] = [
-  { slug: "hygiene", icon: SprayCan, count: "1 248", image: "/categories/hygiene.png", kind: "products" },
-  { slug: "packaging", icon: Package, count: "842", image: "/categories/packaging.png", kind: "products" },
-  { slug: "home", icon: Home, count: "2 153", image: "/categories/home.png", kind: "products" },
-  { slug: "horeca", icon: Coffee, count: "1 004", image: "/categories/horeca.png", kind: "products" },
-  { slug: "private-label", icon: Sparkles, count: "956", image: "/categories/private-label.png", kind: "link", href: "/brand" },
-  { slug: "custom", icon: PackageCheck, count: "", image: "/categories/custom.png", kind: "link", href: "/#contact" },
+  { slug: "hygiene", icon: SprayCan, count: "1 248", image: "/categories/hygiene.webp", kind: "products" },
+  { slug: "packaging", icon: Package, count: "842", image: "/categories/packaging.webp", kind: "products" },
+  { slug: "home", icon: Home, count: "2 153", image: "/categories/home.webp", kind: "products" },
+  { slug: "horeca", icon: Coffee, count: "1 004", image: "/categories/horeca.webp", kind: "products" },
+  { slug: "private-label", icon: Sparkles, count: "956", image: "/categories/private-label.webp", kind: "link", href: "/brand" },
+  { slug: "custom", icon: PackageCheck, count: "", image: "/categories/custom.webp", kind: "link", href: "/#contact" },
 ];
 
 /** Resolve an image: a local public path (starts with "/") is used as-is,
@@ -57,25 +57,25 @@ export type Product = {
 
 export const products: Product[] = [
   // Гигиена
-  { slug: "wet-wipes", category: "hygiene", image: "/products/wet-wipes.png" },
-  { slug: "paper-towels", category: "hygiene", image: "/products/paper-towels.png" },
-  { slug: "liquid-soap", category: "hygiene", image: "/products/liquid-soap.png" },
-  { slug: "hand-sanitizer", category: "hygiene", image: "/products/liquid-soap.png" },
+  { slug: "wet-wipes", category: "hygiene", image: "/products/wet-wipes.webp" },
+  { slug: "paper-towels", category: "hygiene", image: "/products/paper-towels.webp" },
+  { slug: "liquid-soap", category: "hygiene", image: "/products/liquid-soap.webp" },
+  { slug: "hand-sanitizer", category: "hygiene", image: "/products/liquid-soap.webp" },
   // Упаковочные материалы
-  { slug: "pvc-food-film", category: "packaging", image: "/products/pvc-food-film.png" },
-  { slug: "stretch-film-hand", category: "packaging", image: "/products/stretch-film-hand.png" },
-  { slug: "stretch-film-machine", category: "packaging", image: "/products/stretch-film-machine.png" },
-  { slug: "packing-tape", category: "packaging", image: "/products/stretch-film-machine.png" },
+  { slug: "pvc-food-film", category: "packaging", image: "/products/pvc-food-film.webp" },
+  { slug: "stretch-film-hand", category: "packaging", image: "/products/stretch-film-hand.webp" },
+  { slug: "stretch-film-machine", category: "packaging", image: "/products/stretch-film-machine.webp" },
+  { slug: "packing-tape", category: "packaging", image: "/products/stretch-film-machine.webp" },
   // Товары для дома
-  { slug: "trash-bags", category: "home", image: "/products/trash-bags.png" },
-  { slug: "cleaning-set", category: "home", image: "/products/cleaning-set.png" },
-  { slug: "dish-sponges", category: "home", image: "/products/cleaning-set.png" },
-  { slug: "household-gloves", category: "home", image: "/products/household-gloves.jpg" },
+  { slug: "trash-bags", category: "home", image: "/products/trash-bags.webp" },
+  { slug: "cleaning-set", category: "home", image: "/products/cleaning-set.webp" },
+  { slug: "dish-sponges", category: "home", image: "/products/cleaning-set.webp" },
+  { slug: "household-gloves", category: "home", image: "/products/household-gloves.webp" },
   // Бизнес и HoReCa
-  { slug: "paper-cups", category: "horeca", image: "/products/paper-cups.png" },
-  { slug: "food-containers", category: "horeca", image: "/products/pvc-food-film.png" },
-  { slug: "wooden-cutlery", category: "horeca", image: "/products/paper-cups.png" },
-  { slug: "dispenser-napkins", category: "horeca", image: "/products/paper-towels.png" },
+  { slug: "paper-cups", category: "horeca", image: "/products/paper-cups.webp" },
+  { slug: "food-containers", category: "horeca", image: "/products/pvc-food-film.webp" },
+  { slug: "wooden-cutlery", category: "horeca", image: "/products/paper-cups.webp" },
+  { slug: "dispenser-napkins", category: "horeca", image: "/products/paper-towels.webp" },
 ];
 
 /** Curated set shown in the "Популярные товары" block on the home page. */

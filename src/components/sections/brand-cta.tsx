@@ -42,7 +42,7 @@ export function BrandCta() {
 
             <div className="relative min-h-[300px] lg:min-h-[380px] overflow-hidden rounded-tl-[10rem] bg-secondary">
               <Image
-                src="/brand.png"
+                src="/brand.webp"
                 alt={t("title")}
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"

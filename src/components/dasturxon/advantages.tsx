@@ -23,7 +23,7 @@ export function DasturxonAdvantages() {
           {/* Product roll */}
           <div className="sm:col-span-12 lg:col-span-5">
             <img
-              src="/dasturxon/66.png"
+              src="/dasturxon/66.webp"
               alt="DASTURXON PLYÖNKASI"
               loading="lazy"
               decoding="async"

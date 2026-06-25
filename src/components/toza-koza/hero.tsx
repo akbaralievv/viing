@@ -21,9 +21,9 @@ export function TozaKozaHero() {
 
       {/* Scene — <picture> downloads only the matching variant (mobile/desktop) */}
       <picture>
-        <source media="(max-width: 599px)" srcSet="/toza-koza/hero-mobile.png" />
+        <source media="(max-width: 599px)" srcSet="/toza-koza/hero-mobile.webp" />
         <img
-          src="/toza-koza/hero.png"
+          src="/toza-koza/hero.webp"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover object-center"

@@ -103,7 +103,7 @@ export async function generateMetadata({
       description: t("shortDescription"),
       images: [
         {
-          url: "/hero.png",
+          url: "/hero.webp",
           width: 1717,
           height: 916,
           alt: t("ogAlt"),
@@ -114,7 +114,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("ogTitle"),
       description: t("shortDescription"),
-      images: ["/hero.png"],
+      images: ["/hero.webp"],
     },
     robots: {
       index: true,
@@ -154,7 +154,7 @@ export default async function LocaleLayout({
     name: siteConfig.legalName,
     alternateName: siteConfig.name,
     url: siteUrl,
-    logo: `${siteUrl}/logo.png`,
+    logo: `${siteUrl}/logo-text.svg`,
     description: tMeta("description"),
     foundingDate: String(siteConfig.founded),
     address: {

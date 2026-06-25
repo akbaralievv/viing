@@ -42,7 +42,7 @@ export default async function AboutPage({
       {/* Hero — background image, centered text */}
       <section className="relative flex h-[100svh] min-h-[600px] max-h-[900px] flex-col overflow-hidden bg-primary">
         <Image
-          src="/about/about.png"
+          src="/about/about.webp"
           alt=""
           fill
           priority
@@ -147,7 +147,7 @@ export default async function AboutPage({
           className="relative overflow-hidden rounded-3xl bg-primary px-6 py-12 md:px-12 md:py-16 text-center"
         >
           <Image
-            src="/banner.png"
+            src="/banner.webp"
             alt=""
             fill
             sizes="(min-width: 1024px) 1100px, 100vw"

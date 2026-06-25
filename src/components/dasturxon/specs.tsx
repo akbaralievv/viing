@@ -30,7 +30,7 @@ export function DasturxonSpecs() {
 
           <div className="mt-8 grid items-center gap-8 sm:grid-cols-2 sm:gap-6">
             <img
-              src="/dasturxon/box.png"
+              src="/dasturxon/box.webp"
               alt="DASTURXON PLYÖNKASI"
               loading="lazy"
               decoding="async"

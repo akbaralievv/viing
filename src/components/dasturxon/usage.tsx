@@ -2,11 +2,11 @@ import { useTranslations } from "next-intl";
 import { ZoomableImage } from "../zoomable-image";
 
 const IMAGES = [
-  "/dasturxon/use-supermarket.png",
-  "/dasturxon/use-meat.png",
-  "/dasturxon/use-restaurant.png",
-  "/dasturxon/use-production.png",
-  "/dasturxon/use-home.png",
+  "/dasturxon/use-supermarket.webp",
+  "/dasturxon/use-meat.webp",
+  "/dasturxon/use-restaurant.webp",
+  "/dasturxon/use-production.webp",
+  "/dasturxon/use-home.webp",
 ];
 
 export function DasturxonUsage() {

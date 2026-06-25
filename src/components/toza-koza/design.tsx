@@ -2,10 +2,10 @@ import { useTranslations } from "next-intl";
 import { ZoomableImage } from "@/components/zoomable-image";
 
 const IMAGES = [
-  "/toza-koza/design.png",
-  "/toza-koza/print.jpg",
-  "/toza-koza/valve.jpg",
-  "/toza-koza/box.jpg",
+  "/toza-koza/design.webp",
+  "/toza-koza/print.webp",
+  "/toza-koza/valve.webp",
+  "/toza-koza/box.webp",
 ];
 
 export function TozaKozaDesign() {

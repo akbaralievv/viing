@@ -9,7 +9,7 @@ export function TozaKozaCta() {
   return (
     <section className="relative overflow-hidden">
       <Image
-        src="/toza-koza/cta-back.png"
+        src="/toza-koza/cta-back.webp"
         alt=""
         fill
         sizes="100vw"

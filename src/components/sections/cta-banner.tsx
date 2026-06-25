@@ -10,7 +10,7 @@ export function CtaBanner() {
       <div className="container mx-auto px-4">
         <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-10 md:px-12 md:py-14">
           <Image
-            src="/banner.png"
+            src="/banner.webp"
             alt=""
             fill
             sizes="(min-width: 1024px) 1100px, 100vw"

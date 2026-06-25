@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ZoomableImage } from "@/components/zoomable-image";
 
-const CALLOUT_IMAGES = ["/toza-koza/textile.png", "/toza-koza/valve.png"];
+const CALLOUT_IMAGES = ["/toza-koza/textile.webp", "/toza-koza/valve.webp"];
 
 export function TozaKozaSpecs() {
   const t = useTranslations("wetWipes");
@@ -12,7 +12,7 @@ export function TozaKozaSpecs() {
   return (
     <section className="relative overflow-hidden bg-white">
       <Image
-        src="/toza-koza/white-background.png"
+        src="/toza-koza/white-background.webp"
         alt=""
         fill
         sizes="100vw"

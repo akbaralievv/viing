@@ -11,14 +11,14 @@ export function GilamSpecs() {
           {/* Product roll — horizontal in 1 column (below lg), vertical in 2 columns */}
           <div>
             <img
-              src="/gilam/roll.png"
+              src="/gilam/roll.webp"
               alt="GILAM PALLET QADOQLASH PLYONKASI"
               loading="lazy"
               decoding="async"
               className="mx-auto w-full max-w-[480px] select-none object-contain lg:hidden"
             />
             <img
-              src="/gilam/roll2.png"
+              src="/gilam/roll2.webp"
               alt="GILAM PALLET QADOQLASH PLYONKASI"
               loading="lazy"
               decoding="async"

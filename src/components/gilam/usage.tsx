@@ -10,11 +10,11 @@ import { useTranslations } from "next-intl";
 import { ZoomableImage } from "@/components/zoomable-image";
 
 const IMAGES = [
-  "/gilam/use-1.png",
-  "/gilam/use-2.jpg",
-  "/gilam/use-3.jpg",
-  "/gilam/use-4.jpg",
-  "/gilam/use-5.jpg",
+  "/gilam/use-1.webp",
+  "/gilam/use-2.webp",
+  "/gilam/use-3.webp",
+  "/gilam/use-4.webp",
+  "/gilam/use-5.webp",
 ];
 
 const ICONS: LucideIcon[] = [Armchair, Package, Boxes, ShieldCheck, Layers3];
@@ -29,7 +29,7 @@ export function GilamUsage() {
         {/* Header: badge + title + description on the left, roll floated top-right */}
         <div className="relative">
           <img
-            src="/gilam/roll.png"
+            src="/gilam/roll.webp"
             alt="GILAM PALLET QADOQLASH PLYONKASI"
             loading="lazy"
             decoding="async"

@@ -10,7 +10,7 @@ export function GilamCta() {
   return (
     <section id="contacts" className="relative overflow-hidden">
       <Image
-        src="/gilam/cta-back.png"
+        src="/gilam/cta-back.webp"
         alt=""
         fill
         sizes="100vw"
@@ -41,7 +41,7 @@ export function GilamCta() {
           {/* Product */}
           <div className="hidden min-[900px]:block">
             <ZoomableImage
-              src="/gilam/stretch-horizontal.png"
+              src="/gilam/stretch-horizontal.webp"
               alt="GILAM PALLET QADOQLASH PLYONKASI"
               className="ml-auto w-full max-w-[420px] object-contain"
             />

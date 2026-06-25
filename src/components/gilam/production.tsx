@@ -3,11 +3,11 @@ import { useTranslations } from "next-intl";
 import { ZoomableImage } from "@/components/zoomable-image";
 
 const IMAGES = [
-  "/gilam/production-1.png",
-  "/gilam/production-2.png",
-  "/gilam/production-4.png",
-  "/gilam/production-5.png",
-  "/gilam/production-6.png",
+  "/gilam/production-1.webp",
+  "/gilam/production-2.webp",
+  "/gilam/production-4.webp",
+  "/gilam/production-5.webp",
+  "/gilam/production-6.webp",
 ];
 
 export function GilamProduction() {

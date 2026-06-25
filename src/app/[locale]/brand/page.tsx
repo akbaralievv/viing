@@ -42,7 +42,7 @@ export default async function BrandPage({
       {/* Hero — background image (same treatment as the home page hero) */}
       <section className="relative flex flex-col h-[100svh] min-h-[600px] max-h-[800px] overflow-hidden bg-primary">
         <Image
-          src="/brand/your-brand.png"
+          src="/brand/your-brand.webp"
           alt=""
           fill
           priority
@@ -116,7 +116,7 @@ export default async function BrandPage({
 
         <Reveal as="section" className="relative overflow-hidden rounded-3xl bg-primary px-6 py-12 md:px-12 md:py-16 text-center">
           <Image
-            src="/banner.png"
+            src="/banner.webp"
             alt=""
             fill
             sizes="(min-width: 1024px) 1100px, 100vw"

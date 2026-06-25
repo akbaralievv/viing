@@ -9,7 +9,7 @@ export function DasturxonCta() {
   return (
     <section id="contacts" className="relative overflow-hidden bg-dast-sky">
       <Image
-        src="/dasturxon/cta.png"
+        src="/dasturxon/cta.webp"
         alt=""
         fill
         sizes="100vw"
@@ -41,7 +41,7 @@ export function DasturxonCta() {
           {/* Product */}
           <div className="hidden min-[900px]:block">
             <img
-              src="/dasturxon/stretch.png"
+              src="/dasturxon/stretch.webp"
               alt="DASTURXON PLYÖNKASI"
               loading="lazy"
               decoding="async"

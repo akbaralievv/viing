@@ -31,7 +31,7 @@ export function DasturxonHero() {
         <div className="mx-auto min-[900px]:mx-0">
           {/* Decorative wordmark */}
           <img
-            src="/dasturxon/777.png"
+            src="/dasturxon/777.webp"
             alt="DASTURXON PLYÖNKASI"
             className="mx-auto mb-6 w-[clamp(200px,22vw,300px)] select-none min-[900px]:mx-0"
           />
@@ -71,7 +71,7 @@ export function DasturxonHero() {
         {/* Product — black backdrop dissolves into the navy via `lighten` blend */}
         <div className="w-full">
           <img
-            src="/dasturxon/888.png"
+            src="/dasturxon/888.webp"
             alt="DASTURXON PLYÖNKASI"
             className="w-full select-none mix-blend-lighten"
           />

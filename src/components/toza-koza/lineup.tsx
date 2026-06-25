@@ -2,9 +2,9 @@ import { useTranslations } from "next-intl";
 import { ZoomableImage } from "@/components/zoomable-image";
 
 const PRODUCTS = [
-  { count: "40", image: "/toza-koza/40-pieces.png" },
-  { count: "80", image: "/toza-koza/80-pieces.png" },
-  { count: "120", image: "/toza-koza/120-pieces.png" },
+  { count: "40", image: "/toza-koza/40-pieces.webp" },
+  { count: "80", image: "/toza-koza/80-pieces.webp" },
+  { count: "120", image: "/toza-koza/120-pieces.webp" },
 ];
 
 export function TozaKozaLineup() {

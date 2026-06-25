@@ -14,7 +14,7 @@ export function Hero() {
       {/* Content area — background image fills only this block (not the stats bar) */}
       <div className="relative flex h-[100svh] min-h-[600px] max-h-[800px] items-center overflow-hidden">
         <Image
-          src="/hero.png"
+          src="/hero.webp"
           alt=""
           fill
           priority
