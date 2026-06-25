@@ -64,6 +64,7 @@ export default async function CasesPage({
           <div className="flex flex-col gap-16 md:gap-24">
             {projects.map((project, idx) => {
               const study = caseStudies[idx];
+              const isGilam = study.slug === "stretch-film";
               return (
                 <Reveal key={study.slug}>
                   <Link
@@ -73,13 +74,21 @@ export default async function CasesPage({
                       idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                     )}
                   >
-                    <div className="relative aspect-[1.37] w-full overflow-hidden rounded-xl border border-[#c6c6cd] md:w-1/2">
+                    <div
+                      className={cn(
+                        "relative aspect-[1.37] w-full overflow-hidden rounded-xl border border-[#c6c6cd] md:w-1/2",
+                        isGilam && "bg-[#EDEDF1]"
+                      )}
+                    >
                       <Image
                         src={study.image}
                         alt={project.title}
                         fill
                         sizes="(min-width: 768px) 45vw, 100vw"
-                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        className={cn(
+                          "transition-transform duration-700 ease-out group-hover:scale-105",
+                          isGilam ? "object-contain" : "object-cover"
+                        )}
                       />
                       <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         <span className="inline-flex items-center gap-2 rounded-full bg-white/90 px-6 py-3 text-sm font-semibold text-[#191c1e]">

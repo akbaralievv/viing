@@ -52,7 +52,7 @@ export function GilamHero() {
                   key={title}
                   className="flex min-w-0 flex-1 flex-col items-center gap-2 text-center min-[900px]:flex-none"
                 >
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-gilam-cream/40 bg-gilam-title min-[400px]:h-14 min-[400px]:w-14 min-[900px]:h-16 min-[900px]:w-16">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border-2 border-white bg-gilam-title min-[400px]:h-14 min-[400px]:w-14 min-[900px]:h-16 min-[900px]:w-16">
                     <Icon
                       className="h-7 w-7 text-white min-[900px]:h-10 min-[900px]:w-10"
                       strokeWidth={2}
